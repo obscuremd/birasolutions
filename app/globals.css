@@ -3,11 +3,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ═══════════════════════════════════════════════════════════════
+   BIRA SOLUTION — DESIGN TOKENS  (Single source of truth)
+   Dark navy background
+   Teal-blue + Green = accent only (icons, eyebrows, CTAs, borders)
+   White / muted = primary text and UI surfaces
+   ═══════════════════════════════════════════════════════════════ */
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-outfit);
-  --font-display: var(--font-cormorant);
   --font-mono: var(--font-geist-mono);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -32,48 +38,71 @@
 }
 
 :root {
-  --radius: 0.25rem;
+  /* ── Dark navy base ─────────────────────────────────────────── */
+  --bs-dark: #070c14;
+  --bs-navy: #0b1220;
+  --bs-navy-mid: #0f1a2e;
+  --bs-navy-light: #162035;
+  --bs-navy-border: #1c2d46;
+  --bs-subtle: #243550;
 
-  /* Brand palette */
-  --bira-white: #faf9f7;
-  --bira-paper: #f5f3ef;
-  --bira-linen: #ede9e2;
-  --bira-ink: #19180f;
-  --bira-charcoal: #3d3b2f;
-  --bira-smoke: #8a8474;
-  --bira-gold: #c9a84c;
-  --bira-gold-deep: #8b6d28;
-  --bira-gold-pale: #f0e3c0;
-  --bira-green: #1a4d35;
-  --bira-green-mid: #246144;
-  --bira-line: rgba(201, 168, 76, 0.18);
-  --bira-line-strong: rgba(201, 168, 76, 0.32);
+  /* ── Teal-blue — PRIMARY accent ─────────────────────────────── *
+   * Used on: icon boxes, eyebrows, CTA buttons, active borders,   *
+   * progress bars, glow effects. NOT on body text or card titles. */
+  --bs-blue: #2db8d8;
+  --bs-blue-bright: #48d1ee;
+  --bs-blue-dim: #1a6e82;
+  --bs-blue-glow: rgba(45, 184, 216, 0.14);
+  --bs-blue-glass: rgba(45, 184, 216, 0.08);
 
-  /* Shadows — ultra-subtle */
-  --shadow-xs: 0 1px 3px rgba(25, 24, 15, 0.06);
-  --shadow-sm: 0 2px 12px rgba(25, 24, 15, 0.07);
-  --shadow-md: 0 8px 32px rgba(25, 24, 15, 0.09);
+  /* ── Green — SECONDARY accent ───────────────────────────────── *
+   * Used on: success states, alt CTAs, role labels, left borders, *
+   * "open" status dots. NOT overused on text.                     */
+  --bs-green: #26ba81;
+  --bs-green-bright: #2bd3c6;
+  --bs-green-dim: #0f5c40;
+  --bs-green-glow: rgba(38, 186, 129, 0.12);
+  --bs-green-glass: rgba(38, 186, 129, 0.08);
 
-  /* Tokens */
-  --background: var(--bira-white);
-  --foreground: var(--bira-ink);
-  --card: #ffffff;
-  --card-foreground: var(--bira-ink);
-  --popover: #ffffff;
-  --popover-foreground: var(--bira-ink);
-  --primary: var(--bira-gold);
-  --primary-foreground: var(--bira-ink);
-  --secondary: var(--bira-paper);
-  --secondary-foreground: var(--bira-charcoal);
-  --muted: var(--bira-paper);
-  --muted-foreground: var(--bira-smoke);
-  --accent: var(--bira-green);
+  /* ── Text / neutrals ────────────────────────────────────────── *
+   * Most text is white or muted — accents are rare pops of colour */
+  --bs-white: #e8f0f8; /* headings, card titles, labels */
+  --bs-muted: #5e7a99; /* body text, descriptions, meta */
+
+  /* ── Border radius — rounded, friendly feel ─────────────────── */
+  --radius: 0.75rem;
+
+  /* ── Shadows ────────────────────────────────────────────────── */
+  --shadow-xs: 0 2px 6px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 4px 18px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 8px 36px rgba(0, 0, 0, 0.55);
+  --shadow-blue: 0 0 24px rgba(45, 184, 216, 0.2);
+  --shadow-green: 0 0 24px rgba(38, 186, 129, 0.18);
+
+  /* ── Shadcn token mapping ────────────────────────────────────── */
+  --background: var(--bs-navy);
+  --foreground: var(--bs-white);
+  --card: var(--bs-navy-mid);
+  --card-foreground: var(--bs-white);
+  --popover: var(--bs-navy-light);
+  --popover-foreground: var(--bs-white);
+  --primary: var(--bs-blue);
+  --primary-foreground: var(--bs-dark);
+  --secondary: var(--bs-green);
+  --secondary-foreground: #ffffff;
+  --muted: var(--bs-navy-light);
+  --muted-foreground: var(--bs-muted);
+  --accent: var(--bs-green);
   --accent-foreground: #ffffff;
-  --destructive: #a32020;
-  --border: var(--bira-linen);
-  --input: var(--bira-linen);
-  --ring: var(--bira-gold);
+  --destructive: #e53e3e;
+  --border: var(--bs-navy-border);
+  --input: var(--bs-navy-light);
+  --ring: var(--bs-blue);
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   BASE
+   ═══════════════════════════════════════════════════════════════ */
 
 @layer base {
   * {
@@ -91,143 +120,298 @@
     font-family: var(--font-outfit, "Inter", system-ui, sans-serif);
     font-size: 0.9375rem;
     line-height: 1.65;
-    letter-spacing: 0.01em;
-    background-color: var(--bira-white);
+    background-color: var(--bs-navy);
+    /* Very subtle dot grid — barely visible */
+    background-image: radial-gradient(
+      circle,
+      rgba(28, 45, 70, 0.8) 1px,
+      transparent 1px
+    );
+    background-size: 28px 28px;
   }
 
-  /* Display font — Cormorant Garamond for headlines */
   h1,
   h2,
   h3,
   h4,
   .font-display {
-    font-family: var(--font-cormorant, "Cormorant Garamond", "Garamond", serif);
-    letter-spacing: -0.01em;
-    line-height: 1.06;
-    font-weight: 600;
+    font-family: var(--font-outfit, "Inter", system-ui, sans-serif);
+    letter-spacing: -0.02em;
+    line-height: 1.08;
+    font-weight: 700;
   }
 
   ::selection {
-    background: var(--bira-gold-pale);
-    color: var(--bira-green);
+    background: var(--bs-blue);
+    color: var(--bs-dark);
   }
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   UTILITIES
+   ═══════════════════════════════════════════════════════════════ */
+
 @layer utilities {
-  /* Layout */
   .container-page {
-    width: min(1200px, calc(100% - 3rem));
+    width: min(1200px, calc(100% - 2.5rem));
     margin-inline: auto;
   }
-
   .section-y {
-    padding-block: clamp(4rem, 7vw, 7rem);
+    padding-block: clamp(4rem, 7vw, 6.5rem);
   }
   .section-y-sm {
-    padding-block: clamp(2.5rem, 4vw, 4rem);
+    padding-block: clamp(2rem, 4vw, 3.5rem);
   }
 
-  /* Divider */
-  .rule-gold {
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      var(--bira-gold) 30%,
-      var(--bira-gold) 70%,
-      transparent
-    );
-    opacity: 0.35;
-  }
-
-  /* Eyebrow label */
+  /* ── Eyebrow labels — accent colour, small, used sparingly ──── */
   .eyebrow {
     display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
-    font-family: var(--font-outfit, sans-serif);
-    font-size: 0.68rem;
+    gap: 0.55rem;
+    font-size: 0.65rem;
     font-weight: 700;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: var(--bira-gold-deep);
+    color: var(--bs-blue); /* accent: teal-blue */
   }
   .eyebrow::before {
     content: "";
     display: block;
-    width: 1.5rem;
+    width: 1.25rem;
     height: 1px;
-    background: var(--bira-gold);
+    background: var(--bs-blue);
+    flex-shrink: 0;
+  }
+  .eyebrow-green {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--bs-green); /* accent: green */
+  }
+  .eyebrow-green::before {
+    content: "";
+    display: block;
+    width: 1.25rem;
+    height: 1px;
+    background: var(--bs-green);
     flex-shrink: 0;
   }
 
-  /* Nav */
+  /* ── Nav links — muted, white on hover (NOT blue) ────────────── */
   .nav-link {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--bira-charcoal);
-    transition: color 160ms ease;
+    color: var(--bs-muted);
+    transition: color 180ms ease;
     position: relative;
   }
   .nav-link::after {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: -3px;
     left: 0;
     right: 0;
     height: 1px;
-    background: var(--bira-gold);
+    background: var(--bs-blue); /* underline accent */
     transform: scaleX(0);
-    transition: transform 200ms ease;
+    transition: transform 220ms ease;
     transform-origin: left;
   }
   .nav-link:hover {
-    color: var(--bira-gold-deep);
-  }
+    color: var(--bs-white);
+  } /* white on hover */
   .nav-link:hover::after {
     transform: scaleX(1);
   }
 
-  /* Text helpers */
-  .text-muted-tight {
-    color: var(--bira-smoke);
-  }
-  .text-balance {
-    text-wrap: balance;
-  }
-
-  /* Surface styles */
-  .surface-paper {
-    background: var(--bira-paper);
-    border: 1px solid var(--bira-line);
-  }
-
-  .surface-white {
-    background: #ffffff;
-    border: 1px solid var(--bira-line);
-    box-shadow: var(--shadow-xs);
-  }
-
-  /* Image slot */
+  /* ── Image / tech placeholder slots ─────────────────────────── */
   .image-slot {
     background: linear-gradient(
       135deg,
-      var(--bira-linen) 0%,
-      var(--bira-paper) 100%
+      var(--bs-navy-light) 0%,
+      var(--bs-navy-mid) 100%
     );
     position: relative;
     overflow: hidden;
+    border-radius: var(--radius);
   }
   .image-slot::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(
-      ellipse at 70% 30%,
-      rgba(201, 168, 76, 0.12) 0%,
-      transparent 60%
+    background:
+      radial-gradient(
+        ellipse at 70% 30%,
+        rgba(45, 184, 216, 0.08) 0%,
+        transparent 60%
+      ),
+      radial-gradient(
+        ellipse at 20% 80%,
+        rgba(38, 186, 129, 0.06) 0%,
+        transparent 50%
+      );
+  }
+
+  .tech-dots {
+    background-image: radial-gradient(
+      circle,
+      rgba(45, 184, 216, 0.12) 1px,
+      transparent 1px
+    );
+    background-size: 28px 28px;
+  }
+
+  /* ── Hero overlay ───────────────────────────────────────────── */
+  .hero-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(7, 12, 20, 0.96) 0%,
+      rgba(7, 12, 20, 0.85) 40%,
+      rgba(7, 12, 20, 0.4) 70%,
+      rgba(7, 12, 20, 0.1) 100%
     );
   }
+
+  /* ── Scan lines ─────────────────────────────────────────────── */
+  .scan-lines::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.05) 2px,
+      rgba(0, 0, 0, 0.05) 4px
+    );
+    pointer-events: none;
+  }
+
+  /* ── Glow animations (glow-btn variants only) ───────────────── */
+  @keyframes glow-pulse-blue {
+    0%,
+    100% {
+      box-shadow:
+        0 0 10px rgba(45, 184, 216, 0.4),
+        0 0 28px rgba(45, 184, 216, 0.18);
+    }
+    50% {
+      box-shadow:
+        0 0 18px rgba(45, 184, 216, 0.65),
+        0 0 48px rgba(45, 184, 216, 0.28);
+    }
+  }
+  @keyframes glow-pulse-green {
+    0%,
+    100% {
+      box-shadow:
+        0 0 10px rgba(38, 186, 129, 0.4),
+        0 0 28px rgba(38, 186, 129, 0.16);
+    }
+    50% {
+      box-shadow:
+        0 0 18px rgba(38, 186, 129, 0.65),
+        0 0 48px rgba(38, 186, 129, 0.26);
+    }
+  }
+  .animate-glow-blue {
+    animation: glow-pulse-blue 2.6s ease-in-out infinite;
+  }
+  .animate-glow-green {
+    animation: glow-pulse-green 2.6s ease-in-out infinite;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SHADCN COMPONENT OVERRIDES
+   ═══════════════════════════════════════════════════════════════ */
+
+[data-slot="input"] {
+  background: var(--bs-navy-light) !important;
+  border-color: var(--bs-navy-border) !important;
+  color: var(--bs-white) !important;
+  border-radius: var(--radius) !important;
+  height: 2.6rem !important;
+  font-size: 0.875rem !important;
+  transition:
+    border-color 200ms ease,
+    box-shadow 200ms ease !important;
+}
+[data-slot="input"]:focus-visible {
+  border-color: var(--bs-blue) !important;
+  box-shadow: 0 0 0 3px rgba(45, 184, 216, 0.12) !important;
+  outline: none !important;
+}
+[data-slot="input"]::placeholder {
+  color: var(--bs-muted) !important;
+  font-size: 0.825rem !important;
+}
+
+[data-slot="textarea"] {
+  background: var(--bs-navy-light) !important;
+  border-color: var(--bs-navy-border) !important;
+  color: var(--bs-white) !important;
+  border-radius: var(--radius) !important;
+  min-height: 8rem !important;
+  font-size: 0.875rem !important;
+}
+[data-slot="textarea"]:focus-visible {
+  border-color: var(--bs-blue) !important;
+  box-shadow: 0 0 0 3px rgba(45, 184, 216, 0.12) !important;
+  outline: none !important;
+}
+[data-slot="textarea"]::placeholder {
+  color: var(--bs-muted) !important;
+}
+
+[data-slot="native-select"] {
+  background: var(--bs-navy-light) !important;
+  border-color: var(--bs-navy-border) !important;
+  color: var(--bs-white) !important;
+  border-radius: var(--radius) !important;
+  height: 2.6rem !important;
+  font-size: 0.875rem !important;
+}
+[data-slot="native-select"]:focus-visible {
+  border-color: var(--bs-blue) !important;
+  box-shadow: 0 0 0 3px rgba(45, 184, 216, 0.12) !important;
+}
+[data-slot="native-select"] option {
+  background: var(--bs-navy-light);
+  color: var(--bs-white);
+}
+
+[data-slot="separator"] {
+  background-color: var(--bs-navy-border) !important;
+}
+[data-slot="popover-content"] {
+  background: var(--bs-navy-light) !important;
+  border-color: var(--bs-navy-border) !important;
+  color: var(--bs-white) !important;
+  border-radius: var(--radius) !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bs-navy);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bs-navy-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-subtle);
 }

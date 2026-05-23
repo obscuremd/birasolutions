@@ -2,28 +2,35 @@ import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-const cardVariants = cva("flex flex-col transition-all duration-200", {
-  variants: {
-    variant: {
-      /* clean white card */
-      default:
-        "bg-white border border-[var(--bira-line)] rounded-sm shadow-[var(--shadow-xs)]",
-      /* slightly warm paper surface */
-      soft: "bg-[var(--bira-paper)] border border-[var(--bira-line)] rounded-sm",
-      /* hover-lift service card */
-      feature:
-        "bg-white border border-[var(--bira-line)] rounded-sm shadow-[var(--shadow-xs)] hover:shadow-[var(--shadow-md)] hover:-translate-y-0.5 cursor-default",
-      /* dark mesh for CTA */
-      mesh: "bg-[var(--bira-ink)] text-white border border-white/5 rounded-sm",
-      /* media / image frame */
-      media:
-        "overflow-hidden bg-[var(--bira-paper)] border border-[var(--bira-line)] rounded-sm p-0",
+const cardVariants = cva(
+  "flex flex-col transition-all duration-200 rounded-[var(--radius)]",
+  {
+    variants: {
+      variant: {
+        default:
+          "bg-[var(--bs-navy-mid)] border border-[var(--bs-navy-border)] shadow-[var(--shadow-xs)]",
+        elevated:
+          "bg-[var(--bs-navy-light)] border border-[var(--bs-navy-border)] shadow-[var(--shadow-sm)]",
+        /* Blue-accented border */
+        blue: "bg-[var(--bs-navy-mid)] border border-[rgba(45,184,216,0.25)] shadow-[var(--shadow-sm)] hover:border-[rgba(45,184,216,0.55)] hover:shadow-[var(--shadow-blue)]",
+        /* Green-accented border */
+        green:
+          "bg-[var(--bs-navy-mid)] border border-[rgba(38,186,129,0.25)] shadow-[var(--shadow-sm)] hover:border-[rgba(38,186,129,0.55)] hover:shadow-[var(--shadow-green)]",
+        /* Feature hover-lift */
+        feature:
+          "bg-[var(--bs-navy-mid)] border border-[var(--bs-navy-border)] shadow-[var(--shadow-xs)] hover:border-[rgba(45,184,216,0.3)] hover:shadow-[var(--shadow-blue)] hover:-translate-y-0.5 cursor-default",
+        /* Website-type profession card */
+        profession:
+          "bg-[var(--bs-navy-mid)] border border-[var(--bs-navy-border)] shadow-[var(--shadow-xs)] hover:border-[rgba(45,184,216,0.4)] hover:shadow-[var(--shadow-blue)] hover:-translate-y-1 cursor-default transition-all duration-200",
+        dark: "bg-[var(--bs-dark)] border border-[var(--bs-navy-border)]",
+        media:
+          "overflow-hidden bg-[var(--bs-navy-light)] border border-[var(--bs-navy-border)] p-0",
+        glass: "bg-white/5 border border-white/10 backdrop-blur-sm",
+      },
     },
+    defaultVariants: { variant: "default" },
   },
-  defaultVariants: {
-    variant: "default",
-  },
-});
+);
 
 function Card({
   className,
@@ -38,43 +45,39 @@ function Card({
     />
   );
 }
-
 function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-header"
       className={cn(
-        "grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 pt-6",
+        "grid auto-rows-min items-start gap-1.5 px-6 pt-6",
         className,
       )}
       {...props}
     />
   );
 }
-
 function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-title"
       className={cn(
-        "font-display font-semibold leading-tight text-foreground",
+        "font-bold leading-tight text-[var(--bs-white)]",
         className,
       )}
       {...props}
     />
   );
 }
-
 function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-description"
-      className={cn("text-sm text-muted-foreground", className)}
+      className={cn("text-sm text-[var(--bs-muted)]", className)}
       {...props}
     />
   );
 }
-
 function CardAction({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -87,7 +90,6 @@ function CardAction({ className, ...props }: React.ComponentProps<"div">) {
     />
   );
 }
-
 function CardContent({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
@@ -97,7 +99,6 @@ function CardContent({ className, ...props }: React.ComponentProps<"div">) {
     />
   );
 }
-
 function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div

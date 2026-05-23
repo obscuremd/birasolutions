@@ -1,60 +1,80 @@
+// ═══════════════════════════════════════════════════════════════
+// services/page.tsx
+// ═══════════════════════════════════════════════════════════════
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ImageCarousel } from "@/components/site/image-carousel";
-import { CtaBand, PageHero, SectionIntro } from "@/components/site/sections";
+import { HeroCarousel } from "@/components/site/image-carousel";
+import { CtaBand, SectionIntro } from "@/components/site/sections";
 import { coreServices, hostingPlans } from "@/lib/site";
 
 export default function ServicesPage() {
   return (
     <>
-      <PageHero
-        eyebrow="Our services"
-        title="A complete digital services suite for serious businesses."
-        text="Website design, custom software, programming, hosting, domain services, digital marketing, video production, branding, and business support."
+      <HeroCarousel
+        slides={[
+          "Website & development showcase",
+          "Software and CMS systems",
+          "Video and digital marketing",
+        ]}
+        minHeight="min-h-[55vh]"
       >
-        <ImageCarousel
-          title="Services"
-          slides={[
-            "Website and development",
-            "Software development",
-            "Video and digital marketing",
-          ]}
-        />
-      </PageHero>
+        <div className="container-page flex h-full flex-col justify-center py-16 min-h-[55vh]">
+          <div className="max-w-xl">
+            <span className="eyebrow">Our services</span>
+            <h1
+              className="mt-5 font-black text-[var(--bs-white)]"
+              style={{ fontSize: "clamp(2rem,4.5vw,3.6rem)", lineHeight: 1.06 }}
+            >
+              A complete digital{" "}
+              <span className="text-[var(--bs-blue)]">services suite</span> for
+              serious businesses.
+            </h1>
+            <p className="mt-5 max-w-md text-[0.9rem] text-[var(--bs-muted)] leading-relaxed">
+              Website design, custom software, programming, hosting, domain
+              services, digital marketing, video production, branding, and
+              business support.
+            </p>
+          </div>
+        </div>
+      </HeroCarousel>
 
-      {/* ── Full services grid ── */}
       <section className="section-y">
         <div className="container-page">
           <SectionIntro
             eyebrow="Capabilities"
             title="Services built around growth, security, and support."
           />
-
-          <div className="grid gap-px bg-[var(--bira-line-strong)] border border-[var(--bira-line-strong)] sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-px bg-[var(--bs-navy-border)] border border-[var(--bs-navy-border)] rounded-[var(--radius)] overflow-hidden sm:grid-cols-2 lg:grid-cols-3">
             {coreServices.map(({ title, text, icon: Icon }) => (
               <div
                 key={title}
-                className="group bg-white p-6 flex flex-col gap-4 transition-colors duration-200 hover:bg-[var(--bira-paper)]"
+                className="group relative flex flex-col gap-4 bg-[var(--bs-navy-mid)] p-6 overflow-hidden transition-all duration-200 hover:bg-[var(--bs-navy-light)]"
               >
-                <Icon
-                  className="size-4.5 text-[var(--bira-gold)]"
-                  strokeWidth={1.5}
+                <div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{
+                    background:
+                      "radial-gradient(circle at 0% 0%, var(--bs-blue-glow) 0%, transparent 55%)",
+                  }}
                 />
-                <div>
-                  <h3 className="font-display text-[1.2rem] font-semibold text-[var(--bira-ink)] mb-2 leading-snug">
+                <div className="relative z-10 flex size-9 items-center justify-center rounded-lg border border-[rgba(45,184,216,0.2)] text-[var(--bs-blue)] group-hover:border-[rgba(45,184,216,0.5)] group-hover:bg-[rgba(45,184,216,0.08)] transition-all">
+                  <Icon className="size-4" strokeWidth={1.5} />
+                </div>
+                <div className="relative z-10 flex-1">
+                  <h3 className="font-bold text-[1.05rem] text-[var(--bs-white)] mb-2 leading-snug group-hover:text-[var(--bs-blue)] transition-colors">
                     {title}
                   </h3>
-                  <p className="text-[0.825rem] text-[var(--bira-smoke)] leading-relaxed">
+                  <p className="text-[0.825rem] text-[var(--bs-muted)] leading-relaxed">
                     {text}
                   </p>
                 </div>
-                <div className="mt-auto pt-2">
+                <div className="relative z-10 mt-auto">
                   <Button
                     asChild
                     variant="ghost"
                     size="sm"
-                    className="px-0 text-[var(--bira-gold-deep)]"
+                    className="px-0 text-[var(--bs-blue)] opacity-0 group-hover:opacity-100 transition-opacity"
                   >
                     <Link href="/contact">
                       Enquire <ArrowRight className="size-3" />
@@ -67,62 +87,58 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ── Hosting Plans ── */}
-      <section className="section-y bg-[var(--bira-paper)] border-y border-[var(--bira-line)]">
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
         <div className="container-page">
           <SectionIntro
             eyebrow="Hosting services"
             title="Fast, secure hosting plans with support and migration help."
             text="Choose from Business Cloud, Enterprise Cloud, or VPS hosting based on your project scale."
           />
-
-          <div className="grid gap-px bg-[var(--bira-line-strong)] border border-[var(--bira-line-strong)] lg:grid-cols-3">
+          <div className="grid gap-px bg-[var(--bs-navy-border)] border border-[var(--bs-navy-border)] rounded-[var(--radius)] overflow-hidden lg:grid-cols-3">
             {hostingPlans.map((plan, i) => (
               <div
                 key={plan.name}
-                className={`flex flex-col gap-5 p-7 ${i === 1 ? "bg-[var(--bira-ink)]" : "bg-white"}`}
+                className={`relative flex flex-col gap-5 p-7 overflow-hidden ${i === 1 ? "bg-[var(--bs-navy-mid)] border-t-2 border-t-[var(--bs-blue)]" : "bg-[var(--bs-dark)]"}`}
               >
                 {i === 1 && (
-                  <span className="self-start text-[0.6rem] font-bold tracking-[0.2em] uppercase text-[var(--bira-gold)]">
-                    Most popular
-                  </span>
+                  <>
+                    <span className="self-start text-[0.6rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-blue)] border border-[rgba(45,184,216,0.3)] rounded-full px-3 py-0.5">
+                      Most Popular
+                    </span>
+                    <div
+                      className="absolute top-0 right-0 size-32 opacity-10 blur-2xl"
+                      style={{
+                        background:
+                          "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
+                      }}
+                    />
+                  </>
                 )}
-                <h3
-                  className={`font-display font-semibold leading-snug ${i === 1 ? "text-white" : "text-[var(--bira-ink)]"}`}
-                  style={{ fontSize: "1.3rem" }}
-                >
+                <h3 className="font-bold text-[1.15rem] text-[var(--bs-white)] leading-snug">
                   {plan.name}
                 </h3>
-                <div className="h-px bg-[var(--bira-line)]" />
-                <ul className="flex flex-col gap-2.5">
+                <div className="h-px bg-[var(--bs-navy-border)]" />
+                <ul className="flex flex-col gap-2.5 flex-1">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-2.5">
                       <Check
-                        className={`mt-0.5 size-3.5 shrink-0 ${i === 1 ? "text-[var(--bira-gold)]" : "text-[var(--bira-gold)]"}`}
-                        strokeWidth={2}
+                        className="mt-0.5 size-3.5 shrink-0 text-[var(--bs-green)]"
+                        strokeWidth={2.5}
                       />
-                      <span
-                        className={`text-[0.825rem] ${i === 1 ? "text-white/70" : "text-[var(--bira-smoke)]"}`}
-                      >
+                      <span className="text-[0.825rem] text-[var(--bs-muted)]">
                         {feature}
                       </span>
                     </li>
                   ))}
                 </ul>
-                <div className="mt-auto">
-                  <Button
-                    asChild
-                    size="sm"
-                    className={
-                      i === 1
-                        ? "border border-[var(--bira-gold)] bg-transparent text-[var(--bira-gold)] hover:bg-[var(--bira-gold)] hover:text-[var(--bira-ink)]"
-                        : ""
-                    }
-                    variant={i === 1 ? "ghost" : "outline"}
-                  >
-                    <Link href="/contact">Get started</Link>
-                  </Button>
-                </div>
+                <Button
+                  asChild
+                  size="sm"
+                  variant={i === 1 ? "glow-blue" : "outline"}
+                  className="mt-2"
+                >
+                  <Link href="/contact">Get started</Link>
+                </Button>
               </div>
             ))}
           </div>

@@ -1,6 +1,5 @@
-import * as React from "react"
-
-import { cn } from "@/lib/utils"
+import * as React from "react";
+import { cn } from "@/lib/utils";
 
 function Input({ className, type, ...props }: React.ComponentProps<"input">) {
   return (
@@ -8,14 +7,20 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
       type={type}
       data-slot="input"
       className={cn(
-        "file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-11 w-full min-w-0 rounded-full border bg-white/80 px-4 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
-        "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
-        "aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
-        className
+        "h-[2.6rem] w-full min-w-0 px-4 py-1 text-sm",
+        "bg-[var(--bs-navy-light)] border border-[var(--bs-navy-border)]",
+        "text-[var(--bs-white)] placeholder:text-[var(--bs-muted)]",
+        "rounded-none outline-none",
+        "transition-[border-color,box-shadow] duration-200",
+        "focus-visible:border-[var(--bs-gold)] focus-visible:shadow-[0_0_0_2px_rgba(201,168,76,0.12)]",
+        "file:text-[var(--bs-white)] file:border-0 file:bg-transparent file:text-sm file:font-medium",
+        "disabled:pointer-events-none disabled:opacity-40",
+        "aria-invalid:border-[var(--bs-destructive)]",
+        className,
       )}
       {...props}
     />
-  )
+  );
 }
 
-export { Input }
+export { Input };
