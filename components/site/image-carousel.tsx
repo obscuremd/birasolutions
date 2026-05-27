@@ -1,10 +1,11 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ImageIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
-type Slide = { label: string; src?: string };
+export type Slide = { label: string; src?: string };
 
 type HeroCarouselProps = {
   slides: (string | Slide)[];
@@ -160,9 +161,12 @@ export function HeroCarousel({
 }
 
 /* ── Compact inline carousel ─────────────────────────────────── */
+type InlineSlide = { label: string; src?: string };
+
 type InlineCarouselProps = {
   title: string;
-  slides: string[];
+  /** Accept string shorthand or full slide objects with optional src */
+  slides: (string | InlineSlide)[];
   className?: string;
 };
 
@@ -171,11 +175,16 @@ export function ImageCarousel({
   slides,
   className,
 }: InlineCarouselProps) {
+  const normalized: InlineSlide[] = slides.map((s) =>
+    typeof s === "string" ? { label: s } : s,
+  );
+
   const [current, setCurrent] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
   const next = useCallback(
-    () => setCurrent((c) => (c + 1) % slides.length),
-    [slides.length],
+    () => setCurrent((c) => (c + 1) % normalized.length),
+    [normalized.length],
   );
 
   useEffect(() => {
@@ -185,45 +194,106 @@ export function ImageCarousel({
     };
   }, [next]);
 
+  const goTo = (idx: number) => {
+    setCurrent(idx);
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(next, 4000);
+  };
+
+  const slide = normalized[current];
+
   return (
     <div
       className={cn(
-        "relative overflow-hidden border border-[var(--bs-navy-border)] image-slot",
+        "relative overflow-hidden rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)]",
         className,
       )}
     >
-      <div className="absolute inset-0 tech-dots opacity-40" />
-      <div
-        className="absolute right-0 top-0 size-48 opacity-20 blur-3xl"
-        style={{
-          background:
-            "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
-        }}
-      />
-      <div className="relative z-10 flex aspect-[16/9] flex-col justify-between p-5">
-        <div className="flex items-center justify-between">
-          <span className="text-[0.58rem] font-bold tracking-[0.22em] uppercase text-[var(--bs-muted)]">
+      {/* ── Image area — 16/9 aspect ratio ── */}
+      <div className="relative aspect-[16/9] w-full overflow-hidden">
+        {slide.src ? (
+          /* Real image — fills the slot */
+          <Image
+            src={slide.src}
+            alt={slide.label}
+            fill
+            className="object-cover transition-opacity duration-500"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        ) : (
+          /* Styled placeholder — shown when no src is provided */
+          <div className="absolute inset-0 image-slot">
+            <div className="absolute inset-0 tech-dots opacity-40" />
+            <div
+              className="absolute right-0 top-0 size-48 opacity-20 blur-3xl"
+              style={{
+                background:
+                  "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
+              }}
+            />
+            {/* Centred placeholder icon + label */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+              <div className="flex size-12 items-center justify-center rounded-full border border-[var(--bs-navy-border)] bg-[var(--bs-navy-light)] text-[var(--bs-muted)]">
+                <ImageIcon className="size-5" strokeWidth={1.5} />
+              </div>
+              <p className="text-[0.72rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)] text-center max-w-[180px] leading-snug">
+                {slide.label}
+              </p>
+              <p className="text-[0.62rem] text-[var(--bs-subtle)]">
+                Replace with approved imagery
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* Dark gradient at bottom of image for caption legibility */}
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[var(--bs-navy-mid)] to-transparent" />
+
+        {/* Slide counter — top left */}
+        <div className="absolute left-3 top-3 flex items-center gap-1.5 rounded-full border border-[var(--bs-navy-border)] bg-[var(--bs-dark)]/70 px-2.5 py-1 backdrop-blur-sm">
+          <span className="text-[0.58rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-muted)]">
             {String(current + 1).padStart(2, "0")} /{" "}
-            {String(slides.length).padStart(2, "0")}
+            {String(normalized.length).padStart(2, "0")}
           </span>
-          <span className="text-[0.58rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-blue)]/60">
+        </div>
+
+        {/* Title badge — top right */}
+        <div className="absolute right-3 top-3 rounded-full border border-[var(--bs-navy-border)] bg-[var(--bs-dark)]/70 px-2.5 py-1 backdrop-blur-sm">
+          <span className="text-[0.58rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-blue)]/70">
             {title}
           </span>
         </div>
-        <div>
-          <p className="font-bold text-[var(--bs-white)]/80 text-base leading-snug">
-            {slides[current]}
-          </p>
-          <p className="mt-1 text-[0.7rem] text-[var(--bs-muted)]">
-            Placeholder · replaced with project imagery
-          </p>
+      </div>
+
+      {/* ── Caption bar below image ── */}
+      <div className="px-4 py-3 flex items-center justify-between gap-3">
+        <p className="text-[0.8rem] font-semibold text-[var(--bs-white)] leading-snug truncate">
+          {slide.label}
+        </p>
+
+        {/* Dot navigation */}
+        <div className="flex items-center gap-1.5 shrink-0">
+          {normalized.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => goTo(i)}
+              aria-label={`Slide ${i + 1}`}
+              className={cn(
+                "transition-all duration-300 rounded-full",
+                i === current
+                  ? "h-1.5 w-5 bg-[var(--bs-blue)]"
+                  : "size-1.5 bg-[var(--bs-muted)]/40 hover:bg-[var(--bs-muted)]",
+              )}
+            />
+          ))}
         </div>
       </div>
-      {/* Progress bar */}
+
+      {/* ── Progress bar ── */}
       <div className="absolute inset-x-0 bottom-0 h-px bg-[var(--bs-navy-border)]">
         <div
           className="h-full bg-[var(--bs-blue)] transition-all duration-300"
-          style={{ width: `${((current + 1) / slides.length) * 100}%` }}
+          style={{ width: `${((current + 1) / normalized.length) * 100}%` }}
         />
       </div>
     </div>

@@ -22,33 +22,14 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 transition-all duration-300",
+        "sticky top-0 z-50 transition-all duration-300 py-2",
         scrolled
           ? "bg-[var(--bs-dark)]/96 border-b border-[var(--bs-navy-border)] backdrop-blur-xl"
           : "bg-[var(--bs-dark)]/70 backdrop-blur-md",
       )}
     >
-      {/* Top ticker bar */}
-      <div className="border-b border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
-        <div className="container-page flex h-7 items-center justify-between">
-          <div className="flex items-center gap-1.5">
-            <span className="size-1.5 rounded-full bg-[var(--bs-green)] animate-pulse" />
-            <span className="text-[0.6rem] font-bold tracking-[0.22em] uppercase text-[var(--bs-muted)]">
-              Available 24/7 · Lagos, Nigeria
-            </span>
-          </div>
-          <a
-            href={`tel:${contact.phone}`}
-            className="flex items-center gap-1.5 text-[0.6rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-blue)] hover:text-[var(--bs-blue-bright)] transition-colors"
-          >
-            <Phone className="size-2.5" />
-            {contact.phone}
-          </a>
-        </div>
-      </div>
-
       {/* Main nav */}
-      <div className="container-page flex h-14 items-center justify-between gap-6">
+      <div className="container-page flex h-14 items-center justify-between gap-6 ">
         {/* Logo */}
         <Link
           href="/"

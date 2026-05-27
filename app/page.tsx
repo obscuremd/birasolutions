@@ -20,6 +20,7 @@ import {
   websiteTypes,
   contact,
 } from "@/lib/site";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -198,9 +199,6 @@ export default function Home() {
 
       {/* ══════════════════════════════════════════
           GROW YOUR PRIVATE PRACTICE — PROFESSION LIST
-          Styled like "Technology We Use" — clean list
-          panel. 3-col on desktop, 2-col on mobile.
-          No subtitle, no link wrapper — the button handles CTA.
       ══════════════════════════════════════════ */}
       <section className="section-y">
         <div className="container-page">
@@ -265,9 +263,10 @@ export default function Home() {
             <ImageCarousel
               title="Complimentary Business Card"
               slides={[
-                "Business card design mockup",
-                "Brand collateral print preview",
-                "Client identity package",
+                {
+                  label: "Business card design mockup",
+                  src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2Fcard%2FWhatsApp%20Image%202026-05-19%20at%2013.06.59.jpeg?alt=media&token=4449c52b-a662-46d9-89eb-39cbc23bcc76",
+                },
               ]}
             />
           </div>
@@ -298,9 +297,8 @@ export default function Home() {
       </section>
 
       {/* ══════════════════════════════════════════
-          TESTIMONIALS — horizontal infinite auto-scroller
-          Duplicated for seamless loop. Pauses on hover.
-      ══════════════════════════════════════════ */}
+    TESTIMONIALS
+══════════════════════════════════════════ */}
       <section className="section-y overflow-hidden">
         <div className="container-page mb-12">
           <SectionIntro
@@ -309,6 +307,29 @@ export default function Home() {
             text="Transparent reviews from real clients who have worked with Bira Solution."
             accentColor="green"
           />
+
+          {/* ── Featured image — cinematic wide frame ── */}
+          <div className="relative w-full overflow-hidden rounded-[var(--radius)] border border-[var(--bs-navy-border)] aspect-video">
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2Fcard%2FWhatsApp%20Image%202026-05-19%20at%2013.07.00.jpeg?alt=media&token=bf94a367-420e-4e9f-be58-b0ee3e052fc2"
+              alt="Happy Bira Solution clients"
+              fill
+              className="object-cover"
+            />
+
+            {/* Dark overlay — keeps overlaid text readable on real photos */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(7,12,20,0.72) 0%, rgba(7,12,20,0.3) 50%, rgba(7,12,20,0.1) 100%)",
+              }}
+            />
+
+            {/* Corner accent */}
+            <div className="absolute left-0 top-0 h-12 w-px bg-gradient-to-b from-[var(--bs-green)] to-transparent opacity-60" />
+            <div className="absolute left-0 top-0 h-px w-12 bg-gradient-to-r from-[var(--bs-green)] to-transparent opacity-60" />
+          </div>
         </div>
 
         {/* Scroller — no container-page so it bleeds edge-to-edge */}
@@ -332,11 +353,8 @@ export default function Home() {
           {/* The scrolling track — duplicated for seamless infinite loop */}
           <div
             className="flex w-max gap-4"
-            style={{
-              animation: "scroll-x 40s linear infinite",
-            }}
+            style={{ animation: "scroll-x 40s linear infinite" }}
           >
-            {/* Render testimonials twice for seamless loop */}
             {[...testimonials, ...testimonials].map((item, idx) => (
               <blockquote
                 key={`${item.name}-${idx}`}
@@ -364,16 +382,16 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Keyframe injected inline — works without Tailwind plugin */}
+        {/* Keyframe injected inline */}
         <style>{`
-          @keyframes scroll-x {
-            0%   { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          div[style*="scroll-x"]:hover {
-            animation-play-state: paused;
-          }
-        `}</style>
+    @keyframes scroll-x {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    div[style*="scroll-x"]:hover {
+      animation-play-state: paused;
+    }
+  `}</style>
       </section>
 
       {/* ══════════════════════════════════════════

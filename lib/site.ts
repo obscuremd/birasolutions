@@ -1,3 +1,4 @@
+import { Slide } from "@/components/site/image-carousel";
 import {
   BadgeCheck,
   BriefcaseBusiness,
@@ -46,10 +47,38 @@ export const navLinks = [
 /* ─────────────────────────────────────────────
    HERO SLIDES (homepage slideshow)
 ───────────────────────────────────────────── */
-export const heroSlides = [
-  "Website Design & Development",
-  "Software & CMS Solutions",
-  "Digital Marketing & Video Production",
+export const heroSlides: Slide[] = [
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F1.jpeg?alt=media&token=f066d5cb-2617-4469-8600-0467fd277f99",
+  },
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F2.jpeg?alt=media&token=7eac625b-c5c9-4812-b614-245cd0ef41ea",
+  },
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F3.jpeg?alt=media&token=f02130d9-8541-48a5-8cf1-18ddff04aeb3",
+  },
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F4.jpeg?alt=media&token=de54af4c-5328-4861-ae76-f2fa796b94da",
+  },
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F5.jpeg?alt=media&token=399877b6-bb9c-45e0-8b64-886c5f639c2a",
+  },
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F6.jpeg?alt=media&token=427c46a5-fcff-4c66-b20a-d5cd2b845960",
+  },
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F7.jpeg?alt=media&token=5153b3eb-8e44-440b-a2ba-80f14b694e21",
+  },
+  // "Website Design & Development",
+  // "Software & CMS Solutions",
+  // "Digital Marketing & Video Production",
 ];
 
 /* ─────────────────────────────────────────────
