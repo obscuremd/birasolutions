@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Globe, PhoneCall } from "lucide-react";
+import { ArrowRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { HeroCarousel, ImageCarousel } from "@/components/site/image-carousel";
 import {
@@ -128,6 +128,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
+
           {/* Technology we use */}
           <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-7">
             <p className="eyebrow mb-5">Technology We Use</p>
@@ -196,11 +197,15 @@ export default function Home() {
       </section>
 
       {/* ══════════════════════════════════════════
-          GROW YOUR PRIVATE PRACTICE — PROFESSION CARDS
+          GROW YOUR PRIVATE PRACTICE — PROFESSION LIST
+          Styled like "Technology We Use" — clean list
+          panel. 3-col on desktop, 2-col on mobile.
+          No subtitle, no link wrapper — the button handles CTA.
       ══════════════════════════════════════════ */}
       <section className="section-y">
         <div className="container-page">
           <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+            {/* Left — sticky headline + CTA */}
             <div className="lg:sticky lg:top-28">
               <span className="eyebrow">
                 Private Practice &amp; Brand Growth
@@ -228,27 +233,24 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="grid gap-2.5 sm:grid-cols-2">
-              {websiteTypes.map((type) => (
-                <Link
-                  key={type}
-                  href="/contact"
-                  className="group relative flex items-center gap-3 overflow-hidden rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-3.5 transition-all duration-200 hover:border-[rgba(45,184,216,0.3)] hover:bg-[var(--bs-navy-light)]"
-                >
-                  <div className="flex size-7 shrink-0 items-center justify-center rounded-md border border-[rgba(45,184,216,0.15)] bg-[rgba(45,184,216,0.05)] text-[var(--bs-blue)] transition-colors group-hover:border-[rgba(45,184,216,0.35)]">
-                    <Globe className="size-3.5" strokeWidth={1.5} />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-[0.8rem] text-[var(--bs-white)] leading-snug truncate">
+
+            {/* Right — website types as a styled list panel, same look as Tech We Use */}
+            <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-7">
+              <p className="eyebrow mb-5">Types of Website We Design</p>
+              {/* 3 cols desktop, 2 cols mobile */}
+              <div className="grid grid-cols-2  gap-x-6">
+                {websiteTypes.map((type) => (
+                  <div
+                    key={type}
+                    className="flex items-center gap-3 py-2.5 border-b border-[var(--bs-navy-border)] last:border-0"
+                  >
+                    <div className="size-1.5 shrink-0 rounded-full bg-[var(--bs-blue)]" />
+                    <span className="text-[0.85rem] text-[var(--bs-white)]">
                       {type} Website Design
-                    </p>
-                    <p className="text-[0.65rem] text-[var(--bs-muted)] mt-0.5">
-                      Responsive · SEO Ready
-                    </p>
+                    </span>
                   </div>
-                  <ArrowRight className="size-3 text-[var(--bs-muted)] opacity-0 group-hover:opacity-60 transition-all shrink-0 -translate-x-1 group-hover:translate-x-0" />
-                </Link>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -296,21 +298,49 @@ export default function Home() {
       </section>
 
       {/* ══════════════════════════════════════════
-          TESTIMONIALS (all 8 verbatim)
+          TESTIMONIALS — horizontal infinite auto-scroller
+          Duplicated for seamless loop. Pauses on hover.
       ══════════════════════════════════════════ */}
-      <section className="section-y">
-        <div className="container-page">
+      <section className="section-y overflow-hidden">
+        <div className="container-page mb-12">
           <SectionIntro
             eyebrow="What Our Clients Say"
             title="★★★★★ 5 Stars Google Reviews"
             text="Transparent reviews from real clients who have worked with Bira Solution."
             accentColor="green"
           />
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {testimonials.map((item) => (
+        </div>
+
+        {/* Scroller — no container-page so it bleeds edge-to-edge */}
+        <div className="relative w-full overflow-hidden">
+          {/* Fade masks on left and right edges */}
+          <div
+            className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24"
+            style={{
+              background:
+                "linear-gradient(to right, var(--bs-navy), transparent)",
+            }}
+          />
+          <div
+            className="pointer-events-none absolute right-0 top-0 z-10 h-full w-24"
+            style={{
+              background:
+                "linear-gradient(to left, var(--bs-navy), transparent)",
+            }}
+          />
+
+          {/* The scrolling track — duplicated for seamless infinite loop */}
+          <div
+            className="flex w-max gap-4"
+            style={{
+              animation: "scroll-x 40s linear infinite",
+            }}
+          >
+            {/* Render testimonials twice for seamless loop */}
+            {[...testimonials, ...testimonials].map((item, idx) => (
               <blockquote
-                key={item.name}
-                className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-5 relative overflow-hidden flex flex-col"
+                key={`${item.name}-${idx}`}
+                className="w-[320px] shrink-0 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-5 relative overflow-hidden flex flex-col"
               >
                 <div className="absolute left-0 top-0 h-full w-0.5 bg-[var(--bs-green)] opacity-60" />
                 <p className="text-[0.85rem] leading-relaxed text-[var(--bs-muted)] italic pl-4 flex-1">
@@ -333,6 +363,17 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+        {/* Keyframe injected inline — works without Tailwind plugin */}
+        <style>{`
+          @keyframes scroll-x {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          div[style*="scroll-x"]:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
       </section>
 
       {/* ══════════════════════════════════════════
