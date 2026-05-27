@@ -151,6 +151,104 @@ export default function Home() {
       </section>
 
       {/* ══════════════════════════════════════════
+    TESTIMONIALS
+      ══════════════════════════════════════════ */}
+      <section className="section-y overflow-hidden">
+        <div className="container-page mb-12">
+          <SectionIntro
+            eyebrow="What Our Clients Say"
+            title="★★★★★ 5 Stars Google Reviews"
+            text="Transparent reviews from real clients who have worked with Bira Solution."
+            accentColor="green"
+          />
+
+          {/* ── Featured image — cinematic wide frame ── */}
+          <div className="relative w-full overflow-hidden rounded-[var(--radius)] border border-[var(--bs-navy-border)] aspect-video">
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2Fcard%2FWhatsApp%20Image%202026-05-19%20at%2013.07.00.jpeg?alt=media&token=bf94a367-420e-4e9f-be58-b0ee3e052fc2"
+              alt="Happy Bira Solution clients"
+              fill
+              className="object-cover"
+            />
+
+            {/* Dark overlay — keeps overlaid text readable on real photos */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(7,12,20,0.72) 0%, rgba(7,12,20,0.3) 50%, rgba(7,12,20,0.1) 100%)",
+              }}
+            />
+
+            {/* Corner accent */}
+            <div className="absolute left-0 top-0 h-12 w-px bg-gradient-to-b from-[var(--bs-green)] to-transparent opacity-60" />
+            <div className="absolute left-0 top-0 h-px w-12 bg-gradient-to-r from-[var(--bs-green)] to-transparent opacity-60" />
+          </div>
+        </div>
+
+        {/* Scroller — no container-page so it bleeds edge-to-edge */}
+        <div className="relative w-full overflow-hidden">
+          {/* Fade masks on left and right edges */}
+          <div
+            className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24"
+            style={{
+              background:
+                "linear-gradient(to right, var(--bs-navy), transparent)",
+            }}
+          />
+          <div
+            className="pointer-events-none absolute right-0 top-0 z-10 h-full w-24"
+            style={{
+              background:
+                "linear-gradient(to left, var(--bs-navy), transparent)",
+            }}
+          />
+
+          {/* The scrolling track — duplicated for seamless infinite loop */}
+          <div
+            className="flex w-max gap-4"
+            style={{ animation: "scroll-x 40s linear infinite" }}
+          >
+            {[...testimonials, ...testimonials].map((item, idx) => (
+              <blockquote
+                key={`${item.name}-${idx}`}
+                className="w-[320px] shrink-0 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-5 relative overflow-hidden flex flex-col"
+              >
+                <div className="absolute left-0 top-0 h-full w-0.5 bg-[var(--bs-green)] opacity-60" />
+                <p className="text-[0.85rem] leading-relaxed text-[var(--bs-muted)] italic pl-4 flex-1">
+                  &ldquo;{item.quote}&rdquo;
+                </p>
+                <footer className="mt-4 pl-4 flex items-center gap-3">
+                  <div className="size-7 rounded-full bg-[var(--bs-navy-border)] flex items-center justify-center text-[0.62rem] font-bold text-[var(--bs-white)]">
+                    {item.name[0]}
+                  </div>
+                  <div>
+                    <p className="text-[0.78rem] font-bold text-[var(--bs-white)]">
+                      {item.name}
+                    </p>
+                    <p className="text-[0.62rem] font-bold tracking-[0.16em] uppercase text-[var(--bs-green)]">
+                      {item.role}
+                    </p>
+                  </div>
+                </footer>
+              </blockquote>
+            ))}
+          </div>
+        </div>
+
+        {/* Keyframe injected inline */}
+        <style>{`
+    @keyframes scroll-x {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    div[style*="scroll-x"]:hover {
+      animation-play-state: paused;
+    }
+  `}</style>
+      </section>
+
+      {/* ══════════════════════════════════════════
           SERVICES OVERVIEW (6 key services)
       ══════════════════════════════════════════ */}
       <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
@@ -294,104 +392,6 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </section>
-
-      {/* ══════════════════════════════════════════
-    TESTIMONIALS
-══════════════════════════════════════════ */}
-      <section className="section-y overflow-hidden">
-        <div className="container-page mb-12">
-          <SectionIntro
-            eyebrow="What Our Clients Say"
-            title="★★★★★ 5 Stars Google Reviews"
-            text="Transparent reviews from real clients who have worked with Bira Solution."
-            accentColor="green"
-          />
-
-          {/* ── Featured image — cinematic wide frame ── */}
-          <div className="relative w-full overflow-hidden rounded-[var(--radius)] border border-[var(--bs-navy-border)] aspect-video">
-            <Image
-              src="https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2Fcard%2FWhatsApp%20Image%202026-05-19%20at%2013.07.00.jpeg?alt=media&token=bf94a367-420e-4e9f-be58-b0ee3e052fc2"
-              alt="Happy Bira Solution clients"
-              fill
-              className="object-cover"
-            />
-
-            {/* Dark overlay — keeps overlaid text readable on real photos */}
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  "linear-gradient(to right, rgba(7,12,20,0.72) 0%, rgba(7,12,20,0.3) 50%, rgba(7,12,20,0.1) 100%)",
-              }}
-            />
-
-            {/* Corner accent */}
-            <div className="absolute left-0 top-0 h-12 w-px bg-gradient-to-b from-[var(--bs-green)] to-transparent opacity-60" />
-            <div className="absolute left-0 top-0 h-px w-12 bg-gradient-to-r from-[var(--bs-green)] to-transparent opacity-60" />
-          </div>
-        </div>
-
-        {/* Scroller — no container-page so it bleeds edge-to-edge */}
-        <div className="relative w-full overflow-hidden">
-          {/* Fade masks on left and right edges */}
-          <div
-            className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24"
-            style={{
-              background:
-                "linear-gradient(to right, var(--bs-navy), transparent)",
-            }}
-          />
-          <div
-            className="pointer-events-none absolute right-0 top-0 z-10 h-full w-24"
-            style={{
-              background:
-                "linear-gradient(to left, var(--bs-navy), transparent)",
-            }}
-          />
-
-          {/* The scrolling track — duplicated for seamless infinite loop */}
-          <div
-            className="flex w-max gap-4"
-            style={{ animation: "scroll-x 40s linear infinite" }}
-          >
-            {[...testimonials, ...testimonials].map((item, idx) => (
-              <blockquote
-                key={`${item.name}-${idx}`}
-                className="w-[320px] shrink-0 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-5 relative overflow-hidden flex flex-col"
-              >
-                <div className="absolute left-0 top-0 h-full w-0.5 bg-[var(--bs-green)] opacity-60" />
-                <p className="text-[0.85rem] leading-relaxed text-[var(--bs-muted)] italic pl-4 flex-1">
-                  &ldquo;{item.quote}&rdquo;
-                </p>
-                <footer className="mt-4 pl-4 flex items-center gap-3">
-                  <div className="size-7 rounded-full bg-[var(--bs-navy-border)] flex items-center justify-center text-[0.62rem] font-bold text-[var(--bs-white)]">
-                    {item.name[0]}
-                  </div>
-                  <div>
-                    <p className="text-[0.78rem] font-bold text-[var(--bs-white)]">
-                      {item.name}
-                    </p>
-                    <p className="text-[0.62rem] font-bold tracking-[0.16em] uppercase text-[var(--bs-green)]">
-                      {item.role}
-                    </p>
-                  </div>
-                </footer>
-              </blockquote>
-            ))}
-          </div>
-        </div>
-
-        {/* Keyframe injected inline */}
-        <style>{`
-    @keyframes scroll-x {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    div[style*="scroll-x"]:hover {
-      animation-play-state: paused;
-    }
-  `}</style>
       </section>
 
       {/* ══════════════════════════════════════════

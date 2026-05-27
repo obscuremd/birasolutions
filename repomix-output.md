@@ -2822,233 +2822,6 @@ export const products: ProductData[] = [
 ];
 ````
 
-## File: lib/site.ts
-````typescript
-import {
-  BadgeCheck,
-  BriefcaseBusiness,
-  Code2,
-  Film,
-  Globe2,
-  Headphones,
-  Megaphone,
-  MonitorCog,
-  Palette,
-  Server,
-  ShieldCheck,
-  Smartphone,
-  UsersRound,
-} from "lucide-react";
-
-export const contact = {
-  phone: "+234 810 000 7596",
-  phoneAlt: "+234 707 776 7630",
-  email: "consult@birasolution.com",
-  paymentEmail: "payment@birasolution.com",
-  website: "www.birasolution.com",
-  addresses: [
-    "54 Egbeda Idimu Road, Oja Bus-stop, Block 33 Lamrat Plaza, Lagos Nigeria",
-    "No 2 Jaiyeoba Road, Salami Bustop, NNPC Filling Station, Shasha Road Lagos",
-  ],
-};
-
-export const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Our Services", href: "/services" },
-  { label: "Recent Projects", href: "/recent-projects" },
-  { label: "Free Subscription", href: "/free-subscription" },
-  { label: "Contact Us", href: "/contact" },
-];
-
-export const heroSlides = [
-  "Website design portfolio carousel",
-  "Software and CMS dashboard carousel",
-  "Video production and digital marketing carousel",
-];
-
-export const coreServices = [
-  {
-    title: "Website Design and Development",
-    icon: Globe2,
-    text: "Modern, responsive websites for companies, private practices, e-commerce, real estate, hotels, agencies, and personal brands.",
-  },
-  {
-    title: "CMS, CRM and ERP Software",
-    icon: MonitorCog,
-    text: "Custom systems for accounting, inventory, gym, staff, hospital, hotel, school, restaurant, and car management workflows.",
-  },
-  {
-    title: "Programming and Coding",
-    icon: Code2,
-    text: "Front-end and back-end development, database logic, AI-assisted builds, integrations, and long-term technical support.",
-  },
-  {
-    title: "App Development",
-    icon: Smartphone,
-    text: "iOS and Android mobile applications with testing, deployment, support, and growth-focused product strategy.",
-  },
-  {
-    title: "Hosting and Domain Services",
-    icon: Server,
-    text: "Domain registration, transfer, privacy protection, reliable hosting, cloud hosting, VPS, backups, and SSL support.",
-  },
-  {
-    title: "Digital Marketing",
-    icon: Megaphone,
-    text: "Google, Facebook, YouTube, Instagram, video ads, content creation, copywriting, and social media management.",
-  },
-  {
-    title: "Logo and Graphic Design",
-    icon: Palette,
-    text: "Professional logos, 2D and 3D brand graphics, SVG, PNG, PDF, and vector deliverables.",
-  },
-  {
-    title: "Video Production",
-    icon: Film,
-    text: "Movie production, drone video, documentary, music video, corporate video, product demos, and professional editing.",
-  },
-  {
-    title: "Business and Legal Support",
-    icon: BriefcaseBusiness,
-    text: "Trademark registration, CAC business registration, legal consultation, and business license support.",
-  },
-];
-
-export const websiteTypes = [
-  "CEO",
-  "Doctor",
-  "Lawyer",
-  "Banker",
-  "Engineer",
-  "Accountant",
-  "Pilot",
-  "Ambassador",
-  "Automobile",
-  "Cargo Shipment",
-  "Military",
-  "Politician",
-  "Real Estate",
-  "Beauty Spa and Salon",
-  "Lecturer",
-  "Pastor",
-  "Teacher",
-  "Fashion Designer",
-  "Professional Shoe Maker",
-  "Artist",
-];
-
-export const reasons = [
-  { title: "Training and quality assurance", icon: BadgeCheck },
-  { title: "Fast response and satisfaction-led delivery", icon: Headphones },
-  { title: "Property rights and ownership transfer", icon: ShieldCheck },
-  { title: "Support for brands, companies, and enterprise", icon: UsersRound },
-];
-
-export const testimonials = [
-  {
-    name: "Dr Felix Dupe",
-    role: "Hospital",
-    quote:
-      "Bira Solution developed our website and hospital customer CMS management system. I highly recommend them.",
-  },
-  {
-    name: "Mrs. Rose",
-    role: "Lawyer",
-    quote:
-      "I am impressed by the company for creating software that helps me manage and keep client information confidential.",
-  },
-  {
-    name: "Jay J",
-    role: "Restaurant and Bar",
-    quote:
-      "Very professional from start to finish, with a high-quality interactive system and supportive experience.",
-  },
-  {
-    name: "Nanna",
-    role: "Makeup Artist",
-    quote:
-      "They communicated with me, sent a demo, and delivered my website quickly. I am happy with the result.",
-  },
-];
-
-export const hostingPlans = [
-  {
-    name: "Cloud Enterprise Hosting",
-    features: [
-      "100 websites",
-      "100GB NVMe storage",
-      "10 mailboxes per website",
-      "Daily backups",
-      "AI agent for WordPress",
-      "Dedicated IP address",
-    ],
-  },
-  {
-    name: "Business Cloud Hosting",
-    features: [
-      "50 websites",
-      "50GB NVMe storage",
-      "5 mailboxes per website",
-      "5 Node.js web apps",
-      "Daily backups",
-      "Maximum speed with free CDN",
-    ],
-  },
-  {
-    name: "VPS Hosting",
-    features: [
-      "KVM 8, KVM 4, and KVM 2 options",
-      "Up to 8 vCPU cores",
-      "Up to 32GB RAM",
-      "Up to 400GB NVMe disk space",
-      "Up to 32TB bandwidth",
-      "24/7 support",
-    ],
-  },
-];
-
-export const subscriptionBenefits = [
-  "Free modern website design with subscription plan",
-  "Free domain name and hosting options",
-  "Software, CMS, CRM, and ERP development support",
-  "Digital marketing and content support",
-  "Maintenance, security, backups, and 24-hour support",
-  "One-month free trial with ownership transfer",
-];
-
-export const paymentCoins = [
-  "Bitcoin",
-  "XRP",
-  "Ethereum",
-  "Solana",
-  "Litecoin",
-  "USDC",
-  "Tether USDT",
-  "BNB",
-  "SHIB Inu",
-  "Chiliz",
-];
-
-export const bankAccounts = [
-  {
-    title: "Pay in Naira",
-    lines: ["Bank name: UBA", "Account no: 1025207623", "Account name: BIRA RECRUITING AGENCY LIMITED"],
-  },
-  {
-    title: "Pay in USD",
-    lines: ["Account no: 2103433430/2010", "IBAN: CZ2820100000002103433430", "BIC: FIOBCZPPXXX"],
-  },
-  {
-    title: "Pay in Euro",
-    lines: ["Account no: 2403433432/2010", "IBAN: CZ0920100000002403433432", "BIC: FIOBCZPPXXX"],
-  },
-  {
-    title: "Pay in GBP",
-    lines: ["Account no: 2803433431/2010", "IBAN: CZ1820100000002803433431", "BIC: FIOBCZPPXXX"],
-  },
-];
-````
-
 ## File: lib/utils.ts
 ````typescript
 import { clsx, type ClassValue } from "clsx"
@@ -3057,36 +2830,6 @@ import { twMerge } from "tailwind-merge"
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
-````
-
-## File: next.config.ts
-````typescript
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  sassOptions: {
-    compiler: "modern",
-    silenceDeprecations: ["legacy-js-api"],
-  },
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "plus.unsplash.com",
-      },
-      {
-        protocol: "https",
-        hostname: "i.pravatar.cc",
-      },
-    ],
-  },
-};
-
-export default nextConfig;
 ````
 
 ## File: package.json
@@ -3300,538 +3043,6 @@ interface ColorVariant {
   name: string;
   hex: string;
   images: string[]; // 1 or 2 images
-}
-````
-
-## File: app/contact/page.tsx
-````typescript
-import Link from "next/link";
-import {
-  CalendarDays,
-  Mail,
-  MapPin,
-  MapPinned,
-  MessageCircle,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { NativeSelect } from "@/components/ui/native-select";
-import { Textarea } from "@/components/ui/textarea";
-import { ContactCard } from "@/components/site/sections";
-import { HeroCarousel } from "@/components/site/image-carousel";
-import { contact, coreServices } from "@/lib/site";
-
-const contactWays = [
-  {
-    title: "WhatsApp consultation",
-    detail: contact.phone,
-    body: "Send a direct brief, request a demo, or schedule a quick project discussion.",
-    icon: MessageCircle,
-    action: "Chat now",
-    href: `https://wa.me/${contact.phone.replace(/\D/g, "")}`,
-    btnVariant: "glow-green" as const,
-    accentVar: "var(--bs-green)",
-  },
-  {
-    title: "Email the studio",
-    detail: contact.email,
-    body: "Best for documents, formal proposals, payment proof, and detailed requirements.",
-    icon: Mail,
-    action: "Send email",
-    href: `mailto:${contact.email}`,
-    btnVariant: "outline" as const,
-    accentVar: "var(--bs-blue)",
-  },
-  {
-    title: "Visit Lagos office",
-    detail: "Egbeda & Shasha locations",
-    body: "Book a physical meeting for strategy sessions, onboarding, and local support.",
-    icon: MapPinned,
-    action: "View locations",
-    href: "#locations",
-    btnVariant: "outline" as const,
-    accentVar: "var(--bs-muted)",
-  },
-];
-
-export default function ContactPage() {
-  return (
-    <>
-      <HeroCarousel
-        slides={[
-          "Contact Bira Solution",
-          "Schedule your free demo",
-          "Visit our Lagos office",
-        ]}
-        minHeight="min-h-[40vh]"
-      >
-        <div className="container-page flex h-full min-h-[40vh] flex-col justify-center py-14">
-          <div className="max-w-xl">
-            <span className="eyebrow">Contact us</span>
-            <h1
-              className="mt-5 font-black text-[var(--bs-white)]"
-              style={{ fontSize: "clamp(1.8rem,4vw,3.2rem)", lineHeight: 1.06 }}
-            >
-              Tell Bira Solution{" "}
-              <span className="text-[var(--bs-blue)]">
-                what you want to build.
-              </span>
-            </h1>
-            <p className="mt-4 max-w-md text-[0.9rem] text-[var(--bs-muted)] leading-relaxed">
-              Use the form below to share your project brief, request a demo, or
-              schedule a consultation — online or physical.
-            </p>
-          </div>
-        </div>
-      </HeroCarousel>
-
-      {/* ── Contact ways ── */}
-      <section className="section-y">
-        <div className="container-page">
-          <div className="mb-12 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-            <div>
-              <span className="eyebrow">Connect your way</span>
-              <h2
-                className="mt-4 font-bold text-[var(--bs-white)]"
-                style={{
-                  fontSize: "clamp(1.6rem,2.6vw,2.2rem)",
-                  lineHeight: 1.1,
-                }}
-              >
-                Choose the fastest path for your project.
-              </h2>
-            </div>
-            <p className="max-w-xs text-[0.85rem] text-[var(--bs-muted)] leading-relaxed">
-              WhatsApp for speed, email for documentation, or visit for deeper
-              planning.
-            </p>
-          </div>
-
-          <div className="grid gap-4 lg:grid-cols-3">
-            {contactWays.map(
-              ({
-                title,
-                detail,
-                body,
-                icon: Icon,
-                action,
-                href,
-                btnVariant,
-                accentVar,
-              }) => (
-                <div
-                  key={title}
-                  className="group flex flex-col gap-5 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6 transition-colors hover:bg-[var(--bs-navy-light)]"
-                >
-                  <div
-                    className="flex size-9 items-center justify-center rounded-lg border text-[var(--bs-white)]"
-                    style={{
-                      borderColor: `color-mix(in srgb, ${accentVar} 30%, transparent)`,
-                    }}
-                  >
-                    <Icon
-                      className="size-4"
-                      strokeWidth={1.5}
-                      style={{ color: accentVar }}
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-[1.05rem] text-[var(--bs-white)] mb-1">
-                      {title}
-                    </h3>
-                    <p
-                      className="text-[0.72rem] font-semibold mb-2"
-                      style={{ color: accentVar }}
-                    >
-                      {detail}
-                    </p>
-                    <p className="text-[0.825rem] leading-relaxed text-[var(--bs-muted)]">
-                      {body}
-                    </p>
-                  </div>
-                  <Button
-                    asChild
-                    size="sm"
-                    variant={btnVariant}
-                    className="mt-auto self-start"
-                  >
-                    <Link href={href}>{action}</Link>
-                  </Button>
-                </div>
-              ),
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Form + Sidebar ── */}
-      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
-        <div className="container-page grid gap-8 lg:grid-cols-[1.3fr_0.7fr]">
-          {/* Form */}
-          <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-7">
-            <div className="h-0.5 w-16 rounded-full bg-[var(--bs-blue)] mb-6" />
-            <p className="eyebrow mb-6">I am interested</p>
-            <form className="grid gap-4">
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div>
-                  <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                    Name / Company
-                  </label>
-                  <Input placeholder="Your name or company" />
-                </div>
-                <div>
-                  <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                    Phone number
-                  </label>
-                  <Input placeholder="+234 …" />
-                </div>
-                <div>
-                  <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                    Email
-                  </label>
-                  <Input type="email" placeholder="you@example.com" />
-                </div>
-                <div>
-                  <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                    Country
-                  </label>
-                  <Input placeholder="Nigeria" />
-                </div>
-              </div>
-
-              <div>
-                <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                  Service of interest
-                </label>
-                <NativeSelect>
-                  <option>Select a service</option>
-                  {coreServices.map((s) => (
-                    <option key={s.title}>{s.title}</option>
-                  ))}
-                </NativeSelect>
-              </div>
-
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div>
-                  <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                    Website / Social
-                  </label>
-                  <Input placeholder="www.yoursite.com" />
-                </div>
-                <div>
-                  <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                    Budget
-                  </label>
-                  <Input placeholder="₦ / $ / GBP / EUR" />
-                </div>
-              </div>
-
-              <div>
-                <p className="mb-2 text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                  Meeting preference
-                </p>
-                <div className="grid gap-2 sm:grid-cols-3">
-                  {[
-                    "Schedule meeting",
-                    "Online conference",
-                    "Physical meeting",
-                  ].map((opt) => (
-                    <label
-                      key={opt}
-                      className="flex cursor-pointer items-center gap-2.5 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-light)] px-3 py-2.5 text-[0.78rem] text-[var(--bs-muted)] hover:border-[rgba(45,184,216,0.3)] hover:text-[var(--bs-white)] transition-colors"
-                    >
-                      <input
-                        type="checkbox"
-                        className="accent-[var(--bs-blue)]"
-                      />{" "}
-                      {opt}
-                    </label>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                  Preferred date / time
-                </label>
-                <Input placeholder="e.g. Tuesday 2pm Lagos time" />
-              </div>
-
-              <div>
-                <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                  Brief message
-                </label>
-                <Textarea
-                  placeholder="Describe your project or requirement…"
-                  rows={4}
-                />
-              </div>
-
-              <p className="text-[0.72rem] text-[var(--bs-subtle)]">
-                By clicking submit you agree to the terms and conditions.
-              </p>
-
-              <div>
-                <Button type="button" size="default" variant="glow-blue">
-                  Submit enquiry
-                </Button>
-              </div>
-            </form>
-          </div>
-
-          {/* Sidebar */}
-          <div className="flex flex-col gap-4">
-            <ContactCard />
-
-            <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6">
-              <div className="flex items-center gap-2.5 mb-4">
-                <CalendarDays
-                  className="size-4 text-[var(--bs-blue)]"
-                  strokeWidth={1.5}
-                />
-                <p className="eyebrow">Meeting options</p>
-              </div>
-              <div className="flex flex-col gap-2 text-[0.825rem] text-[var(--bs-muted)]">
-                <p>Online: 30 minutes to 1 hour</p>
-                <p>Physical: Lagos office locations</p>
-                <p>
-                  WhatsApp:{" "}
-                  <span className="text-[var(--bs-white)]">
-                    {contact.phone}
-                  </span>
-                </p>
-              </div>
-              <Button
-                asChild
-                variant="outline"
-                size="sm"
-                className="mt-5 w-full"
-              >
-                <Link href="/payment">Pay by crypto or bank transfer</Link>
-              </Button>
-            </div>
-
-            <div
-              id="locations"
-              className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6"
-            >
-              <div className="flex items-center gap-2.5 mb-4">
-                <MapPin
-                  className="size-4 text-[var(--bs-green)]"
-                  strokeWidth={1.5}
-                />
-                <p className="eyebrow-green">Lagos offices</p>
-              </div>
-              <div className="flex flex-col gap-4">
-                {contact.addresses.map((address) => (
-                  <p
-                    key={address}
-                    className="text-[0.82rem] text-[var(--bs-muted)] leading-relaxed border-l-2 border-[rgba(38,186,129,0.35)] pl-3"
-                  >
-                    {address}
-                  </p>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-}
-````
-
-## File: app/free-subscription/page.tsx
-````typescript
-import Link from "next/link";
-import { ArrowRight, Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { HeroCarousel } from "@/components/site/image-carousel";
-import { CtaBand, FeatureList, SectionIntro } from "@/components/site/sections";
-import { subscriptionBenefits } from "@/lib/site";
-
-const membershipItems = [
-  {
-    label: "Website Design",
-    desc: "Modern responsive design tailored to your brand.",
-  },
-  {
-    label: "Web Development",
-    desc: "Full front-end and back-end development.",
-  },
-  {
-    label: "Website Maintenance",
-    desc: "Regular updates, security patches, and backups.",
-  },
-  {
-    label: "Domain Name & Transfer",
-    desc: "Registration, privacy, and transfer management.",
-  },
-  {
-    label: "Hosting & Transfer",
-    desc: "Reliable cloud or shared hosting included.",
-  },
-  {
-    label: "Software Development",
-    desc: "Custom CMS, CRM, or ERP built to spec.",
-  },
-  {
-    label: "Programming & Coding",
-    desc: "Front-end, back-end, and database solutions.",
-  },
-  {
-    label: "Software Maintenance",
-    desc: "Ongoing fixes, updates, and feature additions.",
-  },
-  {
-    label: "App Development",
-    desc: "iOS and Android native or hybrid applications.",
-  },
-  {
-    label: "App Maintenance",
-    desc: "Version updates, store compliance, bug fixes.",
-  },
-  { label: "CMS, CRM & ERP", desc: "Industry-specific management systems." },
-  {
-    label: "Digital Marketing",
-    desc: "Google, social media, ads, and content support.",
-  },
-];
-
-export default function FreeSubscriptionPage() {
-  return (
-    <>
-      <HeroCarousel
-        slides={[
-          "Free website subscription visual",
-          "Membership benefits overview",
-          "Support and maintenance visual",
-        ]}
-        minHeight="min-h-[55vh]"
-      >
-        <div className="container-page flex h-full flex-col justify-center py-16 min-h-[55vh]">
-          <div className="max-w-xl">
-            <span className="eyebrow">Free subscription</span>
-            <h1
-              className="mt-5 font-black text-[var(--bs-white)]"
-              style={{ fontSize: "clamp(2rem,4.5vw,3.6rem)", lineHeight: 1.06 }}
-            >
-              Professional website design with{" "}
-              <span className="text-[var(--bs-green)]">recurring support.</span>
-            </h1>
-            <p className="mt-5 max-w-md text-[0.9rem] text-[var(--bs-muted)] leading-relaxed">
-              Subscription plan for website, hosting, software, CMS, CRM, app
-              development, and digital marketing support.
-            </p>
-          </div>
-        </div>
-      </HeroCarousel>
-
-      <section className="section-y">
-        <div className="container-page grid gap-10 lg:grid-cols-2 lg:items-start">
-          <div className="relative overflow-hidden rounded-[var(--radius)] border border-[rgba(45,184,216,0.25)] bg-[var(--bs-dark)] p-8">
-            <div className="absolute left-0 top-0 h-full w-0.5 rounded-l-[var(--radius)] bg-gradient-to-b from-[var(--bs-blue)] to-transparent opacity-50" />
-            <div
-              className="absolute -right-10 -top-10 size-48 opacity-10 blur-3xl"
-              style={{
-                background:
-                  "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
-              }}
-            />
-            <span className="eyebrow">Why join?</span>
-            <h2
-              className="mt-4 font-bold text-[var(--bs-white)]"
-              style={{
-                fontSize: "clamp(1.7rem,2.8vw,2.4rem)",
-                lineHeight: 1.1,
-              }}
-            >
-              Get the essentials for business growth online.
-            </h2>
-            <p className="mt-4 text-sm text-[var(--bs-muted)] leading-relaxed">
-              Members receive website design, free domain and hosting options,
-              maintenance, security, support, and a one-month free trial
-              depending on the selected subscription terms.
-            </p>
-            <Button asChild size="lg" variant="glow-green" className="mt-7">
-              <Link href="/contact">
-                Join now <ArrowRight className="size-3.5" />
-              </Link>
-            </Button>
-          </div>
-          <div>
-            <p className="eyebrow mb-6">What&apos;s included</p>
-            <ul className="flex flex-col border-t border-[var(--bs-navy-border)]">
-              {subscriptionBenefits.map((item) => (
-                <li
-                  key={item}
-                  className="flex items-start gap-3.5 border-b border-[var(--bs-navy-border)] py-3.5"
-                >
-                  <Check
-                    className="mt-0.5 size-3.5 shrink-0 text-[var(--bs-green)]"
-                    strokeWidth={2.5}
-                  />
-                  <span className="text-[0.875rem] text-[var(--bs-muted)]">
-                    {item}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
-        <div className="container-page">
-          <SectionIntro
-            eyebrow="Membership services"
-            title="Services included in the membership offer."
-            text="Every subscription plan unlocks access to the full suite of Bira Solution services."
-          />
-          <div className="grid gap-px bg-[var(--bs-navy-border)] border border-[var(--bs-navy-border)] rounded-[var(--radius)] overflow-hidden sm:grid-cols-2 lg:grid-cols-4">
-            {membershipItems.map(({ label, desc }, i) => (
-              <div
-                key={label}
-                className={`relative flex flex-col gap-3 p-5 overflow-hidden transition-all duration-200 ${
-                  i === 0 || i === 10
-                    ? "bg-[var(--bs-navy-mid)] border-t-2 border-t-[var(--bs-blue)]"
-                    : "bg-[var(--bs-dark)] hover:bg-[var(--bs-navy-mid)]"
-                }`}
-              >
-                {(i === 0 || i === 10) && (
-                  <div
-                    className="absolute top-0 right-0 size-24 opacity-10 blur-2xl"
-                    style={{
-                      background:
-                        "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
-                    }}
-                  />
-                )}
-                <div className="size-1.5 rounded-full bg-[var(--bs-blue)]" />
-                <div>
-                  <h3 className="font-bold text-[0.95rem] text-[var(--bs-white)] mb-1 leading-snug">
-                    {label}
-                  </h3>
-                  <p className="text-[0.78rem] text-[var(--bs-muted)] leading-relaxed">
-                    {desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-8 flex justify-center">
-            <Button asChild variant="glow-blue">
-              <Link href="/contact">
-                Start your free trial <ArrowRight className="size-3.5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      <CtaBand />
-    </>
-  );
 }
 ````
 
@@ -4256,841 +3467,6 @@ export default function FreeSubscriptionPage() {
 }
 ````
 
-## File: app/page.tsx
-````typescript
-import Link from "next/link";
-import { ArrowRight, Globe, PhoneCall } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { HeroCarousel, ImageCarousel } from "@/components/site/image-carousel";
-import {
-  CtaBand,
-  FeatureList,
-  SectionIntro,
-  StatsBar,
-} from "@/components/site/sections";
-import {
-  coreServices,
-  heroSlides,
-  reasons,
-  testimonials,
-  websiteTypes,
-  contact,
-} from "@/lib/site";
-
-export default function Home() {
-  return (
-    <>
-      {/* ══════════════════════════════════════════
-          HERO
-      ══════════════════════════════════════════ */}
-      <HeroCarousel slides={heroSlides}>
-        <div className="container-page flex h-full flex-col justify-center py-20 min-h-[calc(100svh-5.25rem)]">
-          <div className="max-w-2xl">
-            <span className="eyebrow">Lagos Nigeria Web Development</span>
-
-            <h1
-              className="mt-5 font-black text-[var(--bs-white)] text-balance leading-[1.04]"
-              style={{ fontSize: "clamp(2.4rem,5.5vw,4.5rem)" }}
-            >
-              Professional websites,{" "}
-              <span className="text-[var(--bs-blue)]">software</span> &amp;
-              digital solutions.
-            </h1>
-
-            <div className="my-6 flex items-center gap-3">
-              <div className="h-px w-14 bg-[var(--bs-blue)] opacity-60" />
-              <div className="h-px w-6 bg-[var(--bs-blue)] opacity-30" />
-            </div>
-
-            <p className="max-w-md text-[0.95rem] leading-relaxed text-[var(--bs-muted)]">
-              Bira Solution Limited creates innovative digital solutions that
-              help businesses thrive — from polished brand websites to complex
-              CMS, CRM, ERP, apps, hosting, and marketing systems.
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild size="lg" variant="glow-blue">
-                <Link href="/contact">
-                  Request a free demo <ArrowRight className="size-3.5" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="glass-green">
-                <Link
-                  href={`https://wa.me/${contact.phone.replace(/\D/g, "")}`}
-                >
-                  <PhoneCall className="size-3.5" /> WhatsApp us
-                </Link>
-              </Button>
-            </div>
-
-            <div className="mt-10 flex flex-wrap items-center gap-5">
-              {[
-                "10+ Years Experience",
-                "500+ Projects",
-                "24/7 Support",
-                "Lagos Based",
-              ].map((tag) => (
-                <div key={tag} className="flex items-center gap-2">
-                  <div className="size-1.5 rounded-full bg-[var(--bs-green)]" />
-                  <span className="text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                    {tag}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </HeroCarousel>
-
-      {/* Stats */}
-      <StatsBar
-        stats={[
-          { value: "500+", label: "Projects Delivered" },
-          { value: "10+", label: "Years Experience" },
-          { value: "100%", label: "Client Ownership" },
-          { value: "24/7", label: "Support Desk" },
-        ]}
-      />
-
-      {/* ══════════════════════════════════════════
-          SERVICES
-      ══════════════════════════════════════════ */}
-      <section className="section-y">
-        <div className="container-page">
-          <SectionIntro
-            eyebrow="Our services"
-            title="Everything your business needs, in one technology partner."
-          />
-
-          <div className="grid gap-px bg-[var(--bs-navy-border)] border border-[var(--bs-navy-border)] rounded-[var(--radius)] overflow-hidden sm:grid-cols-2 lg:grid-cols-3">
-            {coreServices.slice(0, 6).map(({ title, text, icon: Icon }) => (
-              <div
-                key={title}
-                className="group relative flex flex-col gap-4 bg-[var(--bs-navy-mid)] p-6 transition-all duration-200 hover:bg-[var(--bs-navy-light)] overflow-hidden"
-              >
-                {/* Subtle hover glow — keep it faint */}
-                <div
-                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  style={{
-                    background:
-                      "radial-gradient(circle at 0% 0%, rgba(45,184,216,0.07) 0%, transparent 60%)",
-                  }}
-                />
-
-                {/* Icon box — blue accent only here */}
-                <div className="relative z-10 flex size-9 items-center justify-center rounded-lg border border-[rgba(45,184,216,0.2)] text-[var(--bs-blue)] transition-all group-hover:border-[rgba(45,184,216,0.4)] group-hover:bg-[rgba(45,184,216,0.07)]">
-                  <Icon className="size-4" strokeWidth={1.5} />
-                </div>
-
-                <div className="relative z-10">
-                  {/* Title stays white — only turns slightly lighter on hover */}
-                  <h3 className="font-bold text-[1.05rem] text-[var(--bs-white)] mb-2 leading-snug">
-                    {title}
-                  </h3>
-                  <p className="text-[0.825rem] text-[var(--bs-muted)] leading-relaxed">
-                    {text}
-                  </p>
-                </div>
-
-                {/* Small blue underline on hover */}
-                <div className="relative z-10 h-px w-0 bg-[var(--bs-blue)] transition-all duration-300 group-hover:w-6 rounded-full opacity-60" />
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-7 flex justify-center">
-            <Button asChild variant="outline">
-              <Link href="/services">
-                View all services <ArrowRight className="size-3.5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════
-          PROFESSION CARD GRID
-      ══════════════════════════════════════════ */}
-      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
-        <div className="container-page">
-          <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
-            {/* Left — headline */}
-            <div className="lg:sticky lg:top-28">
-              <span className="eyebrow">
-                Private practice &amp; brand growth
-              </span>
-              <h2
-                className="mt-5 font-bold text-[var(--bs-white)] text-balance"
-                style={{
-                  fontSize: "clamp(1.8rem,3vw,2.8rem)",
-                  lineHeight: 1.1,
-                }}
-              >
-                A responsive, long-lasting website for every profession.
-              </h2>
-              <p className="mt-4 text-sm leading-relaxed text-[var(--bs-muted)] max-w-sm">
-                Your site will look exceptional on every device — exquisite
-                design, SEO, responsiveness, training, maintenance, and ongoing
-                support.
-              </p>
-              <div className="mt-7">
-                <Button asChild variant="glow-green">
-                  <Link href="/contact">
-                    I am interested <ArrowRight className="size-3.5" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
-
-            {/* Right — card grid */}
-            <div className="grid gap-2.5 sm:grid-cols-2">
-              {websiteTypes.map((type) => (
-                <Link
-                  key={type}
-                  href="/contact"
-                  className="group relative flex items-center gap-3 overflow-hidden rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-3.5 transition-all duration-200 hover:border-[rgba(45,184,216,0.3)] hover:bg-[var(--bs-navy-light)]"
-                >
-                  {/* Icon — blue accent */}
-                  <div className="flex size-7 shrink-0 items-center justify-center rounded-md border border-[rgba(45,184,216,0.15)] bg-[rgba(45,184,216,0.05)] text-[var(--bs-blue)] transition-colors group-hover:border-[rgba(45,184,216,0.35)]">
-                    <Globe className="size-3.5" strokeWidth={1.5} />
-                  </div>
-
-                  {/* Label — white, no color change on hover */}
-                  <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-[0.8rem] text-[var(--bs-white)] leading-snug truncate">
-                      {type} Website Design
-                    </p>
-                    <p className="text-[0.65rem] text-[var(--bs-muted)] mt-0.5">
-                      Responsive · SEO Ready
-                    </p>
-                  </div>
-
-                  <ArrowRight className="size-3 text-[var(--bs-muted)] opacity-0 group-hover:opacity-60 transition-all shrink-0 -translate-x-1 group-hover:translate-x-0" />
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════
-          WHY US + TESTIMONIALS
-      ══════════════════════════════════════════ */}
-      <section className="section-y">
-        <div className="container-page grid gap-14 lg:grid-cols-2">
-          {/* Why choose us */}
-          <div>
-            <SectionIntro
-              eyebrow="Why choose us"
-              title="Quality, ownership, and support — built into every project."
-              align="left"
-            />
-            <div className="flex flex-col border-t border-[var(--bs-navy-border)]">
-              {reasons.map(({ title, icon: Icon }, i) => (
-                <div
-                  key={title}
-                  className="group flex items-center gap-4 border-b border-[var(--bs-navy-border)] py-4 px-2 -mx-2 rounded-lg transition-colors hover:bg-[var(--bs-navy-mid)]"
-                >
-                  {/* Icon box — blue accent only */}
-                  <div className="flex size-8 shrink-0 items-center justify-center rounded-lg border border-[var(--bs-navy-border)] text-[var(--bs-blue)] transition-colors group-hover:border-[rgba(45,184,216,0.35)] group-hover:bg-[rgba(45,184,216,0.06)]">
-                    <Icon className="size-3.5" strokeWidth={1.5} />
-                  </div>
-                  {/* Title stays white */}
-                  <p className="text-[0.875rem] font-semibold text-[var(--bs-white)]">
-                    {title}
-                  </p>
-                  <span className="ml-auto text-[0.6rem] font-bold tracking-widest text-[var(--bs-subtle)]">
-                    0{i + 1}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Testimonials */}
-          <div>
-            <SectionIntro
-              eyebrow="Client voices"
-              title="What clients say about working with us."
-              align="left"
-              accentColor="green"
-            />
-            <div className="flex flex-col gap-4">
-              {testimonials.map((item) => (
-                <blockquote
-                  key={item.name}
-                  className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-5 relative overflow-hidden"
-                >
-                  {/* Green left bar */}
-                  <div className="absolute left-0 top-0 h-full w-0.5 bg-[var(--bs-green)] opacity-60" />
-                  <p className="text-[0.875rem] leading-relaxed text-[var(--bs-muted)] italic pl-4">
-                    &ldquo;{item.quote}&rdquo;
-                  </p>
-                  <footer className="mt-3 pl-4 flex items-center gap-3">
-                    <div className="size-7 rounded-full bg-[var(--bs-navy-border)] flex items-center justify-center text-[0.62rem] font-bold text-[var(--bs-white)]">
-                      {item.name[0]}
-                    </div>
-                    <div>
-                      <p className="text-[0.78rem] font-bold text-[var(--bs-white)]">
-                        {item.name}
-                      </p>
-                      {/* Role gets the green accent */}
-                      <p className="text-[0.62rem] font-bold tracking-[0.16em] uppercase text-[var(--bs-green)]">
-                        {item.role}
-                      </p>
-                    </div>
-                  </footer>
-                </blockquote>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════
-          BUSINESS CARD SECTION
-      ══════════════════════════════════════════ */}
-      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
-        <div className="container-page grid gap-14 lg:grid-cols-2 lg:items-center">
-          <div>
-            <ImageCarousel
-              title="Complimentary business card"
-              slides={[
-                "Business card design mockup",
-                "Brand collateral print preview",
-                "Client identity package",
-              ]}
-            />
-          </div>
-          <div>
-            <span className="eyebrow">Complimentary business card</span>
-            <h2
-              className="mt-5 font-bold text-[var(--bs-white)]"
-              style={{
-                fontSize: "clamp(1.7rem,2.6vw,2.4rem)",
-                lineHeight: 1.1,
-              }}
-            >
-              Give customers a clean way to reach your business.
-            </h2>
-            <p className="mt-4 text-sm leading-relaxed text-[var(--bs-muted)] max-w-sm">
-              Bira Solution designs and prints business cards matched to your
-              brand colors — making every card part of your unified advertising
-              system.
-            </p>
-            <div className="mt-6">
-              <FeatureList
-                items={[
-                  "Brand-matched color palette",
-                  "Print-ready design files",
-                  "Professional contact layout",
-                  "Coordinated with your website launch",
-                ]}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <CtaBand />
-    </>
-  );
-}
-````
-
-## File: app/payment/page.tsx
-````typescript
-import { Copy, Upload } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { ContactCard, SectionIntro } from "@/components/site/sections";
-import { HeroCarousel } from "@/components/site/image-carousel";
-import { bankAccounts, contact, paymentCoins } from "@/lib/site";
-
-export default function PaymentPage() {
-  return (
-    <>
-      <HeroCarousel
-        slides={[
-          "Secure crypto payment portal",
-          "Bank transfer options",
-          "Global payment methods",
-        ]}
-        minHeight="min-h-[40vh]"
-      >
-        <div className="container-page flex h-full min-h-[40vh] flex-col justify-center py-14">
-          <div className="max-w-xl">
-            <span className="eyebrow">Payment</span>
-            <h1
-              className="mt-5 font-black text-[var(--bs-white)]"
-              style={{ fontSize: "clamp(1.8rem,4vw,3.2rem)", lineHeight: 1.06 }}
-            >
-              Pay by <span className="text-[var(--bs-blue)]">crypto</span> or{" "}
-              <span className="text-[var(--bs-green)]">bank transfer.</span>
-            </h1>
-            <p className="mt-4 max-w-md text-[0.9rem] text-[var(--bs-muted)] leading-relaxed">
-              Request a wallet address, complete your transfer, then send proof
-              for quick confirmation. Help desk open 24 hours.
-            </p>
-          </div>
-        </div>
-      </HeroCarousel>
-
-      {/* ── Crypto ── */}
-      <section className="section-y">
-        <div className="container-page">
-          <SectionIntro
-            eyebrow="Crypto payment"
-            title="Request wallet address, then send proof for quick confirmation."
-            text={`After payment, send proof, amount, name, and payment date to ${contact.paymentEmail}.`}
-          />
-
-          <div className="grid gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
-            {paymentCoins.map((coin) => (
-              <div
-                key={coin}
-                className="group flex flex-col gap-3 p-4 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] hover:border-[rgba(45,184,216,0.3)] hover:bg-[var(--bs-navy-light)] transition-all duration-200"
-              >
-                {/* QR placeholder */}
-                <div className="image-slot aspect-square rounded-lg border border-[var(--bs-navy-border)] flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-[0.55rem] font-bold tracking-[0.16em] uppercase text-[var(--bs-muted)]">
-                      QR Code
-                    </div>
-                    <div className="text-[0.5rem] text-[var(--bs-subtle)] mt-0.5">
-                      Scan to pay
-                    </div>
-                  </div>
-                </div>
-                <p className="font-semibold text-[0.9rem] text-[var(--bs-white)] group-hover:text-[var(--bs-blue)] transition-colors">
-                  {coin}
-                </p>
-                <Button variant="outline" size="sm" className="w-full mt-auto">
-                  <Copy className="size-3" /> Copy wallet
-                </Button>
-              </div>
-            ))}
-          </div>
-
-          {/* Upload proof */}
-          <div className="mt-8 rounded-[var(--radius)] border border-[rgba(45,184,216,0.2)] bg-[var(--bs-navy-mid)] p-7">
-            <p className="eyebrow mb-5">Upload payment proof</p>
-            <div className="grid gap-4 md:grid-cols-[1fr_1fr_auto] items-end">
-              <div>
-                <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                  Proof of payment
-                </label>
-                <Input type="file" />
-              </div>
-              <div>
-                <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
-                  Amount paid
-                </label>
-                <Input placeholder="$ USD / ₦ NGN / GBP / EUR" />
-              </div>
-              <Button variant="accent">
-                <Upload className="size-3.5" /> Submit
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Bank Transfer ── */}
-      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
-        <div className="container-page">
-          <SectionIntro
-            eyebrow="Bank transfer"
-            title="Local and international account options."
-            accentColor="green"
-          />
-
-          <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
-            {bankAccounts.map((account, i) => (
-              <div
-                key={account.title}
-                className={`rounded-[var(--radius)] border p-6 ${
-                  i === 0
-                    ? "border-[rgba(38,186,129,0.3)] bg-[var(--bs-navy-mid)]"
-                    : "border-[var(--bs-navy-border)] bg-[var(--bs-dark)]"
-                }`}
-              >
-                <p className={`mb-4 ${i === 0 ? "eyebrow-green" : "eyebrow"}`}>
-                  {account.title}
-                </p>
-                <div className="flex flex-col gap-1.5">
-                  {account.lines.map((line) => (
-                    <p
-                      key={line}
-                      className="text-[0.82rem] text-[var(--bs-muted)]"
-                    >
-                      {line}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-7 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-5">
-            <p className="text-[0.82rem] text-[var(--bs-muted)] leading-relaxed">
-              <span className="font-bold text-[var(--bs-white)]">
-                Important —{" "}
-              </span>
-              After payment, send proof, your name, amount, and payment date to{" "}
-              <span className="text-[var(--bs-blue)]">{contact.email}</span> or
-              WhatsApp{" "}
-              <span className="text-[var(--bs-white)]">{contact.phone}</span>.{" "}
-              Help desk is open 24 hours.
-            </p>
-          </div>
-
-          <div className="mt-8">
-            <ContactCard />
-          </div>
-        </div>
-      </section>
-    </>
-  );
-}
-````
-
-## File: app/recent-projects/page.tsx
-````typescript
-// ═══════════════════════════════════════════════════════════════
-// recent-projects/page.tsx
-// ═══════════════════════════════════════════════════════════════
-import Link from "next/link";
-import { ArrowRight, Play } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { HeroCarousel } from "@/components/site/image-carousel";
-import { CtaBand, SectionIntro } from "@/components/site/sections";
-
-const projectCategories = [
-  {
-    label: "Business website",
-    desc: "Corporate and company sites with CMS integration.",
-  },
-  {
-    label: "E-commerce website",
-    desc: "Online stores with payment gateway and inventory.",
-  },
-  {
-    label: "CMS management system",
-    desc: "Custom content and data management dashboards.",
-  },
-  {
-    label: "Hospital management platform",
-    desc: "Patient records, appointments, and billing systems.",
-  },
-  {
-    label: "Restaurant and bar system",
-    desc: "POS, reservation, and menu management software.",
-  },
-  {
-    label: "Real estate website",
-    desc: "Property listings, agents, and booking portals.",
-  },
-  {
-    label: "Movie production",
-    desc: "Film and video production project websites and reels.",
-  },
-  {
-    label: "Brand identity",
-    desc: "Logo, color systems, print, and digital brand assets.",
-  },
-];
-
-export default function RecentProjectsPage() {
-  return (
-    <>
-      <HeroCarousel
-        slides={[
-          "Portfolio screen recording showcase",
-          "Website project walkthrough",
-          "CMS dashboard demo reel",
-        ]}
-        minHeight="min-h-[55vh]"
-      >
-        <div className="container-page flex h-full flex-col justify-center py-16 min-h-[55vh]">
-          <div className="max-w-xl">
-            <span className="eyebrow">Recent projects</span>
-            <h1
-              className="mt-5 font-black text-[var(--bs-white)]"
-              style={{ fontSize: "clamp(2rem,4.5vw,3.6rem)", lineHeight: 1.06 }}
-            >
-              Screen recordings, demos &amp;{" "}
-              <span className="text-[var(--bs-blue)]">completed work.</span>
-            </h1>
-            <p className="mt-5 max-w-md text-[0.9rem] text-[var(--bs-muted)] leading-relaxed">
-              A dedicated showcase for portfolio imagery, screen recording
-              demos, and client project walkthroughs.
-            </p>
-          </div>
-        </div>
-      </HeroCarousel>
-
-      <section className="section-y">
-        <div className="container-page">
-          {/* Featured video panel */}
-          <div className="relative overflow-hidden rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-dark)] p-8 md:p-12 mb-14">
-            <div className="absolute left-0 top-0 h-16 w-px bg-gradient-to-b from-[var(--bs-blue)] to-transparent opacity-60" />
-            <div className="absolute left-0 top-0 h-px w-16 bg-gradient-to-r from-[var(--bs-blue)] to-transparent opacity-60" />
-            <div className="absolute right-0 bottom-0 h-16 w-px bg-gradient-to-t from-[var(--bs-green)] to-transparent opacity-50" />
-            <div className="absolute right-0 bottom-0 h-px w-16 bg-gradient-to-l from-[var(--bs-green)] to-transparent opacity-50" />
-
-            <div className="relative grid gap-10 lg:grid-cols-[1fr_0.75fr] lg:items-center">
-              <div>
-                <span className="eyebrow">Featured media reel</span>
-                <h2
-                  className="mt-4 font-bold text-[var(--bs-white)]"
-                  style={{
-                    fontSize: "clamp(1.6rem,2.8vw,2.4rem)",
-                    lineHeight: 1.1,
-                  }}
-                >
-                  20-second screen recording — the strongest proof of work.
-                </h2>
-                <p className="mt-3 text-sm text-[var(--bs-muted)] leading-relaxed max-w-md">
-                  Place the demo reel here to show visitors real project
-                  outcomes before exploring individual case studies below.
-                </p>
-                <Button asChild size="sm" className="mt-6" variant="glass-blue">
-                  <Link href="/contact">
-                    Request a project demo <ArrowRight className="size-3" />
-                  </Link>
-                </Button>
-              </div>
-              <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-4 image-slot">
-                <div className="flex aspect-video items-center justify-center rounded-lg border border-[var(--bs-navy-border)]">
-                  <div className="flex flex-col items-center gap-3">
-                    <div className="flex size-11 items-center justify-center rounded-lg border border-[rgba(45,184,216,0.3)] bg-[rgba(45,184,216,0.06)] text-[var(--bs-blue)]">
-                      <Play className="size-4 ml-0.5" strokeWidth={1.5} />
-                    </div>
-                    <p className="text-[0.62rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-muted)]">
-                      Video placeholder
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <SectionIntro
-            eyebrow="Portfolio categories"
-            title="The kinds of outcomes Bira Solution delivers."
-            text="Each panel is ready for screenshots, video embeds, or case-study links once project assets are available."
-          />
-
-          <div className="grid gap-px bg-[var(--bs-navy-border)] border border-[var(--bs-navy-border)] rounded-[var(--radius)] overflow-hidden sm:grid-cols-2 lg:grid-cols-4">
-            {projectCategories.map(({ label, desc }, i) => (
-              <div
-                key={label}
-                className="group relative flex flex-col gap-4 p-5 bg-[var(--bs-navy-mid)] hover:bg-[var(--bs-navy-light)] overflow-hidden transition-all duration-200"
-              >
-                <div
-                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity"
-                  style={{
-                    background:
-                      "radial-gradient(circle at 50% 0%, var(--bs-blue-glow) 0%, transparent 60%)",
-                  }}
-                />
-                <div className="relative z-10 image-slot aspect-[4/3] rounded-lg border border-[var(--bs-navy-border)] group-hover:border-[rgba(45,184,216,0.25)] transition-colors">
-                  <div className="absolute top-2 left-2 text-[0.55rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-blue)]/50">
-                    {String(i + 1).padStart(2, "0")}
-                  </div>
-                </div>
-                <div className="relative z-10">
-                  <h3 className="font-bold text-[0.95rem] text-[var(--bs-white)] mb-1.5 leading-snug group-hover:text-[var(--bs-blue)] transition-colors">
-                    {label}
-                  </h3>
-                  <p className="text-[0.78rem] text-[var(--bs-muted)] leading-relaxed">
-                    {desc}
-                  </p>
-                </div>
-                <Button
-                  asChild
-                  variant="ghost"
-                  size="sm"
-                  className="relative z-10 mt-auto self-start px-0 text-[var(--bs-blue)] opacity-0 group-hover:opacity-100 transition-opacity"
-                >
-                  <Link href="/contact">
-                    Request demo <ArrowRight className="size-3" />
-                  </Link>
-                </Button>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-8 flex justify-center">
-            <Button asChild variant="glow-blue">
-              <Link href="/contact">Request a project demo</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      <CtaBand />
-    </>
-  );
-}
-````
-
-## File: app/services/page.tsx
-````typescript
-// ═══════════════════════════════════════════════════════════════
-// services/page.tsx
-// ═══════════════════════════════════════════════════════════════
-import Link from "next/link";
-import { ArrowRight, Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { HeroCarousel } from "@/components/site/image-carousel";
-import { CtaBand, SectionIntro } from "@/components/site/sections";
-import { coreServices, hostingPlans } from "@/lib/site";
-
-export default function ServicesPage() {
-  return (
-    <>
-      <HeroCarousel
-        slides={[
-          "Website & development showcase",
-          "Software and CMS systems",
-          "Video and digital marketing",
-        ]}
-        minHeight="min-h-[55vh]"
-      >
-        <div className="container-page flex h-full flex-col justify-center py-16 min-h-[55vh]">
-          <div className="max-w-xl">
-            <span className="eyebrow">Our services</span>
-            <h1
-              className="mt-5 font-black text-[var(--bs-white)]"
-              style={{ fontSize: "clamp(2rem,4.5vw,3.6rem)", lineHeight: 1.06 }}
-            >
-              A complete digital{" "}
-              <span className="text-[var(--bs-blue)]">services suite</span> for
-              serious businesses.
-            </h1>
-            <p className="mt-5 max-w-md text-[0.9rem] text-[var(--bs-muted)] leading-relaxed">
-              Website design, custom software, programming, hosting, domain
-              services, digital marketing, video production, branding, and
-              business support.
-            </p>
-          </div>
-        </div>
-      </HeroCarousel>
-
-      <section className="section-y">
-        <div className="container-page">
-          <SectionIntro
-            eyebrow="Capabilities"
-            title="Services built around growth, security, and support."
-          />
-          <div className="grid gap-px bg-[var(--bs-navy-border)] border border-[var(--bs-navy-border)] rounded-[var(--radius)] overflow-hidden sm:grid-cols-2 lg:grid-cols-3">
-            {coreServices.map(({ title, text, icon: Icon }) => (
-              <div
-                key={title}
-                className="group relative flex flex-col gap-4 bg-[var(--bs-navy-mid)] p-6 overflow-hidden transition-all duration-200 hover:bg-[var(--bs-navy-light)]"
-              >
-                <div
-                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  style={{
-                    background:
-                      "radial-gradient(circle at 0% 0%, var(--bs-blue-glow) 0%, transparent 55%)",
-                  }}
-                />
-                <div className="relative z-10 flex size-9 items-center justify-center rounded-lg border border-[rgba(45,184,216,0.2)] text-[var(--bs-blue)] group-hover:border-[rgba(45,184,216,0.5)] group-hover:bg-[rgba(45,184,216,0.08)] transition-all">
-                  <Icon className="size-4" strokeWidth={1.5} />
-                </div>
-                <div className="relative z-10 flex-1">
-                  <h3 className="font-bold text-[1.05rem] text-[var(--bs-white)] mb-2 leading-snug group-hover:text-[var(--bs-blue)] transition-colors">
-                    {title}
-                  </h3>
-                  <p className="text-[0.825rem] text-[var(--bs-muted)] leading-relaxed">
-                    {text}
-                  </p>
-                </div>
-                <div className="relative z-10 mt-auto">
-                  <Button
-                    asChild
-                    variant="ghost"
-                    size="sm"
-                    className="px-0 text-[var(--bs-blue)] opacity-0 group-hover:opacity-100 transition-opacity"
-                  >
-                    <Link href="/contact">
-                      Enquire <ArrowRight className="size-3" />
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
-        <div className="container-page">
-          <SectionIntro
-            eyebrow="Hosting services"
-            title="Fast, secure hosting plans with support and migration help."
-            text="Choose from Business Cloud, Enterprise Cloud, or VPS hosting based on your project scale."
-          />
-          <div className="grid gap-px bg-[var(--bs-navy-border)] border border-[var(--bs-navy-border)] rounded-[var(--radius)] overflow-hidden lg:grid-cols-3">
-            {hostingPlans.map((plan, i) => (
-              <div
-                key={plan.name}
-                className={`relative flex flex-col gap-5 p-7 overflow-hidden ${i === 1 ? "bg-[var(--bs-navy-mid)] border-t-2 border-t-[var(--bs-blue)]" : "bg-[var(--bs-dark)]"}`}
-              >
-                {i === 1 && (
-                  <>
-                    <span className="self-start text-[0.6rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-blue)] border border-[rgba(45,184,216,0.3)] rounded-full px-3 py-0.5">
-                      Most Popular
-                    </span>
-                    <div
-                      className="absolute top-0 right-0 size-32 opacity-10 blur-2xl"
-                      style={{
-                        background:
-                          "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
-                      }}
-                    />
-                  </>
-                )}
-                <h3 className="font-bold text-[1.15rem] text-[var(--bs-white)] leading-snug">
-                  {plan.name}
-                </h3>
-                <div className="h-px bg-[var(--bs-navy-border)]" />
-                <ul className="flex flex-col gap-2.5 flex-1">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-2.5">
-                      <Check
-                        className="mt-0.5 size-3.5 shrink-0 text-[var(--bs-green)]"
-                        strokeWidth={2.5}
-                      />
-                      <span className="text-[0.825rem] text-[var(--bs-muted)]">
-                        {feature}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-                <Button
-                  asChild
-                  size="sm"
-                  variant={i === 1 ? "glow-blue" : "outline"}
-                  className="mt-2"
-                >
-                  <Link href="/contact">Get started</Link>
-                </Button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <CtaBand />
-    </>
-  );
-}
-````
-
 ## File: components/localComponents/footer.tsx
 ````typescript
 import Image from "next/image";
@@ -5223,560 +3599,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
-}
-````
-
-## File: components/localComponents/header.tsx
-````typescript
-"use client";
-
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { Menu, Phone, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { navLinks, contact } from "@/lib/site";
-import { cn } from "@/lib/utils";
-
-export default function Header() {
-  const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  return (
-    <header
-      className={cn(
-        "sticky top-0 z-50 transition-all duration-300",
-        scrolled
-          ? "bg-[var(--bs-dark)]/96 border-b border-[var(--bs-navy-border)] backdrop-blur-xl"
-          : "bg-[var(--bs-dark)]/70 backdrop-blur-md",
-      )}
-    >
-      {/* Top ticker bar */}
-      <div className="border-b border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
-        <div className="container-page flex h-7 items-center justify-between">
-          <div className="flex items-center gap-1.5">
-            <span className="size-1.5 rounded-full bg-[var(--bs-green)] animate-pulse" />
-            <span className="text-[0.6rem] font-bold tracking-[0.22em] uppercase text-[var(--bs-muted)]">
-              Available 24/7 · Lagos, Nigeria
-            </span>
-          </div>
-          <a
-            href={`tel:${contact.phone}`}
-            className="flex items-center gap-1.5 text-[0.6rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-blue)] hover:text-[var(--bs-blue-bright)] transition-colors"
-          >
-            <Phone className="size-2.5" />
-            {contact.phone}
-          </a>
-        </div>
-      </div>
-
-      {/* Main nav */}
-      <div className="container-page flex h-14 items-center justify-between gap-6">
-        {/* Logo */}
-        <Link
-          href="/"
-          className="group relative flex shrink-0 items-center"
-          aria-label="Bira Solution"
-        >
-          <div className="relative flex h-[56px] w-[170px] items-center justify-center overflow-hidden">
-            <div className="relative h-[42px] w-full">
-              <Image
-                src="/brand/Logo.svg"
-                alt="Bira Solution Limited"
-                fill
-                priority
-                className="object-contain"
-              />
-            </div>
-          </div>
-        </Link>
-
-        {/* Desktop nav */}
-        <nav className="hidden items-center gap-7 lg:flex">
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="nav-link">
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-
-        {/* Desktop CTA */}
-        <div className="hidden items-center gap-2.5 lg:flex">
-          <Button asChild variant="ghost" size="sm">
-            <Link href="/payment">Pay Online</Link>
-          </Button>
-          {/* Free Demo — always-glowing glow-blue button */}
-          <Button asChild variant="glow-blue" size="sm">
-            <Link href="/contact">Free Demo</Link>
-          </Button>
-        </div>
-
-        {/* Mobile toggle */}
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="inline-flex size-9 items-center justify-center rounded-[var(--radius)] border border-[var(--bs-navy-border)] text-[var(--bs-muted)] hover:text-[var(--bs-blue)] hover:border-[var(--bs-blue)]/40 transition-colors lg:hidden"
-          aria-label="Toggle menu"
-        >
-          {open ? <X className="size-4" /> : <Menu className="size-4" />}
-        </button>
-      </div>
-
-      {/* Mobile menu */}
-      {open && (
-        <div className="border-t border-[var(--bs-navy-border)] bg-[var(--bs-dark)] lg:hidden">
-          <nav className="container-page py-5 flex flex-col">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="py-3 text-[0.68rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-muted)] hover:text-[var(--bs-blue)] border-b border-[var(--bs-navy-border)] last:border-0 transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <div className="mt-5 flex gap-3">
-              <Button asChild variant="outline" size="sm" className="flex-1">
-                <Link href="/payment" onClick={() => setOpen(false)}>
-                  Pay Online
-                </Link>
-              </Button>
-              <Button asChild variant="glow-blue" size="sm" className="flex-1">
-                <Link href="/contact" onClick={() => setOpen(false)}>
-                  Free Demo
-                </Link>
-              </Button>
-            </div>
-          </nav>
-        </div>
-      )}
-    </header>
-  );
-}
-````
-
-## File: components/site/image-carousel.tsx
-````typescript
-"use client";
-
-import { useCallback, useEffect, useRef, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { cn } from "@/lib/utils";
-
-type Slide = { label: string; src?: string };
-
-type HeroCarouselProps = {
-  slides: (string | Slide)[];
-  children: React.ReactNode;
-  className?: string;
-  minHeight?: string;
-};
-
-export function HeroCarousel({
-  slides,
-  children,
-  className,
-  minHeight = "min-h-[calc(100svh-5.25rem)]",
-}: HeroCarouselProps) {
-  const normalized: Slide[] = slides.map((s) =>
-    typeof s === "string" ? { label: s } : s,
-  );
-  const [current, setCurrent] = useState(0);
-  const [transitioning, setTransitioning] = useState(false);
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
-
-  const go = useCallback(
-    (idx: number) => {
-      if (transitioning) return;
-      setTransitioning(true);
-      setTimeout(() => {
-        setCurrent((idx + normalized.length) % normalized.length);
-        setTransitioning(false);
-      }, 300);
-    },
-    [transitioning, normalized.length],
-  );
-
-  const next = useCallback(() => go(current + 1), [go, current]);
-  const prev = useCallback(() => go(current - 1), [go, current]);
-
-  useEffect(() => {
-    timerRef.current = setInterval(next, 5000);
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [next]);
-
-  const resetTimer = () => {
-    if (timerRef.current) clearInterval(timerRef.current);
-    timerRef.current = setInterval(next, 5000);
-  };
-
-  return (
-    <section className={cn("relative overflow-hidden", minHeight, className)}>
-      {normalized.map((slide, i) => (
-        <div
-          key={i}
-          className={cn(
-            "absolute inset-0 transition-opacity duration-700 ease-in-out",
-            i === current ? "opacity-100" : "opacity-0",
-          )}
-        >
-          {slide.src ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={slide.src}
-              alt={slide.label}
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          ) : (
-            <div
-              className="absolute inset-0 image-slot scan-lines"
-              style={{ borderRadius: 0 }}
-            >
-              <div className="absolute inset-0 tech-dots opacity-60" />
-              <div
-                className="absolute -right-32 -top-32 size-[500px] rounded-full opacity-18 blur-[80px]"
-                style={{
-                  background:
-                    "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
-                }}
-              />
-              <div
-                className="absolute -bottom-20 -left-20 size-[400px] rounded-full opacity-15 blur-[70px]"
-                style={{
-                  background:
-                    "radial-gradient(circle, var(--bs-green) 0%, transparent 70%)",
-                }}
-              />
-              <div className="absolute bottom-12 right-12 text-right">
-                <p className="text-[0.58rem] font-bold tracking-[0.28em] uppercase text-[var(--bs-blue)]/60 mb-1">
-                  {String(i + 1).padStart(2, "0")} /{" "}
-                  {String(normalized.length).padStart(2, "0")}
-                </p>
-                <p className="font-bold text-[var(--bs-white)]/20 text-lg max-w-[220px] leading-snug">
-                  {slide.label}
-                </p>
-              </div>
-            </div>
-          )}
-          <div className="absolute inset-0 hero-overlay" />
-          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[var(--bs-dark)] to-transparent" />
-        </div>
-      ))}
-
-      <div className="relative z-10 h-full">{children}</div>
-
-      {/* Controls */}
-      <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2 flex items-center gap-4">
-        <button
-          onClick={() => {
-            prev();
-            resetTimer();
-          }}
-          className="flex size-8 items-center justify-center rounded-lg border border-[var(--bs-navy-border)] bg-[var(--bs-dark)]/70 text-[var(--bs-muted)] hover:border-[var(--bs-blue)] hover:text-[var(--bs-blue)] transition-colors backdrop-blur-sm"
-          aria-label="Previous slide"
-        >
-          <ChevronLeft className="size-3.5" />
-        </button>
-        <div className="flex items-center gap-2">
-          {normalized.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => {
-                go(i);
-                resetTimer();
-              }}
-              aria-label={`Slide ${i + 1}`}
-              className={cn(
-                "transition-all duration-300 rounded-full",
-                i === current
-                  ? "h-1.5 w-6 bg-[var(--bs-blue)]"
-                  : "size-1.5 bg-[var(--bs-muted)]/50 hover:bg-[var(--bs-muted)]",
-              )}
-            />
-          ))}
-        </div>
-        <button
-          onClick={() => {
-            next();
-            resetTimer();
-          }}
-          className="flex size-8 items-center justify-center rounded-lg border border-[var(--bs-navy-border)] bg-[var(--bs-dark)]/70 text-[var(--bs-muted)] hover:border-[var(--bs-blue)] hover:text-[var(--bs-blue)] transition-colors backdrop-blur-sm"
-          aria-label="Next slide"
-        >
-          <ChevronRight className="size-3.5" />
-        </button>
-      </div>
-
-      {/* Corner accents — blue */}
-      <div className="pointer-events-none absolute left-0 top-0 h-16 w-px bg-gradient-to-b from-[var(--bs-blue)] to-transparent opacity-50 z-10" />
-      <div className="pointer-events-none absolute left-0 top-0 h-px w-16 bg-gradient-to-r from-[var(--bs-blue)] to-transparent opacity-50 z-10" />
-      <div className="pointer-events-none absolute bottom-0 right-0 h-16 w-px bg-gradient-to-t from-[var(--bs-green)] to-transparent opacity-30 z-10" />
-      <div className="pointer-events-none absolute bottom-0 right-0 h-px w-16 bg-gradient-to-l from-[var(--bs-green)] to-transparent opacity-30 z-10" />
-    </section>
-  );
-}
-
-/* ── Compact inline carousel ─────────────────────────────────── */
-type InlineCarouselProps = {
-  title: string;
-  slides: string[];
-  className?: string;
-};
-
-export function ImageCarousel({
-  title,
-  slides,
-  className,
-}: InlineCarouselProps) {
-  const [current, setCurrent] = useState(0);
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const next = useCallback(
-    () => setCurrent((c) => (c + 1) % slides.length),
-    [slides.length],
-  );
-
-  useEffect(() => {
-    timerRef.current = setInterval(next, 4000);
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [next]);
-
-  return (
-    <div
-      className={cn(
-        "relative overflow-hidden border border-[var(--bs-navy-border)] image-slot",
-        className,
-      )}
-    >
-      <div className="absolute inset-0 tech-dots opacity-40" />
-      <div
-        className="absolute right-0 top-0 size-48 opacity-20 blur-3xl"
-        style={{
-          background:
-            "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
-        }}
-      />
-      <div className="relative z-10 flex aspect-[16/9] flex-col justify-between p-5">
-        <div className="flex items-center justify-between">
-          <span className="text-[0.58rem] font-bold tracking-[0.22em] uppercase text-[var(--bs-muted)]">
-            {String(current + 1).padStart(2, "0")} /{" "}
-            {String(slides.length).padStart(2, "0")}
-          </span>
-          <span className="text-[0.58rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-blue)]/60">
-            {title}
-          </span>
-        </div>
-        <div>
-          <p className="font-bold text-[var(--bs-white)]/80 text-base leading-snug">
-            {slides[current]}
-          </p>
-          <p className="mt-1 text-[0.7rem] text-[var(--bs-muted)]">
-            Placeholder · replaced with project imagery
-          </p>
-        </div>
-      </div>
-      {/* Progress bar */}
-      <div className="absolute inset-x-0 bottom-0 h-px bg-[var(--bs-navy-border)]">
-        <div
-          className="h-full bg-[var(--bs-blue)] transition-all duration-300"
-          style={{ width: `${((current + 1) / slides.length) * 100}%` }}
-        />
-      </div>
-    </div>
-  );
-}
-````
-
-## File: components/site/sections.tsx
-````typescript
-import Link from "next/link";
-import { ArrowRight, Check, PhoneCall } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { contact } from "@/lib/site";
-
-/* ── Section Intro ──────────────────────────────────────────── */
-export function SectionIntro({
-  eyebrow,
-  title,
-  text,
-  align = "center",
-  accentColor = "blue",
-}: {
-  eyebrow: string;
-  title: string;
-  text?: string;
-  align?: "left" | "center";
-  accentColor?: "blue" | "green";
-}) {
-  return (
-    <div
-      className={`mb-12 ${align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl"}`}
-    >
-      <span
-        className={`${accentColor === "green" ? "eyebrow-green" : "eyebrow"} ${align === "center" ? "justify-center" : ""}`}
-      >
-        {eyebrow}
-      </span>
-      {/* Heading always white */}
-      <h2
-        className="mt-4 font-bold text-[var(--bs-white)]"
-        style={{ fontSize: "clamp(1.7rem,2.8vw,2.6rem)", lineHeight: 1.1 }}
-      >
-        {title}
-      </h2>
-      {text && (
-        <p className="mt-3 text-[0.875rem] leading-relaxed text-[var(--bs-muted)]">
-          {text}
-        </p>
-      )}
-    </div>
-  );
-}
-
-/* ── CTA Band ───────────────────────────────────────────────── */
-export function CtaBand() {
-  return (
-    <section className="section-y">
-      <div className="container-page">
-        <div className="relative overflow-hidden rounded-[var(--radius)] bg-[var(--bs-dark)] border border-[var(--bs-navy-border)] px-10 py-14 md:px-14">
-          {/* Corner accent lines — subtle */}
-          <div className="absolute left-0 top-0 h-20 w-px rounded-tl-[var(--radius)] bg-gradient-to-b from-[var(--bs-blue)] to-transparent opacity-50" />
-          <div className="absolute left-0 top-0 h-px w-20 bg-gradient-to-r from-[var(--bs-blue)] to-transparent opacity-50" />
-          <div className="absolute right-0 bottom-0 h-20 w-px bg-gradient-to-t from-[var(--bs-green)] to-transparent opacity-40" />
-          <div className="absolute right-0 bottom-0 h-px w-20 bg-gradient-to-l from-[var(--bs-green)] to-transparent opacity-40" />
-
-          <div className="relative grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
-            <div>
-              {/* Eyebrow — blue accent */}
-              <span className="eyebrow">Schedule a meeting</span>
-              {/* Heading — white */}
-              <h2
-                className="mt-4 font-bold text-[var(--bs-white)]"
-                style={{
-                  fontSize: "clamp(1.8rem,3vw,2.8rem)",
-                  lineHeight: 1.1,
-                }}
-              >
-                Ready to make Bira Solution your technology partner?
-              </h2>
-              <p className="mt-3 max-w-lg text-sm text-[var(--bs-muted)] leading-relaxed">
-                Book an online or physical consultation, request a demo, or send
-                your project brief by WhatsApp.
-              </p>
-            </div>
-            <div className="flex flex-col gap-3 shrink-0">
-              <Button asChild size="lg" variant="glow-blue">
-                <Link href="/contact">
-                  I am interested <ArrowRight className="size-3.5" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="glass-green">
-                <Link
-                  href={`https://wa.me/${contact.phone.replace(/\D/g, "")}`}
-                >
-                  <PhoneCall className="size-3.5" /> WhatsApp us
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ── Feature List ───────────────────────────────────────────── */
-export function FeatureList({ items }: { items: string[] }) {
-  return (
-    <ul className="flex flex-col gap-2.5">
-      {items.map((item) => (
-        <li
-          key={item}
-          className="flex items-start gap-3 text-sm text-[var(--bs-muted)]"
-        >
-          {/* Green check mark — accent only */}
-          <Check
-            className="mt-0.5 size-3.5 shrink-0 text-[var(--bs-green)]"
-            strokeWidth={2.5}
-          />
-          {item}
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-/* ── Contact Card ───────────────────────────────────────────── */
-export function ContactCard() {
-  return (
-    <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6">
-      {/* Eyebrow — blue accent */}
-      <p className="eyebrow mb-4">Help desk</p>
-      <div className="flex flex-col gap-2 text-sm text-[var(--bs-muted)]">
-        <p>
-          Call / WhatsApp:{" "}
-          <span className="text-[var(--bs-white)]">{contact.phone}</span>
-        </p>
-        <p>
-          Call / WhatsApp:{" "}
-          <span className="text-[var(--bs-white)]">{contact.phoneAlt}</span>
-        </p>
-        <p>
-          Email: <span className="text-[var(--bs-white)]">{contact.email}</span>
-        </p>
-        <div className="mt-3 flex items-center gap-2">
-          {/* Green dot — accent only */}
-          <span className="size-1.5 rounded-full bg-[var(--bs-green)] animate-pulse" />
-          <span className="text-[0.62rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-green)]">
-            Open 24 hours
-          </span>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-/* ── Stats Bar ──────────────────────────────────────────────── */
-export function StatsBar({
-  stats,
-}: {
-  stats: { value: string; label: string }[];
-}) {
-  return (
-    <div
-      className="grid gap-px bg-[var(--bs-navy-border)] border border-[var(--bs-navy-border)]"
-      style={{ gridTemplateColumns: `repeat(${stats.length}, 1fr)` }}
-    >
-      {stats.map(({ value, label }, i) => (
-        <div key={label} className="bg-[var(--bs-dark)] px-6 py-5 text-center">
-          {/* Value alternates blue / green accent */}
-          <p
-            className="text-2xl font-black"
-            style={{
-              color: i % 2 === 0 ? "var(--bs-blue)" : "var(--bs-green)",
-            }}
-          >
-            {value}
-          </p>
-          {/* Label — muted, not accented */}
-          <p className="mt-1 text-[0.68rem] font-bold tracking-[0.16em] uppercase text-[var(--bs-muted)]">
-            {label}
-          </p>
-        </div>
-      ))}
-    </div>
   );
 }
 ````
@@ -6163,4 +3985,3459 @@ function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
 }
 
 export { Textarea };
+````
+
+## File: next.config.ts
+````typescript
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  sassOptions: {
+    compiler: "modern",
+    silenceDeprecations: ["legacy-js-api"],
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "plus.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "i.pravatar.cc",
+      },
+      {
+        protocol: "https",
+        hostname: "firebasestorage.googleapis.com",
+      },
+    ],
+  },
+};
+
+export default nextConfig;
+````
+
+## File: app/contact/page.tsx
+````typescript
+import Link from "next/link";
+import { CalendarDays, Mail, MapPin, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { NativeSelect } from "@/components/ui/native-select";
+import { Textarea } from "@/components/ui/textarea";
+import { ContactCard } from "@/components/site/sections";
+import { HeroCarousel } from "@/components/site/image-carousel";
+import { contact, coreServices } from "@/lib/site";
+
+export default function ContactPage() {
+  return (
+    <>
+      <HeroCarousel
+        slides={[
+          "Contact Bira Solution",
+          "Schedule Your Free Demo",
+          "Visit Our Lagos Office",
+        ]}
+        minHeight="min-h-[40vh]"
+      >
+        <div className="container-page flex h-full min-h-[40vh] flex-col justify-center py-14">
+          <div className="max-w-xl">
+            <span className="eyebrow">Contact Us</span>
+            <h1
+              className="mt-5 font-black text-[var(--bs-white)]"
+              style={{ fontSize: "clamp(1.8rem,4vw,3.2rem)", lineHeight: 1.06 }}
+            >
+              Tell Bira Solution{" "}
+              <span className="text-[var(--bs-blue)]">
+                what you want to build.
+              </span>
+            </h1>
+            <p className="mt-4 max-w-md text-[0.9rem] text-[var(--bs-muted)] leading-relaxed">
+              Contact Bira Solution for a Demo, schedule a free online meeting
+              or physical meeting (30mins–1hr). Consider making Bira Solution
+              your Trusted Technology partner — we will help you achieve your
+              goals contact us now.
+            </p>
+          </div>
+        </div>
+      </HeroCarousel>
+
+      {/* ── Contact ways ── */}
+      <section className="section-y">
+        <div className="container-page">
+          <div className="mb-12 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+            <div>
+              <span className="eyebrow">Ways to Reach Us</span>
+              <h2
+                className="mt-4 font-bold text-[var(--bs-white)]"
+                style={{
+                  fontSize: "clamp(1.6rem,2.6vw,2.2rem)",
+                  lineHeight: 1.1,
+                }}
+              >
+                Choose the fastest path for your project.
+              </h2>
+            </div>
+            <p className="max-w-xs text-[0.85rem] text-[var(--bs-muted)] leading-relaxed">
+              WhatsApp for speed, email for documentation, or visit for deeper
+              planning sessions.
+            </p>
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-3">
+            {/* WhatsApp */}
+            <div className="group flex flex-col gap-5 rounded-[var(--radius)] border border-[rgba(38,186,129,0.25)] bg-[var(--bs-navy-mid)] p-6 transition-colors hover:bg-[var(--bs-navy-light)]">
+              <div className="flex size-9 items-center justify-center rounded-lg border border-[rgba(38,186,129,0.25)] text-[var(--bs-green)]">
+                <MessageCircle className="size-4" strokeWidth={1.5} />
+              </div>
+              <div>
+                <h3 className="font-bold text-[1.05rem] text-[var(--bs-white)] mb-1">
+                  WhatsApp Consultation
+                </h3>
+                <p className="text-[0.72rem] font-semibold text-[var(--bs-green)] mb-2">
+                  {contact.phone}
+                </p>
+                <p className="text-[0.825rem] leading-relaxed text-[var(--bs-muted)]">
+                  Send a direct brief, request a demo, or schedule a quick
+                  project discussion via WhatsApp.
+                </p>
+              </div>
+              <Button
+                asChild
+                size="sm"
+                variant="glow-green"
+                className="mt-auto self-start"
+              >
+                <Link
+                  href={`https://wa.me/${contact.phone.replace(/\D/g, "")}`}
+                >
+                  Order by WhatsApp
+                </Link>
+              </Button>
+            </div>
+
+            {/* Email */}
+            <div className="group flex flex-col gap-5 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6 transition-colors hover:bg-[var(--bs-navy-light)]">
+              <div className="flex size-9 items-center justify-center rounded-lg border border-[rgba(45,184,216,0.2)] text-[var(--bs-blue)]">
+                <Mail className="size-4" strokeWidth={1.5} />
+              </div>
+              <div>
+                <h3 className="font-bold text-[1.05rem] text-[var(--bs-white)] mb-1">
+                  Email the Studio
+                </h3>
+                <p className="text-[0.72rem] font-semibold text-[var(--bs-blue)] mb-2">
+                  {contact.email}
+                </p>
+                <p className="text-[0.825rem] leading-relaxed text-[var(--bs-muted)]">
+                  Best for documents, formal proposals, payment proof, and
+                  detailed project requirements.
+                </p>
+              </div>
+              <Button
+                asChild
+                size="sm"
+                variant="outline"
+                className="mt-auto self-start"
+              >
+                <Link href={`mailto:${contact.email}`}>Send Email</Link>
+              </Button>
+            </div>
+
+            {/* Offices */}
+            <div className="group flex flex-col gap-5 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6 transition-colors hover:bg-[var(--bs-navy-light)]">
+              <div className="flex size-9 items-center justify-center rounded-lg border border-[var(--bs-navy-border)] text-[var(--bs-muted)]">
+                <MapPin className="size-4" strokeWidth={1.5} />
+              </div>
+              <div>
+                <h3 className="font-bold text-[1.05rem] text-[var(--bs-white)] mb-1">
+                  Visit Lagos Office
+                </h3>
+                <p className="text-[0.72rem] font-semibold text-[var(--bs-muted)] mb-2">
+                  Egbeda &amp; Shasha locations
+                </p>
+                <p className="text-[0.825rem] leading-relaxed text-[var(--bs-muted)]">
+                  Book a physical meeting for strategy sessions, onboarding, and
+                  local support (30mins–1hr).
+                </p>
+              </div>
+              <Button
+                asChild
+                size="sm"
+                variant="outline"
+                className="mt-auto self-start"
+              >
+                <Link href="#locations">View Locations</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Form + Sidebar ── */}
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page grid gap-8 lg:grid-cols-[1.3fr_0.7fr]">
+          {/* Form — verbatim fields from PDF */}
+          <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-7">
+            <div className="h-0.5 w-16 rounded-full bg-[var(--bs-blue)] mb-6" />
+            <p className="eyebrow mb-6">I&apos;m Interested</p>
+
+            <form className="grid gap-4">
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                    Name / Company
+                  </label>
+                  <Input placeholder="Your name or company" />
+                </div>
+                <div>
+                  <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                    Phone No
+                  </label>
+                  <Input placeholder="+234 …" />
+                </div>
+                <div>
+                  <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                    Email
+                  </label>
+                  <Input type="email" placeholder="you@example.com" />
+                </div>
+                <div>
+                  <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                    Country
+                  </label>
+                  <Input placeholder="Nigeria" />
+                </div>
+              </div>
+
+              <div>
+                <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                  I&apos;m Interested In *
+                </label>
+                <NativeSelect>
+                  <option value="">Select a service</option>
+                  {coreServices.map((s) => (
+                    <option key={s.title} value={s.title}>
+                      {s.title}
+                    </option>
+                  ))}
+                </NativeSelect>
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                    Website or Social Media Name
+                  </label>
+                  <Input placeholder="www.yoursite.com or @handle" />
+                </div>
+                <div>
+                  <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                    Budget: ₦, $, GBP, £, GHC
+                  </label>
+                  <Input placeholder="Your budget range" />
+                </div>
+              </div>
+
+              {/* Meeting preference — verbatim from PDF */}
+              <div>
+                <p className="mb-2 text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                  Meeting Type
+                </p>
+                <div className="grid gap-2 sm:grid-cols-3">
+                  {[
+                    "Schedule Meeting (30mins–1hr)",
+                    "Online Conference Meeting",
+                    "Physical Meeting",
+                  ].map((opt) => (
+                    <label
+                      key={opt}
+                      className="flex cursor-pointer items-center gap-2.5 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-light)] px-3 py-2.5 text-[0.78rem] text-[var(--bs-muted)] hover:border-[rgba(45,184,216,0.3)] hover:text-[var(--bs-white)] transition-colors"
+                    >
+                      <input
+                        type="checkbox"
+                        className="accent-[var(--bs-blue)]"
+                      />{" "}
+                      {opt}
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                  Date / Time
+                </label>
+                <Input placeholder="e.g. Tuesday 2pm Lagos time" />
+              </div>
+
+              <div>
+                <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                  Brief Message
+                </label>
+                <Textarea
+                  placeholder="Describe your project or requirement…"
+                  rows={4}
+                />
+              </div>
+
+              <p className="text-[0.72rem] text-[var(--bs-subtle)]">
+                By clicking the &ldquo;Submit&rdquo; button you agree to our
+                Terms &amp; Conditions.
+              </p>
+
+              <div>
+                <Button type="button" size="default" variant="glow-blue">
+                  Submit
+                </Button>
+              </div>
+            </form>
+          </div>
+
+          {/* Sidebar */}
+          <div className="flex flex-col gap-4">
+            <ContactCard />
+
+            {/* Meeting options */}
+            <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6">
+              <div className="flex items-center gap-2.5 mb-4">
+                <CalendarDays
+                  className="size-4 text-[var(--bs-blue)]"
+                  strokeWidth={1.5}
+                />
+                <p className="eyebrow">Meeting Options</p>
+              </div>
+              <div className="flex flex-col gap-2 text-[0.825rem] text-[var(--bs-muted)]">
+                <p>Online meeting: 30 minutes to 1 hour</p>
+                <p>Physical meeting: Lagos locations available</p>
+                <p>
+                  WhatsApp:{" "}
+                  <span className="text-[var(--bs-white)]">
+                    {contact.phone}
+                  </span>
+                </p>
+                <p>
+                  WhatsApp:{" "}
+                  <span className="text-[var(--bs-white)]">
+                    {contact.phoneAlt}
+                  </span>
+                </p>
+              </div>
+              <Button
+                asChild
+                variant="outline"
+                size="sm"
+                className="mt-5 w-full"
+              >
+                <Link href="/payment">
+                  Click Here to Pay by Crypto or Bank Transfer
+                </Link>
+              </Button>
+            </div>
+
+            {/* Lagos offices — verbatim addresses */}
+            <div
+              id="locations"
+              className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6"
+            >
+              <div className="flex items-center gap-2.5 mb-4">
+                <MapPin
+                  className="size-4 text-[var(--bs-green)]"
+                  strokeWidth={1.5}
+                />
+                <p className="eyebrow-green">Lagos Offices</p>
+              </div>
+              <div className="flex flex-col gap-5">
+                <div>
+                  <p className="text-[0.68rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-blue)] mb-1">
+                    Egbeda Lagos
+                  </p>
+                  <p className="text-[0.82rem] text-[var(--bs-muted)] leading-relaxed border-l-2 border-[rgba(45,184,216,0.25)] pl-3">
+                    Address: 54 Egbeda Idimu Road, Oja Bus-stop, Block 33 Lamrat
+                    Plaza, Lagos Nigeria.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-[0.68rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-blue)] mb-1">
+                    Shasha Lagos
+                  </p>
+                  <p className="text-[0.82rem] text-[var(--bs-muted)] leading-relaxed border-l-2 border-[rgba(45,184,216,0.25)] pl-3">
+                    Address: No 2 Jaiyeoba Road, Salami Bustop, NNPC Filling
+                    Station, Shasha Road Lagos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Chat / Email quick links */}
+            <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-5 flex flex-col gap-2">
+              <p className="text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-white)] mb-1">
+                Quick Connect
+              </p>
+              <a
+                href={`https://wa.me/${contact.phone.replace(/\D/g, "")}`}
+                className="text-[0.82rem] text-[var(--bs-green)] hover:underline"
+              >
+                Chat us on WhatsApp
+              </a>
+              <a
+                href={`mailto:${contact.email}`}
+                className="text-[0.82rem] text-[var(--bs-blue)] hover:underline"
+              >
+                Send Email ({contact.email})
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+````
+
+## File: app/free-subscription/page.tsx
+````typescript
+import Link from "next/link";
+import { ArrowRight, Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { HeroCarousel } from "@/components/site/image-carousel";
+import { CtaBand, SectionIntro } from "@/components/site/sections";
+import { contact, membershipItems, subscriptionBenefits } from "@/lib/site";
+
+export default function FreeSubscriptionPage() {
+  return (
+    <>
+      <HeroCarousel
+        slides={[
+          "Free Website Subscription",
+          "Membership Benefits",
+          "Support & Maintenance",
+        ]}
+        minHeight="min-h-[55vh]"
+      >
+        <div className="container-page flex h-full flex-col justify-center py-16 min-h-[55vh]">
+          <div className="max-w-xl">
+            <span className="eyebrow">Free Subscription</span>
+            <h1
+              className="mt-5 font-black text-[var(--bs-white)]"
+              style={{ fontSize: "clamp(2rem,4.5vw,3.6rem)", lineHeight: 1.06 }}
+            >
+              Professional Modern Website Design with{" "}
+              <span className="text-[var(--bs-green)]">Recurring Support.</span>
+            </h1>
+            <p className="mt-5 max-w-md text-[0.9rem] text-[var(--bs-muted)] leading-relaxed">
+              Bira solution team will build a professional Modern website for
+              Free — schedule (30mins–1hr) online meeting or physical meeting.
+            </p>
+            <div className="mt-3 text-[0.82rem] text-[var(--bs-muted)]">
+              Help Line · Call/WhatsApp:{" "}
+              <span className="text-[var(--bs-white)]">{contact.phone}</span> ·
+              Email:{" "}
+              <span className="text-[var(--bs-white)]">{contact.email}</span>
+            </div>
+            <Button asChild variant="glow-green" className="mt-5">
+              <Link href="/contact">
+                I&apos;m Interested <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </HeroCarousel>
+
+      {/* ── Why Join ── */}
+      <section className="section-y">
+        <div className="container-page grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-start">
+          <div className="relative overflow-hidden rounded-[var(--radius)] border border-[rgba(45,184,216,0.25)] bg-[var(--bs-dark)] p-8">
+            <div className="absolute left-0 top-0 h-full w-0.5 rounded-l-[var(--radius)] bg-gradient-to-b from-[var(--bs-blue)] to-transparent opacity-50" />
+            <div
+              className="absolute -right-10 -top-10 size-48 opacity-8 blur-3xl"
+              style={{
+                background:
+                  "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
+              }}
+            />
+
+            <span className="eyebrow">Why Join?</span>
+            <h2
+              className="mt-4 font-bold text-[var(--bs-white)]"
+              style={{
+                fontSize: "clamp(1.7rem,2.8vw,2.4rem)",
+                lineHeight: 1.1,
+              }}
+            >
+              Get the essentials for business growth online.
+            </h2>
+            <p className="mt-4 text-sm text-[var(--bs-muted)] leading-relaxed">
+              Bira Tech Solution will give you all you need for your business
+              growth online, that is why your brand and business website
+              matters. You need professional and reliable support for your
+              online presence. We offer Membership Subscription Package Whereby
+              you get Lots of Benefits as our Client. The Membership Benefits
+              are; Bira Solution Tech Teams will Design your website for free
+              with a free Domain name and Hosting, free Software Development,
+              free CMS Development and Digital Marketing. We use the Best
+              Technology and Approach; we use Bira Solution high performance
+              reliable Hosting Services. We can finish design in (2weeks to 4
+              weeks) and deliver 100% ownership to you plus one-month free
+              trial. Our professional team will customise to your desire,
+              schedule (30min–1hr) online meeting or physical meeting with us.
+              We will Maintain the site, Security and 24hrs Support, you will
+              get a warranty for all design. All you have to do is pay
+              subscription fees according to how you set, Monthly, Quarterly,
+              Yearly and your site gets uninterrupted services and running
+              smoothly.
+            </p>
+            <Button asChild size="lg" variant="glow-blue" className="mt-7">
+              <Link href="/contact">
+                Join Now <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+
+          <div>
+            <p className="eyebrow mb-6">What&apos;s Included</p>
+            <ul className="flex flex-col border-t border-[var(--bs-navy-border)]">
+              {subscriptionBenefits.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-start gap-3.5 border-b border-[var(--bs-navy-border)] py-3.5"
+                >
+                  <Check
+                    className="mt-0.5 size-3.5 shrink-0 text-[var(--bs-green)]"
+                    strokeWidth={2.5}
+                  />
+                  <span className="text-[0.875rem] text-[var(--bs-muted)]">
+                    {item}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Membership Site Subscription ── */}
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page">
+          <SectionIntro
+            eyebrow="Membership Site Subscription — Join Now"
+            title="Services Included in the Membership Offer"
+            text="Every subscription plan unlocks access to the full suite of Bira Solution services."
+          />
+          <div className="grid gap-px bg-[var(--bs-navy-border)] border border-[var(--bs-navy-border)] rounded-[var(--radius)] overflow-hidden sm:grid-cols-2 lg:grid-cols-4">
+            {membershipItems.map((label, i) => (
+              <div
+                key={label}
+                className={`relative flex flex-col gap-3 p-5 overflow-hidden transition-all duration-200 ${
+                  i === 0 || i === 11
+                    ? "bg-[var(--bs-navy-mid)] border-t-2 border-t-[var(--bs-blue)]"
+                    : "bg-[var(--bs-dark)] hover:bg-[var(--bs-navy-mid)]"
+                }`}
+              >
+                {(i === 0 || i === 11) && (
+                  <div
+                    className="absolute top-0 right-0 size-24 opacity-8 blur-2xl"
+                    style={{
+                      background:
+                        "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
+                    }}
+                  />
+                )}
+                <div className="size-1.5 rounded-full bg-[var(--bs-blue)]" />
+                <h3 className="font-bold text-[0.95rem] text-[var(--bs-white)] leading-snug">
+                  {label}
+                </h3>
+              </div>
+            ))}
+          </div>
+
+          {/* Price range */}
+          <div className="mt-10 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6 flex flex-col sm:flex-row items-center justify-between gap-5">
+            <div>
+              <p className="font-bold text-[var(--bs-white)] text-lg">
+                Price Range: $100........ $100,000
+              </p>
+              <p className="mt-1 text-[0.82rem] text-[var(--bs-muted)]">
+                Monthly, Quarterly, Yearly subscription options available.
+              </p>
+            </div>
+            <Button asChild variant="glow-blue" size="lg">
+              <Link href="/payment">
+                Click Here to Pay by Crypto or Bank Transfer
+              </Link>
+            </Button>
+          </div>
+
+          {/* Help desk */}
+          <div className="mt-5 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-dark)] p-5">
+            <p className="text-[0.72rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-white)] mb-2">
+              Help Desk
+            </p>
+            <p className="text-[0.82rem] text-[var(--bs-muted)]">
+              Call/WhatsApp:{" "}
+              <span className="text-[var(--bs-white)]">{contact.phone}</span>
+            </p>
+            <p className="text-[0.82rem] text-[var(--bs-muted)]">
+              Call/WhatsApp:{" "}
+              <span className="text-[var(--bs-white)]">{contact.phoneAlt}</span>
+            </p>
+            <p className="text-[0.82rem] text-[var(--bs-muted)]">
+              Email:{" "}
+              <span className="text-[var(--bs-white)]">{contact.email}</span>
+            </p>
+            <p className="text-[0.82rem] text-[var(--bs-muted)]">
+              Website:{" "}
+              <span className="text-[var(--bs-white)]">{contact.website}</span>
+            </p>
+          </div>
+
+          {/* Addresses */}
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-dark)] p-5">
+              <p className="text-[0.7rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-blue)] mb-2">
+                Egbeda Lagos
+              </p>
+              <p className="text-[0.82rem] text-[var(--bs-muted)]">
+                Address: 54 Egbeda Idimu Road Oja Bus-stop Block 33 Lamrat Plaza
+                Lagos Nigeria.
+              </p>
+            </div>
+            <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-dark)] p-5">
+              <p className="text-[0.7rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-blue)] mb-2">
+                Shasha Lagos
+              </p>
+              <p className="text-[0.82rem] text-[var(--bs-muted)]">
+                Address: No 2 Jaiyeoba Road Salami Bustop NNPC Filling Station
+                Shasha Road Lagos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CtaBand />
+    </>
+  );
+}
+````
+
+## File: app/payment/page.tsx
+````typescript
+import Link from "next/link";
+import { ArrowRight, Copy, Upload } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { ContactCard, SectionIntro } from "@/components/site/sections";
+import { HeroCarousel } from "@/components/site/image-carousel";
+import { bankAccounts, contact, paymentCoins } from "@/lib/site";
+
+export default function PaymentPage() {
+  return (
+    <>
+      <HeroCarousel
+        slides={[
+          "Secure Crypto Payment Portal",
+          "Bank Transfer Options",
+          "Global Payment Methods",
+        ]}
+        minHeight="min-h-[40vh]"
+      >
+        <div className="container-page flex h-full min-h-[40vh] flex-col justify-center py-14">
+          <div className="max-w-xl">
+            <span className="eyebrow">Payment</span>
+            <h1
+              className="mt-5 font-black text-[var(--bs-white)]"
+              style={{ fontSize: "clamp(1.8rem,4vw,3.2rem)", lineHeight: 1.06 }}
+            >
+              Pay by <span className="text-[var(--bs-blue)]">Crypto</span> or{" "}
+              <span className="text-[var(--bs-green)]">Bank Transfer.</span>
+            </h1>
+            <p className="mt-4 max-w-md text-[0.9rem] text-[var(--bs-muted)] leading-relaxed">
+              Make full payment or make a deposit. Help desk open 24 hours.
+            </p>
+          </div>
+        </div>
+      </HeroCarousel>
+
+      {/* ── Pay by Crypto ── */}
+      <section className="section-y">
+        <div className="container-page">
+          <SectionIntro
+            eyebrow="Pay by Crypto"
+            title="Pay by Crypto"
+            text="Request wallet address. Once payment is made, kindly send proof of payment, crypto Amount, Name, Payment date via Email: payment@birasolution.com — Once payment is verified you will receive email that your payment is confirmed."
+          />
+
+          <div className="grid gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
+            {paymentCoins.map((coin) => (
+              <div
+                key={coin}
+                className="group flex flex-col gap-3 p-4 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] hover:border-[rgba(45,184,216,0.3)] hover:bg-[var(--bs-navy-light)] transition-all duration-200"
+              >
+                {/* QR placeholder */}
+                <div className="image-slot aspect-square rounded-lg border border-[var(--bs-navy-border)] flex flex-col items-center justify-center gap-1">
+                  <div className="text-[0.55rem] font-bold tracking-[0.16em] uppercase text-[var(--bs-muted)]">
+                    QR Code
+                  </div>
+                  <div className="text-[0.5rem] text-[var(--bs-subtle)]">
+                    Scan to pay
+                  </div>
+                </div>
+                <p className="font-semibold text-[0.9rem] text-[var(--bs-white)] group-hover:text-[var(--bs-blue)] transition-colors">
+                  {coin}
+                </p>
+                {/* Deposit method info */}
+                <p className="text-[0.65rem] text-[var(--bs-muted)] leading-snug">
+                  {coin} Deposit Method — ensure you deposit to the specified
+                  link address on the payment page.
+                </p>
+                <Button variant="outline" size="sm" className="w-full mt-auto">
+                  <Copy className="size-3" /> Copy Wallet
+                </Button>
+              </div>
+            ))}
+          </div>
+
+          {/* Upload proof — verbatim from PDF */}
+          <div className="mt-8 rounded-[var(--radius)] border border-[rgba(45,184,216,0.2)] bg-[var(--bs-navy-mid)] p-7">
+            <p className="eyebrow mb-2">Upload Payment Proof</p>
+            <p className="text-[0.82rem] text-[var(--bs-muted)] mb-5">
+              If your payment was successful, please upload your payment proof
+              below.
+            </p>
+            <div className="grid gap-4 md:grid-cols-[1fr_1fr_auto] items-end">
+              <div>
+                <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                  Upload — Choose File
+                </label>
+                <Input type="file" />
+              </div>
+              <div>
+                <label className="mb-1.5 block text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                  Amount $
+                </label>
+                <Input placeholder="Amount in USD" />
+              </div>
+              <div className="flex gap-2">
+                <Button variant="ghost" size="default">
+                  Cancel
+                </Button>
+                <Button variant="accent" size="default">
+                  <Upload className="size-3.5" /> Submit
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* Help desk */}
+          <div className="mt-5 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-dark)] p-5">
+            <p className="text-[0.72rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-white)] mb-2">
+              Help Desk
+            </p>
+            <div className="flex flex-wrap gap-x-6 gap-y-1 text-[0.82rem] text-[var(--bs-muted)]">
+              <p>
+                Call/WhatsApp:{" "}
+                <span className="text-[var(--bs-white)]">{contact.phone}</span>
+              </p>
+              <p>
+                Call/WhatsApp:{" "}
+                <span className="text-[var(--bs-white)]">
+                  {contact.phoneAlt}
+                </span>
+              </p>
+              <p>
+                Email:{" "}
+                <span className="text-[var(--bs-white)]">
+                  {contact.paymentEmail}
+                </span>
+              </p>
+              <p className="text-[var(--bs-green)] font-bold">Open 24hrs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Pay by Bank Transfer ── */}
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page">
+          <SectionIntro
+            eyebrow="Pay by Bank Transfer"
+            title="Pay by Bank Transfer"
+            text="Make full payment or make a deposit. Local and international account options."
+            accentColor="green"
+          />
+
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {bankAccounts.map((account, i) => (
+              <div
+                key={account.title}
+                className={`rounded-[var(--radius)] border p-6 ${
+                  i === 0
+                    ? "border-[rgba(38,186,129,0.3)] bg-[var(--bs-navy-mid)]"
+                    : "border-[var(--bs-navy-border)] bg-[var(--bs-dark)]"
+                }`}
+              >
+                <p
+                  className={`mb-4 text-[0.65rem] font-bold tracking-[0.22em] uppercase ${i === 0 ? "text-[var(--bs-green)]" : "text-[var(--bs-blue)]"}`}
+                >
+                  {account.title}
+                </p>
+                <div className="flex flex-col gap-1.5">
+                  {account.lines.map((line) => (
+                    <p
+                      key={line}
+                      className="text-[0.82rem] text-[var(--bs-muted)]"
+                    >
+                      {line}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Verbatim NOTE from PDF */}
+          <div className="mt-6 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-5">
+            <p className="text-[0.82rem] text-[var(--bs-muted)] leading-relaxed">
+              <span className="font-bold text-[var(--bs-white)]">NOTE: </span>
+              Kindly send your Payment Proof, Name, Amount, Payment Date to
+              Email or WhatsApp. Call/WhatsApp:{" "}
+              <span className="text-[var(--bs-white)]">
+                {contact.phone}
+              </span> · Call/WhatsApp:{" "}
+              <span className="text-[var(--bs-white)]">{contact.phoneAlt}</span>{" "}
+              · Email:{" "}
+              <span className="text-[var(--bs-white)]">{contact.email}</span>
+            </p>
+          </div>
+
+          {/* Help Desk */}
+          <div className="mt-4 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-dark)] p-5">
+            <p className="text-[0.72rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-white)] mb-2">
+              Help Desk
+            </p>
+            <div className="flex flex-wrap gap-x-6 gap-y-1 text-[0.82rem] text-[var(--bs-muted)]">
+              <p>
+                Call/WhatsApp:{" "}
+                <span className="text-[var(--bs-white)]">{contact.phone}</span>
+              </p>
+              <p>
+                Call/WhatsApp:{" "}
+                <span className="text-[var(--bs-white)]">
+                  {contact.phoneAlt}
+                </span>
+              </p>
+              <p>
+                Email:{" "}
+                <span className="text-[var(--bs-white)]">{contact.email}</span>
+              </p>
+              <p className="text-[var(--bs-green)] font-bold">Open 24hrs</p>
+            </div>
+          </div>
+
+          {/* Other deposit options link */}
+          <div className="mt-6 flex justify-center">
+            <Button asChild variant="outline">
+              <Link href="#crypto">
+                Other Deposit Options <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+
+          <div className="mt-8">
+            <ContactCard />
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+````
+
+## File: app/recent-projects/page.tsx
+````typescript
+import Link from "next/link";
+import { ArrowRight, Play } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { HeroCarousel } from "@/components/site/image-carousel";
+import { CtaBand, SectionIntro } from "@/components/site/sections";
+import { contact } from "@/lib/site";
+
+/* Verbatim project categories from website design page of PDF */
+const projectCategories = [
+  {
+    label: "Business Website",
+    desc: "Corporate and company sites with CMS integration.",
+  },
+  {
+    label: "E-commerce Website",
+    desc: "Online stores with payment gateway and inventory management.",
+  },
+  {
+    label: "CMS Management System",
+    desc: "Custom content and data management dashboards.",
+  },
+  {
+    label: "Hospital Management Platform",
+    desc: "Patient records, appointments, and billing systems.",
+  },
+  {
+    label: "Restaurant & Bar System",
+    desc: "POS, reservation, and menu management software.",
+  },
+  {
+    label: "Real Estate Website",
+    desc: "Property listings, agents, and booking portals.",
+  },
+  {
+    label: "Movie Production",
+    desc: "Film and video production project websites and reels.",
+  },
+  {
+    label: "Brand Identity",
+    desc: "Logo, color systems, print, and digital brand assets.",
+  },
+  {
+    label: "Oil and Gas Website",
+    desc: "Industry-specific portals and management systems.",
+  },
+  {
+    label: "Hotel Website",
+    desc: "Booking systems, room management, and guest portals.",
+  },
+  {
+    label: "Entertainment Website",
+    desc: "Events, media, and entertainment platforms.",
+  },
+  {
+    label: "Charity Foundation Website",
+    desc: "Donation platforms and nonprofit online presence.",
+  },
+];
+
+/* Ways to work together (from website design sub-page of PDF) */
+const waysTogether = [
+  {
+    title: "Branding",
+    text: "Our website design is tailored to help you get more customers. We will use your logo, the colours you like tailored to design and customize exactly what you have in mind. If you don't have logo, we will design a professional logo for you.",
+  },
+  {
+    title: "Custom Development",
+    text: "We can programme and develop from scratch with possibility of further adjustment overtime; we can customize an existing system and design according to the reality of your company.",
+  },
+  {
+    title: "Ongoing Support",
+    text: "We Guarantee Quality, Timely delivery, Training, Maintenance and Support. Our professional team will customise to your desire, schedule a meeting with us.",
+  },
+];
+
+export default function RecentProjectsPage() {
+  return (
+    <>
+      {/* ── Hero ── */}
+      <HeroCarousel
+        slides={[
+          "20-Second Screen Recording — All Recent Projects",
+          "Website Project Walkthroughs",
+          "CMS & Software Demos",
+        ]}
+        minHeight="min-h-[55vh]"
+      >
+        <div className="container-page flex h-full flex-col justify-center py-16 min-h-[55vh]">
+          <div className="max-w-xl">
+            <span className="eyebrow">Recent Projects</span>
+            <h1
+              className="mt-5 font-black text-[var(--bs-white)]"
+              style={{ fontSize: "clamp(2rem,4.5vw,3.6rem)", lineHeight: 1.06 }}
+            >
+              Professional Website Designs{" "}
+              <span className="text-[var(--bs-blue)]">
+                Dedicated to Your Profession and Brand.
+              </span>
+            </h1>
+            <p className="mt-5 max-w-md text-[0.9rem] text-[var(--bs-muted)] leading-relaxed">
+              A dedicated showcase for screen recordings, demos, and completed
+              work. The video features a pointing mouse arrow across our recent
+              projects.
+            </p>
+          </div>
+        </div>
+      </HeroCarousel>
+
+      {/* ── 20-second screen recording ── */}
+      <section className="section-y">
+        <div className="container-page">
+          {/* Featured video panel — verbatim note from PDF */}
+          <div className="relative overflow-hidden rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-dark)] p-8 md:p-12 mb-14">
+            <div className="absolute left-0 top-0 h-16 w-px bg-gradient-to-b from-[var(--bs-blue)] to-transparent opacity-60" />
+            <div className="absolute left-0 top-0 h-px w-16 bg-gradient-to-r from-[var(--bs-blue)] to-transparent opacity-60" />
+            <div className="absolute right-0 bottom-0 h-16 w-px bg-gradient-to-t from-[var(--bs-green)] to-transparent opacity-50" />
+            <div className="absolute right-0 bottom-0 h-px w-16 bg-gradient-to-l from-[var(--bs-green)] to-transparent opacity-50" />
+
+            <div className="relative grid gap-10 lg:grid-cols-[1fr_0.75fr] lg:items-center">
+              <div>
+                <span className="eyebrow">Featured Media Reel</span>
+                <h2
+                  className="mt-4 font-bold text-[var(--bs-white)]"
+                  style={{
+                    fontSize: "clamp(1.6rem,2.8vw,2.4rem)",
+                    lineHeight: 1.1,
+                  }}
+                >
+                  20-Second Screen Recording of All Our Recent Projects
+                </h2>
+                <p className="mt-3 text-sm text-[var(--bs-muted)] leading-relaxed max-w-md">
+                  The video features a pointing mouse arrow across all our
+                  recent projects — website designs, CMS systems, software
+                  platforms, and digital marketing campaigns.
+                </p>
+                <Button asChild size="sm" variant="glass-blue" className="mt-6">
+                  <Link href="/contact">
+                    Request a Project Demo <ArrowRight className="size-3" />
+                  </Link>
+                </Button>
+              </div>
+
+              {/* Video placeholder */}
+              <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-4 image-slot">
+                <div className="flex aspect-video items-center justify-center rounded-lg border border-[var(--bs-navy-border)]">
+                  <div className="flex flex-col items-center gap-3">
+                    <div className="flex size-12 items-center justify-center rounded-full border border-[rgba(45,184,216,0.3)] bg-[rgba(45,184,216,0.06)] text-[var(--bs-blue)]">
+                      <Play className="size-5 ml-0.5" strokeWidth={1.5} />
+                    </div>
+                    <p className="text-[0.62rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-muted)]">
+                      20-Second Screen Recording
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Slideshow review note + ways to work together */}
+          <div className="mb-14 grid gap-6 lg:grid-cols-3">
+            {waysTogether.map(({ title, text }) => (
+              <div
+                key={title}
+                className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6"
+              >
+                <h3 className="font-bold text-[1rem] text-[var(--bs-white)] mb-3">
+                  {title}
+                </h3>
+                <p className="text-[0.825rem] text-[var(--bs-muted)] leading-relaxed">
+                  {text}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Portfolio categories */}
+          <SectionIntro
+            eyebrow="Portfolio Categories"
+            title="Professional Website Designs Dedicated to Your Profession and Brand"
+            text="Each panel is ready for screenshots, video embeds, or case-study links once project assets are available."
+          />
+
+          <div className="grid gap-px bg-[var(--bs-navy-border)] border border-[var(--bs-navy-border)] rounded-[var(--radius)] overflow-hidden sm:grid-cols-2 lg:grid-cols-4">
+            {projectCategories.map(({ label, desc }, i) => (
+              <div
+                key={label}
+                className="group relative flex flex-col gap-4 p-5 bg-[var(--bs-navy-mid)] hover:bg-[var(--bs-navy-light)] overflow-hidden transition-all duration-200"
+              >
+                <div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity"
+                  style={{
+                    background:
+                      "radial-gradient(circle at 50% 0%, rgba(45,184,216,0.06) 0%, transparent 60%)",
+                  }}
+                />
+                <div className="relative z-10 image-slot aspect-[4/3] rounded-lg border border-[var(--bs-navy-border)] group-hover:border-[rgba(45,184,216,0.2)] transition-colors">
+                  <div className="absolute top-2 left-2 text-[0.55rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-blue)]/50">
+                    {String(i + 1).padStart(2, "0")}
+                  </div>
+                </div>
+                <div className="relative z-10">
+                  <h3 className="font-bold text-[0.95rem] text-[var(--bs-white)] mb-1.5 leading-snug">
+                    {label}
+                  </h3>
+                  <p className="text-[0.78rem] text-[var(--bs-muted)] leading-relaxed">
+                    {desc}
+                  </p>
+                </div>
+                <Button
+                  asChild
+                  variant="ghost"
+                  size="sm"
+                  className="relative z-10 mt-auto self-start px-0 text-[var(--bs-blue)] opacity-0 group-hover:opacity-100 transition-opacity"
+                >
+                  <Link href="/contact">
+                    Request Demo <ArrowRight className="size-3" />
+                  </Link>
+                </Button>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <Button asChild variant="glow-blue">
+              <Link href="/contact">
+                Request a Project Demo <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Website design page — types of website for profession */}
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page">
+          <SectionIntro
+            eyebrow="Types of Website Design for Your Brand"
+            title="Professional Website Designs for Every Profession"
+            text="We specialise in professional website design dedicated to your profession and brand."
+          />
+
+          {/* Complimentary business card section (verbatim from website design sub-page PDF) */}
+          <div className="mt-10 rounded-[var(--radius)] border border-[rgba(45,184,216,0.2)] bg-[var(--bs-navy-mid)] p-8">
+            <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+              <div>
+                <span className="eyebrow">Complimentary Business Card</span>
+                <h2
+                  className="mt-4 font-bold text-[var(--bs-white)]"
+                  style={{
+                    fontSize: "clamp(1.5rem,2.4vw,2rem)",
+                    lineHeight: 1.1,
+                  }}
+                >
+                  Complimentary Business Card
+                </h2>
+                <p className="mt-4 text-[0.875rem] text-[var(--bs-muted)] leading-relaxed">
+                  Boost your online business by giving your business card to new
+                  customers, Client can easily find you with your business. We
+                  will design and print-out your business cards according to
+                  your preference colors, your business card is a part of
+                  advertising your brand and you need it.
+                </p>
+                <Button asChild variant="outline" className="mt-5">
+                  <Link href="/contact">
+                    I&apos;m Interested <ArrowRight className="size-3.5" />
+                  </Link>
+                </Button>
+              </div>
+              {/* Photo placeholder */}
+              <div className="image-slot rounded-[var(--radius)] border border-[var(--bs-navy-border)] aspect-video flex items-center justify-center">
+                <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-muted)]">
+                  Photo Placeholder
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Hire IT Services */}
+          <div className="mt-6 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-8">
+            <span className="eyebrow">
+              Hire IT Services &amp; Management in Lagos Nigeria
+            </span>
+            <h2
+              className="mt-4 font-bold text-[var(--bs-white)]"
+              style={{ fontSize: "clamp(1.5rem,2.4vw,2rem)", lineHeight: 1.1 }}
+            >
+              Hire IT Services &amp; Management in Lagos Nigeria
+            </h2>
+            <p className="mt-4 text-[0.875rem] text-[var(--bs-muted)] leading-relaxed">
+              We provide IT specialists for hiring tell us your requirements, We
+              can help supplement Web Developers; Programmers help desk for your
+              Company. We will provide Software Developer for your project, if
+              you want to startup your company we can help with start-up,
+              consultation services, Device Delivery such as Computer desktop,
+              Laptops, Printers, Corporate hardware. Let us know if you need
+              help schedule a meeting (30mins–1hr).
+            </p>
+            <div className="mt-4 text-[0.78rem] text-[var(--bs-muted)]">
+              Help Line · Call/WhatsApp:{" "}
+              <span className="text-[var(--bs-white)]">{contact.phone}</span> ·
+              Email:{" "}
+              <span className="text-[var(--bs-white)]">{contact.email}</span>
+            </div>
+            <Button asChild variant="glass-blue" className="mt-5">
+              <Link href="/contact">
+                I&apos;m Interested <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+
+          {/* Website Design Personalise */}
+          <div className="mt-6 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-8">
+            <span className="eyebrow">Website Design Personalise</span>
+            <h2
+              className="mt-4 font-bold text-[var(--bs-white)]"
+              style={{ fontSize: "clamp(1.5rem,2.4vw,2rem)", lineHeight: 1.1 }}
+            >
+              Website Design Personalise
+            </h2>
+            <p className="mt-4 text-[0.875rem] text-[var(--bs-muted)] leading-relaxed">
+              Personalise your website and domain name, win more lead that
+              convert with our awesome website design, our team will help in the
+              development of your website, update, backup, security patches,
+              spam prevention and maintenance. Get in touch for your personalise
+              website.
+            </p>
+            <Button asChild variant="outline" className="mt-5">
+              <Link href="/contact">
+                I&apos;m Interested <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <CtaBand />
+    </>
+  );
+}
+````
+
+## File: app/services/page.tsx
+````typescript
+import Link from "next/link";
+import { ArrowRight, Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { HeroCarousel } from "@/components/site/image-carousel";
+import { CtaBand, SectionIntro } from "@/components/site/sections";
+import {
+  contact,
+  coreServices,
+  digitalMarketingServices,
+  domainServices,
+  fullServicesList,
+  hostingPlans,
+  hostingTransferBenefits,
+  hostingTypes,
+  legalServices,
+  videoProductionServices,
+} from "@/lib/site";
+
+export default function ServicesPage() {
+  return (
+    <>
+      <HeroCarousel
+        slides={[
+          "Website Design & Development",
+          "Software Development",
+          "Digital Marketing & Video Production",
+        ]}
+        minHeight="min-h-[55vh]"
+      >
+        <div className="container-page flex h-full flex-col justify-center py-16 min-h-[55vh]">
+          <div className="max-w-xl">
+            <span className="eyebrow">Our Services</span>
+            <h1
+              className="mt-5 font-black text-[var(--bs-white)]"
+              style={{ fontSize: "clamp(2rem,4.5vw,3.6rem)", lineHeight: 1.06 }}
+            >
+              A complete digital{" "}
+              <span className="text-[var(--bs-blue)]">services suite</span> for
+              serious businesses.
+            </h1>
+            <p className="mt-5 max-w-md text-[0.9rem] text-[var(--bs-muted)] leading-relaxed">
+              Professional website design, software development, hosting, domain
+              registration, digital marketing, video production, and business
+              support in Lagos Nigeria.
+            </p>
+            <p className="mt-3 text-[0.85rem] font-semibold text-[var(--bs-muted)]">
+              Price Range: $100........ $100,000
+            </p>
+          </div>
+        </div>
+      </HeroCarousel>
+
+      {/* ── Full Services List (verbatim from PDF) ── */}
+      <section className="section-y">
+        <div className="container-page">
+          <SectionIntro
+            eyebrow="All Services"
+            title="Services built around growth, security, and support."
+          />
+          <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            {fullServicesList.map((service, i) => (
+              <div
+                key={service}
+                className="flex items-start gap-3 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] px-4 py-3 hover:border-[rgba(45,184,216,0.25)] transition-colors"
+              >
+                <span className="text-[0.6rem] font-bold text-[var(--bs-blue)] mt-0.5 shrink-0">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="text-[0.85rem] text-[var(--bs-white)]">
+                  {service}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Website Design ── */}
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page">
+          <SectionIntro
+            eyebrow="Website Design in Lagos Nigeria"
+            title="Website Design in Lagos Nigeria"
+            align="left"
+          />
+          <div className="grid gap-8 lg:grid-cols-2">
+            {coreServices.slice(0, 2).map(({ title, text, icon: Icon }) => (
+              <div
+                key={title}
+                className="group relative flex flex-col gap-4 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6 hover:bg-[var(--bs-navy-light)] transition-all"
+              >
+                <div className="flex size-9 items-center justify-center rounded-lg border border-[rgba(45,184,216,0.2)] text-[var(--bs-blue)]">
+                  <Icon className="size-4" strokeWidth={1.5} />
+                </div>
+                <h3 className="font-bold text-[1.1rem] text-[var(--bs-white)]">
+                  {title}
+                </h3>
+                <p className="text-[0.85rem] text-[var(--bs-muted)] leading-relaxed">
+                  {text}
+                </p>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="self-start"
+                >
+                  <Link href="/contact">
+                    I&apos;m Interested <ArrowRight className="size-3" />
+                  </Link>
+                </Button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CMS / CRM / ERP + Programming + App ── */}
+      <section className="section-y">
+        <div className="container-page">
+          <SectionIntro
+            eyebrow="Software Development"
+            title="Custom software, CMS, CRM, ERP & app development."
+          />
+          <div className="grid gap-6 lg:grid-cols-3">
+            {coreServices.slice(2, 5).map(({ title, text, icon: Icon }) => (
+              <div
+                key={title}
+                className="flex flex-col gap-4 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6 hover:border-[rgba(45,184,216,0.25)] transition-colors"
+              >
+                <div className="flex size-9 items-center justify-center rounded-lg border border-[rgba(45,184,216,0.2)] text-[var(--bs-blue)]">
+                  <Icon className="size-4" strokeWidth={1.5} />
+                </div>
+                <h3 className="font-bold text-[1.05rem] text-[var(--bs-white)]">
+                  {title}
+                </h3>
+                <p className="text-[0.825rem] text-[var(--bs-muted)] leading-relaxed">
+                  {text}
+                </p>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="mt-auto self-start"
+                >
+                  <Link href="/contact">
+                    I&apos;m Interested <ArrowRight className="size-3" />
+                  </Link>
+                </Button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Website Maintenance + Hire IT ── */}
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page grid gap-8 lg:grid-cols-2">
+          {coreServices.slice(5, 7).map(({ title, text, icon: Icon }) => (
+            <div
+              key={title}
+              className="flex flex-col gap-4 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6 hover:border-[rgba(45,184,216,0.25)] transition-colors"
+            >
+              <div className="flex size-9 items-center justify-center rounded-lg border border-[rgba(45,184,216,0.2)] text-[var(--bs-blue)]">
+                <Icon className="size-4" strokeWidth={1.5} />
+              </div>
+              <h3 className="font-bold text-[1.1rem] text-[var(--bs-white)]">
+                {title}
+              </h3>
+              <p className="text-[0.85rem] text-[var(--bs-muted)] leading-relaxed">
+                {text}
+              </p>
+              <Button
+                asChild
+                variant="outline"
+                size="sm"
+                className="self-start"
+              >
+                <Link href="/contact">
+                  I&apos;m Interested <ArrowRight className="size-3" />
+                </Link>
+              </Button>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Digital Marketing ── */}
+      <section className="section-y">
+        <div className="container-page grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-start">
+          <div>
+            <span className="eyebrow">Digital Marketing in Lagos Nigeria</span>
+            <h2
+              className="mt-4 font-bold text-[var(--bs-white)]"
+              style={{
+                fontSize: "clamp(1.7rem,2.8vw,2.5rem)",
+                lineHeight: 1.1,
+              }}
+            >
+              Digital Marketing
+            </h2>
+            <p className="mt-4 text-[0.875rem] text-[var(--bs-muted)] leading-relaxed">
+              Boost brand awareness, drive traffic to your business and hit your
+              marketing goals with our digital marketing solutions. Promote your
+              product and service by leveraging online marketing tactics, such
+              as Google ads, YouTube ads, Facebook ads. Bira Solution team will
+              help you achieve your goals.
+            </p>
+            <Button asChild variant="glow-blue" className="mt-6">
+              <Link href="/contact">
+                I&apos;m Interested <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {digitalMarketingServices.map((service) => (
+              <div
+                key={service}
+                className="flex items-center gap-3 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] px-4 py-3"
+              >
+                <Check
+                  className="size-3.5 shrink-0 text-[var(--bs-green)]"
+                  strokeWidth={2.5}
+                />
+                <span className="text-[0.85rem] text-[var(--bs-white)]">
+                  {service}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Video Production ── */}
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-start">
+          <div>
+            <span className="eyebrow">
+              Professional Video Production / Editing Service in Nigeria
+            </span>
+            <h2
+              className="mt-4 font-bold text-[var(--bs-white)]"
+              style={{
+                fontSize: "clamp(1.7rem,2.8vw,2.5rem)",
+                lineHeight: 1.1,
+              }}
+            >
+              Professional Video Production / Editing Service in Nigeria
+            </h2>
+            <p className="mt-4 text-[0.875rem] text-[var(--bs-muted)] leading-relaxed">
+              We Deliver Best HD Motion Graphics and Video Production Services
+              With 4K and 8K camera. We have Netflix Standard Cameras. We have
+              Drone 4k bird eye view, Sonny 4k, Black magic 6k, RED Camera, ARRI
+              CAMERA. We work with Nollywood Cinematographers, Producers and
+              Directors. Contact us for your Movie project or Video production.
+              Our team will shoot and edit your project, we will deliver the
+              best for your project, our team can travel Globally for projects.
+            </p>
+            <Button asChild variant="glow-blue" className="mt-6">
+              <Link href="/contact">
+                I&apos;m Interested <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {videoProductionServices.map((service) => (
+              <div
+                key={service}
+                className="flex items-center gap-3 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] px-4 py-3"
+              >
+                <Check
+                  className="size-3.5 shrink-0 text-[var(--bs-green)]"
+                  strokeWidth={2.5}
+                />
+                <span className="text-[0.85rem] text-[var(--bs-white)]">
+                  {service}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Domain Registration ── */}
+      <section className="section-y">
+        <div className="container-page">
+          <SectionIntro
+            eyebrow="Domain Registration in Nigeria"
+            title="Domain Registration in Nigeria"
+            text=".com .ng .org .net .uk etc"
+          />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {domainServices.map(({ title, text }) => (
+              <div
+                key={title}
+                className="flex flex-col gap-3 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6 hover:border-[rgba(45,184,216,0.25)] transition-colors"
+              >
+                <h3 className="font-bold text-[1rem] text-[var(--bs-white)]">
+                  {title}
+                </h3>
+                <p className="text-[0.825rem] text-[var(--bs-muted)] leading-relaxed">
+                  {text}
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-5">
+            <p className="text-[0.82rem] text-[var(--bs-muted)]">
+              Help Line · Call/WhatsApp:{" "}
+              <span className="text-[var(--bs-white)]">{contact.phone}</span> ·
+              Email:{" "}
+              <span className="text-[var(--bs-white)]">{contact.email}</span>
+            </p>
+          </div>
+          <div className="mt-4 flex justify-center">
+            <Button asChild variant="glow-blue">
+              <Link href="/contact">
+                I&apos;m Interested <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Hosting Services ── */}
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page">
+          <SectionIntro
+            eyebrow="Hosting Services in Nigeria"
+            title="Hosting Services in Nigeria"
+            text="Best Hosting service in Nigeria. Bira Solution Hosting is very fast and 100% reliable that guarantees optimum high performance. We use dedicated Servers in the U.S."
+          />
+          {/* Hosting types */}
+          <div className="mb-10 flex flex-wrap gap-3 justify-center">
+            {hostingTypes.map((t) => (
+              <span
+                key={t}
+                className="rounded-full border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] px-4 py-2 text-[0.8rem] text-[var(--bs-white)]"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+          {/* Hosting plans */}
+          <div className="grid gap-4 lg:grid-cols-3 xl:grid-cols-5">
+            {hostingPlans.map((plan, i) => (
+              <div
+                key={plan.name}
+                className={`relative flex flex-col gap-4 rounded-[var(--radius)] border p-6 overflow-hidden ${
+                  i === 0
+                    ? "border-[rgba(45,184,216,0.35)] bg-[var(--bs-navy-mid)] lg:col-span-1"
+                    : i === 1
+                      ? "border-[rgba(45,184,216,0.2)] bg-[var(--bs-navy-mid)]"
+                      : "border-[var(--bs-navy-border)] bg-[var(--bs-dark)]"
+                }`}
+              >
+                {i === 0 && (
+                  <div
+                    className="absolute top-0 right-0 size-24 opacity-10 blur-2xl"
+                    style={{
+                      background:
+                        "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
+                    }}
+                  />
+                )}
+                <h3 className="font-bold text-[1rem] text-[var(--bs-white)] leading-snug">
+                  {plan.name}
+                </h3>
+                <div className="h-px bg-[var(--bs-navy-border)]" />
+                <ul className="flex flex-col gap-2 flex-1">
+                  {plan.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2">
+                      <Check
+                        className="mt-0.5 size-3 shrink-0 text-[var(--bs-green)]"
+                        strokeWidth={2.5}
+                      />
+                      <span className="text-[0.78rem] text-[var(--bs-muted)]">
+                        {f}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <Button
+                  asChild
+                  size="sm"
+                  variant={i < 2 ? "glow-blue" : "outline"}
+                >
+                  <Link href="/contact">Get Started</Link>
+                </Button>
+              </div>
+            ))}
+          </div>
+          {/* Hosting transfer */}
+          <div className="mt-10 rounded-[var(--radius)] border border-[rgba(38,186,129,0.25)] bg-[var(--bs-navy-mid)] p-7">
+            <p className="eyebrow-green mb-3">Hosting Transfer</p>
+            <p className="text-[0.875rem] text-[var(--bs-muted)] leading-relaxed mb-5">
+              If your hosting is very slow your customer will hesitate to visit
+              your online business, We can help you Migrate your hosting to a
+              high performance hosting company. You can also transfer to our
+              hosting company that is very fast, secure, 100% reliable and high
+              performance with 24hrs support. Contact us to help you transfer to
+              a trusted hosting company.
+            </p>
+            <p className="text-[0.75rem] font-bold text-[var(--bs-white)] mb-3">
+              Benefits:
+            </p>
+            <ul className="flex flex-col gap-2">
+              {hostingTransferBenefits.map((b) => (
+                <li key={b} className="flex items-start gap-2.5">
+                  <Check
+                    className="mt-0.5 size-3.5 shrink-0 text-[var(--bs-green)]"
+                    strokeWidth={2.5}
+                  />
+                  <span className="text-[0.82rem] text-[var(--bs-muted)]">
+                    {b}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-5 text-[0.78rem] text-[var(--bs-muted)]">
+              Help Line · Call/WhatsApp:{" "}
+              <span className="text-[var(--bs-white)]">{contact.phone}</span> ·
+              Email:{" "}
+              <span className="text-[var(--bs-white)]">{contact.email}</span>
+            </div>
+            <Button asChild variant="glass-green" className="mt-4">
+              <Link href="/contact">
+                I&apos;m Interested <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+          <div className="mt-5 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-4">
+            <p className="text-[0.78rem] text-[var(--bs-muted)]">
+              Contact us to purchase your hosting · Help Desk:{" "}
+              <span className="text-[var(--bs-white)]">{contact.phone}</span> ·{" "}
+              <span className="text-[var(--bs-white)]">{contact.email}</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Logo & Graphic Design ── */}
+      <section className="section-y">
+        <div className="container-page grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+          <div>
+            <span className="eyebrow">
+              Branding – Logo and Graphic Design in Lagos Nigeria
+            </span>
+            <h2
+              className="mt-4 font-bold text-[var(--bs-white)]"
+              style={{
+                fontSize: "clamp(1.7rem,2.8vw,2.5rem)",
+                lineHeight: 1.1,
+              }}
+            >
+              Branding – Logo and Graphic Design in Lagos Nigeria
+            </h2>
+            <p className="mt-4 text-[0.875rem] text-[var(--bs-muted)] leading-relaxed">
+              Our graphic designer team are professionals and very good at
+              creating customized logos for brands, companies and personal
+              individuals. We focus on crafting graphics exactly as our
+              customers idea. We can deliver 3D, 2D, Contemporary, Extraordinary
+              art for Company, Brands that can thrive business contact us for
+              samples. We will deliver the PNG, SVG, PDF, Vector.
+            </p>
+            <div className="mt-4 text-[0.78rem] text-[var(--bs-muted)]">
+              Help Line · Call/WhatsApp:{" "}
+              <span className="text-[var(--bs-white)]">{contact.phone}</span> ·
+              Email:{" "}
+              <span className="text-[var(--bs-white)]">{contact.email}</span>
+            </div>
+            <Button asChild variant="glow-blue" className="mt-5">
+              <Link href="/contact">
+                I&apos;m Interested <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+          <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6 image-slot aspect-square flex items-center justify-center">
+            <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-muted)]">
+              Photo / Portfolio Placeholder
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Movie Production ── */}
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+          <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6 image-slot aspect-video flex items-center justify-center">
+            <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-muted)]">
+              Photo / Showreel Placeholder
+            </p>
+          </div>
+          <div>
+            <span className="eyebrow">Movie Production in Nigeria</span>
+            <h2
+              className="mt-4 font-bold text-[var(--bs-white)]"
+              style={{
+                fontSize: "clamp(1.7rem,2.8vw,2.5rem)",
+                lineHeight: 1.1,
+              }}
+            >
+              Movie Production in Nigeria
+            </h2>
+            <p className="mt-4 text-[0.875rem] text-[var(--bs-muted)] leading-relaxed">
+              Do you have a story you want us to help you bring to life, our
+              Production department are ready to shoot and edit your project;
+              you can make money from your movie production. We work with
+              Nollywood producers, Directors and Cinematographers, we shoot with
+              high quality Netflix approved cameras; such as Black magic 6k, Red
+              camera, Arri camera. We also shoot series and YouTube standard
+              movies, Facebook movie with 4k cameras. We have Extras in our
+              Database, we can send you pictures portfolio of actors and models
+              to select your choice for your project. We are in contact with
+              Nollywood stars, We have professional script writers in our
+              database get in touch with us. Our DOP can shoot commercials,
+              documentaries, short film, skits, Cinematic film and more.
+            </p>
+            <Button asChild variant="glow-blue" className="mt-5">
+              <Link href="/contact">
+                I&apos;m Interested <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Trademark / CAC / Legal ── */}
+      <section className="section-y">
+        <div className="container-page">
+          <SectionIntro
+            eyebrow="Business & Legal Services"
+            title="Trademark Registration, CAC Registration & Legal Consultation"
+          />
+          <div className="grid gap-6 lg:grid-cols-3">
+            {coreServices.slice(12, 15).map(({ title, text, icon: Icon }) => (
+              <div
+                key={title}
+                className="flex flex-col gap-4 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6 hover:border-[rgba(45,184,216,0.25)] transition-colors"
+              >
+                <div className="flex size-9 items-center justify-center rounded-lg border border-[rgba(45,184,216,0.2)] text-[var(--bs-blue)]">
+                  <Icon className="size-4" strokeWidth={1.5} />
+                </div>
+                <h3 className="font-bold text-[1.05rem] text-[var(--bs-white)]">
+                  {title}
+                </h3>
+                <p className="text-[0.825rem] text-[var(--bs-muted)] leading-relaxed">
+                  {text}
+                </p>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="mt-auto self-start"
+                >
+                  <Link href="/contact">
+                    I&apos;m Interested <ArrowRight className="size-3" />
+                  </Link>
+                </Button>
+              </div>
+            ))}
+          </div>
+          {/* Legal list */}
+          <div className="mt-8 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-7">
+            <p className="eyebrow mb-4">Legal Consultation Services</p>
+            <ul className="grid gap-2 sm:grid-cols-2">
+              {legalServices.map((s) => (
+                <li key={s} className="flex items-start gap-2.5">
+                  <Check
+                    className="mt-0.5 size-3.5 shrink-0 text-[var(--bs-green)]"
+                    strokeWidth={2.5}
+                  />
+                  <span className="text-[0.85rem] text-[var(--bs-muted)]">
+                    {s}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Price range + pay CTA */}
+      <section className="section-y-sm border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page flex flex-col sm:flex-row items-center justify-between gap-5">
+          <p className="font-bold text-[var(--bs-white)] text-lg">
+            Price Range: $100........ $100,000
+          </p>
+          <Button asChild variant="glow-blue" size="lg">
+            <Link href="/payment">
+              Click Here to Pay by Crypto or Bank Transfer
+            </Link>
+          </Button>
+        </div>
+      </section>
+
+      <CtaBand />
+    </>
+  );
+}
+````
+
+## File: components/localComponents/header.tsx
+````typescript
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { Menu, Phone, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { navLinks, contact } from "@/lib/site";
+import { cn } from "@/lib/utils";
+
+export default function Header() {
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <header
+      className={cn(
+        "sticky top-0 z-50 transition-all duration-300 py-2",
+        scrolled
+          ? "bg-[var(--bs-dark)]/96 border-b border-[var(--bs-navy-border)] backdrop-blur-xl"
+          : "bg-[var(--bs-dark)]/70 backdrop-blur-md",
+      )}
+    >
+      {/* Main nav */}
+      <div className="container-page flex h-14 items-center justify-between gap-6 ">
+        {/* Logo */}
+        <Link
+          href="/"
+          className="group relative flex shrink-0 items-center"
+          aria-label="Bira Solution"
+        >
+          <div className="relative flex h-[56px] w-[170px] items-center justify-center overflow-hidden">
+            <div className="relative h-[42px] w-full">
+              <Image
+                src="/brand/Logo.svg"
+                alt="Bira Solution Limited"
+                fill
+                priority
+                className="object-contain"
+              />
+            </div>
+          </div>
+        </Link>
+
+        {/* Desktop nav */}
+        <nav className="hidden items-center gap-7 lg:flex">
+          {navLinks.map((link) => (
+            <Link key={link.href} href={link.href} className="nav-link">
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Desktop CTA */}
+        <div className="hidden items-center gap-2.5 lg:flex">
+          <Button asChild variant="ghost" size="sm">
+            <Link href="/payment">Pay Online</Link>
+          </Button>
+          {/* Free Demo — always-glowing glow-blue button */}
+          <Button asChild variant="glow-blue" size="sm">
+            <Link href="/contact">Free Demo</Link>
+          </Button>
+        </div>
+
+        {/* Mobile toggle */}
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          className="inline-flex size-9 items-center justify-center rounded-[var(--radius)] border border-[var(--bs-navy-border)] text-[var(--bs-muted)] hover:text-[var(--bs-blue)] hover:border-[var(--bs-blue)]/40 transition-colors lg:hidden"
+          aria-label="Toggle menu"
+        >
+          {open ? <X className="size-4" /> : <Menu className="size-4" />}
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      {open && (
+        <div className="border-t border-[var(--bs-navy-border)] bg-[var(--bs-dark)] lg:hidden">
+          <nav className="container-page py-5 flex flex-col">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="py-3 text-[0.68rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-muted)] hover:text-[var(--bs-blue)] border-b border-[var(--bs-navy-border)] last:border-0 transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+            <div className="mt-5 flex gap-3">
+              <Button asChild variant="outline" size="sm" className="flex-1">
+                <Link href="/payment" onClick={() => setOpen(false)}>
+                  Pay Online
+                </Link>
+              </Button>
+              <Button asChild variant="glow-blue" size="sm" className="flex-1">
+                <Link href="/contact" onClick={() => setOpen(false)}>
+                  Free Demo
+                </Link>
+              </Button>
+            </div>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+}
+````
+
+## File: components/site/image-carousel.tsx
+````typescript
+"use client";
+
+import { useCallback, useEffect, useRef, useState } from "react";
+import { ChevronLeft, ChevronRight, ImageIcon } from "lucide-react";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
+
+export type Slide = { label: string; src?: string };
+
+type HeroCarouselProps = {
+  slides: (string | Slide)[];
+  children: React.ReactNode;
+  className?: string;
+  minHeight?: string;
+};
+
+export function HeroCarousel({
+  slides,
+  children,
+  className,
+  minHeight = "min-h-[calc(100svh-5.25rem)]",
+}: HeroCarouselProps) {
+  const normalized: Slide[] = slides.map((s) =>
+    typeof s === "string" ? { label: s } : s,
+  );
+  const [current, setCurrent] = useState(0);
+  const [transitioning, setTransitioning] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const go = useCallback(
+    (idx: number) => {
+      if (transitioning) return;
+      setTransitioning(true);
+      setTimeout(() => {
+        setCurrent((idx + normalized.length) % normalized.length);
+        setTransitioning(false);
+      }, 300);
+    },
+    [transitioning, normalized.length],
+  );
+
+  const next = useCallback(() => go(current + 1), [go, current]);
+  const prev = useCallback(() => go(current - 1), [go, current]);
+
+  useEffect(() => {
+    timerRef.current = setInterval(next, 5000);
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [next]);
+
+  const resetTimer = () => {
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(next, 5000);
+  };
+
+  return (
+    <section className={cn("relative overflow-hidden", minHeight, className)}>
+      {normalized.map((slide, i) => (
+        <div
+          key={i}
+          className={cn(
+            "absolute inset-0 transition-opacity duration-700 ease-in-out",
+            i === current ? "opacity-100" : "opacity-0",
+          )}
+        >
+          {slide.src ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={slide.src}
+              alt={slide.label}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          ) : (
+            <div
+              className="absolute inset-0 image-slot scan-lines"
+              style={{ borderRadius: 0 }}
+            >
+              <div className="absolute inset-0 tech-dots opacity-60" />
+              <div
+                className="absolute -right-32 -top-32 size-[500px] rounded-full opacity-18 blur-[80px]"
+                style={{
+                  background:
+                    "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
+                }}
+              />
+              <div
+                className="absolute -bottom-20 -left-20 size-[400px] rounded-full opacity-15 blur-[70px]"
+                style={{
+                  background:
+                    "radial-gradient(circle, var(--bs-green) 0%, transparent 70%)",
+                }}
+              />
+              <div className="absolute bottom-12 right-12 text-right">
+                <p className="text-[0.58rem] font-bold tracking-[0.28em] uppercase text-[var(--bs-blue)]/60 mb-1">
+                  {String(i + 1).padStart(2, "0")} /{" "}
+                  {String(normalized.length).padStart(2, "0")}
+                </p>
+                <p className="font-bold text-[var(--bs-white)]/20 text-lg max-w-[220px] leading-snug">
+                  {slide.label}
+                </p>
+              </div>
+            </div>
+          )}
+          <div className="absolute inset-0 hero-overlay" />
+          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[var(--bs-dark)] to-transparent" />
+        </div>
+      ))}
+
+      <div className="relative z-10 h-full">{children}</div>
+
+      {/* Controls */}
+      <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2 flex items-center gap-4">
+        <button
+          onClick={() => {
+            prev();
+            resetTimer();
+          }}
+          className="flex size-8 items-center justify-center rounded-lg border border-[var(--bs-navy-border)] bg-[var(--bs-dark)]/70 text-[var(--bs-muted)] hover:border-[var(--bs-blue)] hover:text-[var(--bs-blue)] transition-colors backdrop-blur-sm"
+          aria-label="Previous slide"
+        >
+          <ChevronLeft className="size-3.5" />
+        </button>
+        <div className="flex items-center gap-2">
+          {normalized.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => {
+                go(i);
+                resetTimer();
+              }}
+              aria-label={`Slide ${i + 1}`}
+              className={cn(
+                "transition-all duration-300 rounded-full",
+                i === current
+                  ? "h-1.5 w-6 bg-[var(--bs-blue)]"
+                  : "size-1.5 bg-[var(--bs-muted)]/50 hover:bg-[var(--bs-muted)]",
+              )}
+            />
+          ))}
+        </div>
+        <button
+          onClick={() => {
+            next();
+            resetTimer();
+          }}
+          className="flex size-8 items-center justify-center rounded-lg border border-[var(--bs-navy-border)] bg-[var(--bs-dark)]/70 text-[var(--bs-muted)] hover:border-[var(--bs-blue)] hover:text-[var(--bs-blue)] transition-colors backdrop-blur-sm"
+          aria-label="Next slide"
+        >
+          <ChevronRight className="size-3.5" />
+        </button>
+      </div>
+
+      {/* Corner accents — blue */}
+      <div className="pointer-events-none absolute left-0 top-0 h-16 w-px bg-gradient-to-b from-[var(--bs-blue)] to-transparent opacity-50 z-10" />
+      <div className="pointer-events-none absolute left-0 top-0 h-px w-16 bg-gradient-to-r from-[var(--bs-blue)] to-transparent opacity-50 z-10" />
+      <div className="pointer-events-none absolute bottom-0 right-0 h-16 w-px bg-gradient-to-t from-[var(--bs-green)] to-transparent opacity-30 z-10" />
+      <div className="pointer-events-none absolute bottom-0 right-0 h-px w-16 bg-gradient-to-l from-[var(--bs-green)] to-transparent opacity-30 z-10" />
+    </section>
+  );
+}
+
+/* ── Compact inline carousel ─────────────────────────────────── */
+type InlineSlide = { label: string; src?: string };
+
+type InlineCarouselProps = {
+  title: string;
+  /** Accept string shorthand or full slide objects with optional src */
+  slides: (string | InlineSlide)[];
+  className?: string;
+};
+
+export function ImageCarousel({
+  title,
+  slides,
+  className,
+}: InlineCarouselProps) {
+  const normalized: InlineSlide[] = slides.map((s) =>
+    typeof s === "string" ? { label: s } : s,
+  );
+
+  const [current, setCurrent] = useState(0);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const next = useCallback(
+    () => setCurrent((c) => (c + 1) % normalized.length),
+    [normalized.length],
+  );
+
+  useEffect(() => {
+    timerRef.current = setInterval(next, 4000);
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [next]);
+
+  const goTo = (idx: number) => {
+    setCurrent(idx);
+    if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = setInterval(next, 4000);
+  };
+
+  const slide = normalized[current];
+
+  return (
+    <div
+      className={cn(
+        "relative overflow-hidden rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)]",
+        className,
+      )}
+    >
+      {/* ── Image area — 16/9 aspect ratio ── */}
+      <div className="relative aspect-[16/9] w-full overflow-hidden">
+        {slide.src ? (
+          /* Real image — fills the slot */
+          <Image
+            src={slide.src}
+            alt={slide.label}
+            fill
+            className="object-cover transition-opacity duration-500"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        ) : (
+          /* Styled placeholder — shown when no src is provided */
+          <div className="absolute inset-0 image-slot">
+            <div className="absolute inset-0 tech-dots opacity-40" />
+            <div
+              className="absolute right-0 top-0 size-48 opacity-20 blur-3xl"
+              style={{
+                background:
+                  "radial-gradient(circle, var(--bs-blue) 0%, transparent 70%)",
+              }}
+            />
+            {/* Centred placeholder icon + label */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+              <div className="flex size-12 items-center justify-center rounded-full border border-[var(--bs-navy-border)] bg-[var(--bs-navy-light)] text-[var(--bs-muted)]">
+                <ImageIcon className="size-5" strokeWidth={1.5} />
+              </div>
+              <p className="text-[0.72rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)] text-center max-w-[180px] leading-snug">
+                {slide.label}
+              </p>
+              <p className="text-[0.62rem] text-[var(--bs-subtle)]">
+                Replace with approved imagery
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* Dark gradient at bottom of image for caption legibility */}
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[var(--bs-navy-mid)] to-transparent" />
+
+        {/* Slide counter — top left */}
+        <div className="absolute left-3 top-3 flex items-center gap-1.5 rounded-full border border-[var(--bs-navy-border)] bg-[var(--bs-dark)]/70 px-2.5 py-1 backdrop-blur-sm">
+          <span className="text-[0.58rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-muted)]">
+            {String(current + 1).padStart(2, "0")} /{" "}
+            {String(normalized.length).padStart(2, "0")}
+          </span>
+        </div>
+
+        {/* Title badge — top right */}
+        <div className="absolute right-3 top-3 rounded-full border border-[var(--bs-navy-border)] bg-[var(--bs-dark)]/70 px-2.5 py-1 backdrop-blur-sm">
+          <span className="text-[0.58rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-blue)]/70">
+            {title}
+          </span>
+        </div>
+      </div>
+
+      {/* ── Caption bar below image ── */}
+      <div className="px-4 py-3 flex items-center justify-between gap-3">
+        <p className="text-[0.8rem] font-semibold text-[var(--bs-white)] leading-snug truncate">
+          {slide.label}
+        </p>
+
+        {/* Dot navigation */}
+        <div className="flex items-center gap-1.5 shrink-0">
+          {normalized.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => goTo(i)}
+              aria-label={`Slide ${i + 1}`}
+              className={cn(
+                "transition-all duration-300 rounded-full",
+                i === current
+                  ? "h-1.5 w-5 bg-[var(--bs-blue)]"
+                  : "size-1.5 bg-[var(--bs-muted)]/40 hover:bg-[var(--bs-muted)]",
+              )}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* ── Progress bar ── */}
+      <div className="absolute inset-x-0 bottom-0 h-px bg-[var(--bs-navy-border)]">
+        <div
+          className="h-full bg-[var(--bs-blue)] transition-all duration-300"
+          style={{ width: `${((current + 1) / normalized.length) * 100}%` }}
+        />
+      </div>
+    </div>
+  );
+}
+````
+
+## File: components/site/sections.tsx
+````typescript
+import Link from "next/link";
+import { ArrowRight, Check, PhoneCall } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { contact } from "@/lib/site";
+
+/* ── Section Intro ──────────────────────────────────────────── */
+export function SectionIntro({
+  eyebrow,
+  title,
+  text,
+  align = "center",
+  accentColor = "blue",
+}: {
+  eyebrow: string;
+  title: string;
+  text?: string;
+  align?: "left" | "center";
+  accentColor?: "blue" | "green";
+}) {
+  return (
+    <div
+      className={`mb-12 ${align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl"}`}
+    >
+      <span
+        className={`${accentColor === "green" ? "eyebrow-green" : "eyebrow"} ${
+          align === "center" ? "justify-center" : ""
+        }`}
+      >
+        {eyebrow}
+      </span>
+      <h2
+        className="mt-4 font-bold text-[var(--bs-white)]"
+        style={{ fontSize: "clamp(1.7rem,2.8vw,2.6rem)", lineHeight: 1.1 }}
+      >
+        {title}
+      </h2>
+      {text && (
+        <p className="mt-3 text-[0.875rem] leading-relaxed text-[var(--bs-muted)]">
+          {text}
+        </p>
+      )}
+    </div>
+  );
+}
+
+/* ── CTA Band ───────────────────────────────────────────────── */
+export function CtaBand() {
+  return (
+    <section className="section-y">
+      <div className="container-page">
+        <div className="relative overflow-hidden rounded-[var(--radius)] bg-[var(--bs-dark)] border border-[var(--bs-navy-border)] px-10 py-14 md:px-14">
+          {/* Corner accent lines */}
+          <div className="absolute left-0 top-0 h-20 w-px rounded-tl-[var(--radius)] bg-gradient-to-b from-[var(--bs-blue)] to-transparent opacity-50" />
+          <div className="absolute left-0 top-0 h-px w-20 bg-gradient-to-r from-[var(--bs-blue)] to-transparent opacity-50" />
+          <div className="absolute right-0 bottom-0 h-20 w-px bg-gradient-to-t from-[var(--bs-green)] to-transparent opacity-40" />
+          <div className="absolute right-0 bottom-0 h-px w-20 bg-gradient-to-l from-[var(--bs-green)] to-transparent opacity-40" />
+
+          <div className="relative grid gap-10 md:grid-cols-[1fr_auto] md:items-center">
+            <div>
+              <span className="eyebrow">Schedule a Meeting</span>
+              <h2
+                className="mt-4 font-bold text-[var(--bs-white)]"
+                style={{
+                  fontSize: "clamp(1.8rem,3vw,2.8rem)",
+                  lineHeight: 1.1,
+                }}
+              >
+                Ready to make Bira Solution your technology partner?
+              </h2>
+              <p className="mt-3 max-w-lg text-sm text-[var(--bs-muted)] leading-relaxed">
+                Contact Bira Solution for a Demo, schedule a free online meeting
+                or physical meeting (30mins–1hr). Consider making Bira Solution
+                your Trusted Technology partner — we will help you achieve your
+                goals contact us now.
+              </p>
+            </div>
+            <div className="flex flex-col gap-3 shrink-0">
+              <Button asChild size="lg" variant="glow-blue">
+                <Link href="/contact">
+                  I&apos;m Interested <ArrowRight className="size-3.5" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="glass-green">
+                <Link
+                  href={`https://wa.me/${contact.phone.replace(/\D/g, "")}`}
+                >
+                  <PhoneCall className="size-3.5" /> Order by WhatsApp
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Feature List ───────────────────────────────────────────── */
+export function FeatureList({ items }: { items: string[] }) {
+  return (
+    <ul className="flex flex-col gap-2.5">
+      {items.map((item) => (
+        <li
+          key={item}
+          className="flex items-start gap-3 text-sm text-[var(--bs-muted)]"
+        >
+          <Check
+            className="mt-0.5 size-3.5 shrink-0 text-[var(--bs-green)]"
+            strokeWidth={2.5}
+          />
+          {item}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/* ── Contact Card ───────────────────────────────────────────── */
+export function ContactCard() {
+  return (
+    <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-6">
+      <p className="eyebrow mb-4">Help Desk</p>
+      <div className="flex flex-col gap-2 text-sm text-[var(--bs-muted)]">
+        <p>
+          Call/WhatsApp:{" "}
+          <span className="text-[var(--bs-white)]">{contact.phone}</span>
+        </p>
+        <p>
+          Call/WhatsApp:{" "}
+          <span className="text-[var(--bs-white)]">{contact.phoneAlt}</span>
+        </p>
+        <p>
+          Email: <span className="text-[var(--bs-white)]">{contact.email}</span>
+        </p>
+        <div className="mt-3 flex items-center gap-2">
+          <span className="size-1.5 rounded-full bg-[var(--bs-green)] animate-pulse" />
+          <span className="text-[0.62rem] font-bold tracking-[0.2em] uppercase text-[var(--bs-green)]">
+            Open 24 hours
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ── Stats Bar ──────────────────────────────────────────────── */
+export function StatsBar({
+  stats,
+}: {
+  stats: { value: string; label: string }[];
+}) {
+  return (
+    <div
+      className="grid gap-px bg-[var(--bs-navy-border)] border border-[var(--bs-navy-border)]"
+      style={{ gridTemplateColumns: `repeat(${stats.length}, 1fr)` }}
+    >
+      {stats.map(({ value, label }, i) => (
+        <div key={label} className="bg-[var(--bs-dark)] px-6 py-5 text-center">
+          <p
+            className="text-2xl font-black"
+            style={{
+              color: i % 2 === 0 ? "var(--bs-blue)" : "var(--bs-green)",
+            }}
+          >
+            {value}
+          </p>
+          <p className="mt-1 text-[0.68rem] font-bold tracking-[0.16em] uppercase text-[var(--bs-muted)]">
+            {label}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+}
+````
+
+## File: lib/site.ts
+````typescript
+import { Slide } from "@/components/site/image-carousel";
+import {
+  BadgeCheck,
+  BriefcaseBusiness,
+  Code2,
+  Film,
+  Globe2,
+  Headphones,
+  Megaphone,
+  MonitorCog,
+  Palette,
+  Server,
+  ShieldCheck,
+  Smartphone,
+  UsersRound,
+  Wrench,
+  FileText,
+  Scale,
+} from "lucide-react";
+
+/* ─────────────────────────────────────────────
+   CONTACT
+───────────────────────────────────────────── */
+export const contact = {
+  phone: "+234 810 000 7596",
+  phoneAlt: "+234 707 776 7630",
+  email: "consult@birasolution.com",
+  paymentEmail: "payment@birasolution.com",
+  website: "www.birasolution.com",
+  addresses: [
+    "54 Egbeda Idimu Road, Oja Bus-stop, Block 33 Lamrat Plaza, Lagos Nigeria",
+    "No 2 Jaiyeoba Road, Salami Bustop, NNPC Filling Station, Shasha Road Lagos",
+  ],
+};
+
+/* ─────────────────────────────────────────────
+   NAV LINKS
+───────────────────────────────────────────── */
+export const navLinks = [
+  { label: "Home", href: "/" },
+  { label: "Our Services", href: "/services" },
+  { label: "Recent Projects", href: "/recent-projects" },
+  { label: "Free Subscription", href: "/free-subscription" },
+  { label: "Contact Us", href: "/contact" },
+];
+
+/* ─────────────────────────────────────────────
+   HERO SLIDES (homepage slideshow)
+───────────────────────────────────────────── */
+export const heroSlides: Slide[] = [
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F1.jpeg?alt=media&token=f066d5cb-2617-4469-8600-0467fd277f99",
+  },
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F2.jpeg?alt=media&token=7eac625b-c5c9-4812-b614-245cd0ef41ea",
+  },
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F3.jpeg?alt=media&token=f02130d9-8541-48a5-8cf1-18ddff04aeb3",
+  },
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F4.jpeg?alt=media&token=de54af4c-5328-4861-ae76-f2fa796b94da",
+  },
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F5.jpeg?alt=media&token=399877b6-bb9c-45e0-8b64-886c5f639c2a",
+  },
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F6.jpeg?alt=media&token=427c46a5-fcff-4c66-b20a-d5cd2b845960",
+  },
+  {
+    label: "",
+    src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2F7.jpeg?alt=media&token=5153b3eb-8e44-440b-a2ba-80f14b694e21",
+  },
+  // "Website Design & Development",
+  // "Software & CMS Solutions",
+  // "Digital Marketing & Video Production",
+];
+
+/* ─────────────────────────────────────────────
+   ABOUT US (verbatim from PDF)
+───────────────────────────────────────────── */
+export const aboutText = `Welcome to Bira Solution Limited Award-Winning Lagos Nigeria Web Development, Programming and Coding Company. We are creating innovative digital solution that helps business thrive. We specialize in Professional Website Design, Programming, CMS Software Development, Hosting, Domain Registration, E-Commerce, Shopify, WordPress, SEO, Professional Logo, Graphic Design and Digital Marketing. Bira Solution experienced team of programmers are ready to design and implement applications. We can develop and programme Sophisticated and Complex site with codes, we use numerous technology and approach. We Guarantee Quality, Timely delivery, Training, Maintenance and Support. Bira Solution delivers comprehensive Services for Brands, Companies and Enterprise around the Globe.
+
+Contact Bira Solution for a Demo, schedule a free online meeting or physical meeting (30mins -1hr) Consider making Bira Solution your Trusted Technology partner we will help you achieve your goals contact us now.`;
+
+export const professionSectionIntro = `GROW YOUR PRIVATE PRACTICE AND BRAND WITH OUR PROFESSIONAL WEB DESIGN
+
+Your website will look good on Laptop, Desktop, Phone, Tablet.
+Features Long lifespan, Exquisite Design, SEO, Device Responsive and Guarantee Maximum Support.`;
+
+/* ─────────────────────────────────────────────
+   CORE SERVICES (all services from PDF)
+───────────────────────────────────────────── */
+export const coreServices = [
+  {
+    title: "Website Design and Development",
+    icon: Globe2,
+    text: "Boost your online credibility and attract more visitors to your website. Bira solution team will help you customize stunning modern website such as E-commerce website, Business website, Oil and gas website, Blogs website, charity foundation website, Entertainment website, Agency website, Real estate website, Hotel website, turnkey and mobile-friendly. We will get the right domain name and hosting. Move your business forward by contacting us.",
+  },
+  {
+    title: "Professional Web Development in Lagos",
+    icon: Code2,
+    text: "Bira Solution expert team will help you develop and code your own website according to your specific need. We can programme and develop from scratch with possibility of further adjustment overtime; we can customize an existing system and design according to the reality of your company.",
+  },
+  {
+    title: "CMS / CRM / ERP Software Development",
+    icon: MonitorCog,
+    text: "We are creating innovative digital solution that helps business thrive. We are an experienced team of programmers ready to design and implement applications. We can design sophisticated and complex software such as Accounting software, Inventory software, Gym Management software, Staff Management software, Oil and Gas software, Real estate software, Restaurant Management software, School Management Software, Hospital Management Software, Hotel Management software, CAR Management software and more. All in one platform Lead Management, Payment system, Billing, Access control, Reduce Admin and Grow your business with ease.",
+  },
+  {
+    title: "Programming & Coding Services",
+    icon: FileText,
+    text: "Bira solution expert will code, program and develop your software, We use numerous technology, and AI power to accelerate development and solve problems. Our team will code front end and back end to manage database and application logic, Contact us to help you build your project.",
+  },
+  {
+    title: "App Development in Lagos",
+    icon: Smartphone,
+    text: "Unlock business growth with Leading Mobile App Development Company, create a powerful Mobile App with Bira solution expertise in iOS Android Development, Innovative Mobile App for your business. We use the latest technology deployment, mobilization testing end-to-end and Support our Client. We deliver comprehensive service for Brands, Company and enterprise around the globe, contact us for your App project.",
+  },
+  {
+    title: "Website Management & Maintenance",
+    icon: Wrench,
+    text: "Hire professional dedicated team for technical support, Code Management, Website Maintenance, Software, CMS Maintenance ensure your website and systems are running smoothly, remains fast, secure and functioning through regular updates, backups, Content graphic updates, malware scanning, bug fixing optimization and technical to improve user friendly experience.",
+  },
+  {
+    title: "Digital Marketing",
+    icon: Megaphone,
+    text: "Boost brand awareness, drive traffic to your business and hit your marketing goals with our digital marketing solutions. Promote your product and service by leveraging online marketing tactics, such as Google ads, YouTube ads, Facebook ads. Bira Solution team will help you achieve your goals.",
+  },
+  {
+    title: "Domain Registration in Nigeria",
+    icon: Server,
+    text: "Best Hosting service in Nigeria, Buy the best web Hosting plan to launch your website, Bira Solution Hosting is very fast and 100% reliable that guarantees optimum high performance. We use dedicated Servers in the U.S. .com .ng .org .net .uk etc — Domain Name Search, Renewal, Transfer, Privacy & Protection, Domain Investment.",
+  },
+  {
+    title: "Hosting Services in Nigeria",
+    icon: Server,
+    text: "Best Hosting service in Nigeria, Buy the best web Hosting plan to launch your website. Bira Solution Hosting is very fast and 100% reliable that guarantees optimum high performance. We use dedicated Servers in the U.S. that is designed to give you optimum speed and security, our third-party partners are trusted by High profile companies and enterprises.",
+  },
+  {
+    title: "Professional Logo & Graphic Design",
+    icon: Palette,
+    text: "Our graphic designer team are professionals and very good at creating customized logos for brands, companies and personal individuals. We focus on crafting graphics exactly as our customers idea. We can deliver 3D, 2D, Contemporary, Extraordinary art for Company, Brands that can thrive business contact us for samples. We will deliver the PNG, SVG, PDF, Vector.",
+  },
+  {
+    title: "Professional Video Production / Editing",
+    icon: Film,
+    text: "We Deliver Best HD Motion Graphics and Video Production Services With 4K and 8K camera. We have Netflix Standard Cameras. We have Drone 4k bird eye view, Sonny 4k, Black magic 6k, RED Camera, ARRI CAMERA. We work with Nollywood Cinematographers, Producers and Directors. Contact us for your Movie project or Video production.",
+  },
+  {
+    title: "Hire IT Services & Management",
+    icon: UsersRound,
+    text: "We provide IT specialists for hiring tell us your requirements, We can help supplement Web Developers; Programmers help desk for your Company. We will provide Software Developer for your project, if you want to startup your company we can help with start-up, consultation services, Device Delivery such as Computer desktop, Laptops, Printers, Corporate hardware. Let us know if you need help schedule a meeting (30mins-1hr).",
+  },
+  {
+    title: "Trademark Registration in Nigeria",
+    icon: BadgeCheck,
+    text: "Are you considering registering a trademark? Bira solution will help you register your business name to avoid potential conflicts. Trademarks makes you the rightful owner of your brand name. Contact Bira solution to save cost and time.",
+  },
+  {
+    title: "Business License Registration (CAC)",
+    icon: BriefcaseBusiness,
+    text: "Set up your business licenses such as LTD, PLC, LLC, Sole Proprietorship (Business Name Registration), Nonprofit Organization. Obtain your business license from CAC in Nigeria. We will help you with CAC Business Name Registration.",
+  },
+  {
+    title: "Legal Consultation in Lagos",
+    icon: Scale,
+    text: "Our Legal department experienced team will help you with: Power of Attorney Documents, Legalization, Identification Documents, Criminal Record Certificate, Online Company Registration, Authentication Documents in the Ministry, Business License for Third Country Nationals, Residence permit for business License, Court documents & Advocate court Proceedings.",
+  },
+];
+
+/* Full services list (Our Services page) — verbatim from PDF */
+export const fullServicesList = [
+  "Website design and Development",
+  "Software Development",
+  "Programming Front End/Back End",
+  "Website Maintenance and Management",
+  "Web content writing",
+  "Hosting & Domain Registration",
+  "Domain & Hosting Transfer",
+  "CMS-CRM-ERP Software Development",
+  "Software development & Maintenance",
+  "App Development & Maintenance",
+  "SEO / Copy writing",
+  "Crypto Payment integration",
+  "Payment gateway integration",
+  "AI Video generation",
+  "Drone Video shoot 4k",
+  "Animation Video",
+  "Professional Video Editing",
+  "Professional Script writing",
+  "Commercial Video shoot",
+  "Music Video Shoot 4K, 6K, 8K Red Camera / Arri camera",
+  "Cinematic Video Production and Movie Production",
+  "Professional Logo & Graphic Design",
+  "Digital Marketing",
+  "Training & Consultation",
+  "Trademark Registration (Company/Name)",
+  "Business License Registration (CAC)",
+  "Legal Consultation",
+  "Business License (for Third Country Nationals)",
+];
+
+/* ─────────────────────────────────────────────
+   DIGITAL MARKETING SERVICES (verbatim)
+───────────────────────────────────────────── */
+export const digitalMarketingServices = [
+  "Facebook Ads",
+  "Google Ads",
+  "YouTube Ads",
+  "Instagram Ads",
+  "Video Ads / Editing",
+  "Commercial Ads / Editing",
+  "Content Creation",
+  "Professional Voice Over",
+  "Copy Writing",
+  "Social Media Management",
+];
+
+/* ─────────────────────────────────────────────
+   VIDEO PRODUCTION SERVICES (verbatim)
+───────────────────────────────────────────── */
+export const videoProductionServices = [
+  "Movie production",
+  "Cinema movies",
+  "Drone Video 4k",
+  "Documentary",
+  "Music Video",
+  "Event video",
+  "AI video generation",
+  "Church video",
+  "Wedding Creation",
+  "Video Editing",
+  "Commercial video",
+  "Educational and Training Videos",
+  "Cooperate video",
+  "Logo Animation",
+  "Storyboard Design",
+  "Training video",
+  "YouTube Video",
+  "Social media video content",
+  "Product Demo Videos",
+  "Social Media Video Content",
+];
+
+/* ─────────────────────────────────────────────
+   TECHNOLOGY WE USE (verbatim from PDF)
+───────────────────────────────────────────── */
+export const technologies = [
+  "Laravel web development",
+  "PHP Development",
+  "Python Development",
+  "HTML5 Development",
+  "CodeIgniter Development",
+  "Nodejs Development",
+];
+
+/* ─────────────────────────────────────────────
+   WEBSITE TYPES (verbatim from PDF — all 20)
+───────────────────────────────────────────── */
+export const websiteTypes = [
+  "CEO",
+  "Doctor",
+  "Lawyer",
+  "Banker",
+  "Engineer",
+  "Accountant",
+  "Pilot",
+  "Ambassador",
+  "Auto Mobile",
+  "Cargo Shipment",
+  "Military",
+  "Politician",
+  "Real Estate",
+  "Beauty Spa-Salon",
+  "Lecturer",
+  "Pastor",
+  "Teacher",
+  "Fashion Designer",
+  "Professional Shoe Maker",
+  "Artist",
+];
+
+/* ─────────────────────────────────────────────
+   REASONS TO CHOOSE US (verbatim from PDF)
+───────────────────────────────────────────── */
+export const reasons = [
+  { title: "Speed Optimization & 24hrs Support", icon: Headphones },
+  { title: "Modern Design & Customized Programming", icon: Palette },
+  { title: "Security & Protection", icon: ShieldCheck },
+  { title: "Full Website Development", icon: Globe2 },
+  { title: "Training & Quality Assurance", icon: BadgeCheck },
+  { title: "Fast Response & 100% Satisfaction", icon: UsersRound },
+  {
+    title: "Property Right & 100% Ownership Transfer",
+    icon: BriefcaseBusiness,
+  },
+];
+
+/* ─────────────────────────────────────────────
+   TESTIMONIALS (verbatim from PDF — all 7)
+───────────────────────────────────────────── */
+export const testimonials = [
+  {
+    name: "Dr Felix Dupe",
+    role: "Hospital",
+    quote:
+      "We Just Developed our site and our hospital customers CMS management system Bira Solution Company developed it I highly recommend.",
+  },
+  {
+    name: "Mrs. Rose",
+    role: "Lawyer",
+    quote:
+      "I am very impressed by Bira Solution company for helping create a software that helps me manage and keep my client information confidential.",
+  },
+  {
+    name: "Mr Bassey",
+    role: "Movie Executive Producer",
+    quote:
+      "I work with Bira solution Movie production team, and we produced couple of movies for YouTube channel and some cinematic movies, i really like how organized their production teams are the script writer, the cinematographers, director are all good in their jobs.",
+  },
+  {
+    name: "Madam Joyce",
+    role: "Boutique",
+    quote:
+      "I will definitely recommend, this company provide wide range of services am happy with the website they designed for my business.",
+  },
+  {
+    name: "Ashley Adams",
+    role: "Business Lady",
+    quote:
+      "Amazing website development with CMS customised exactly how i wanted, they helped me buy a domain name and hosting. My next website will be designed by with Bira solution.",
+  },
+  {
+    name: "Nanna",
+    role: "Makeup Artist",
+    quote:
+      "Am from Ghana, was struggling to find a good website designer, then a friend introduced me to Bira solution Company, i contacted them, with in 25days my website was ready, i was surprised with the fast delivery, they communicated with me, and send me a demo after my website was ready I am happy.",
+  },
+  {
+    name: "Jay J",
+    role: "Restaurant & Bar",
+    quote:
+      "Very professional from start to finish, high quality interactive system very supportive Great experience.",
+  },
+  {
+    name: "Glory Dike Kalu",
+    role: "Entrepreneur",
+    quote:
+      "Believe me am really grateful for my website and the Software Development Management system. Bira solution team are really professional i want to say very big thanks to Bira solution for all they have done form my business, moving forward am really grateful.",
+  },
+];
+
+/* ─────────────────────────────────────────────
+   HOSTING PLANS (verbatim from PDF)
+───────────────────────────────────────────── */
+export const hostingPlans = [
+  {
+    name: "Cloud Enterprise Hosting",
+    features: [
+      "100 Websites",
+      "50 Vibe Coding Credits",
+      "100GB NVMe Storage",
+      "10 Mailboxes Per Website",
+      "Daily Backups",
+      "E-commerce site with AI",
+      "AI Agent for WordPress",
+      "Maximum speed with free CDN",
+      "Manage site with WordPress multi-site",
+      "100 PHP Workers",
+      "10 Nodes js web apps",
+      "2M Inodes to scale your files",
+      "4GB RAM",
+      "Dedicated IP Address",
+      "24/7 Support",
+    ],
+  },
+  {
+    name: "Business Cloud Hosting",
+    features: [
+      "50 Websites",
+      "30 Vibe Coding Credits",
+      "50GB NVMe Storage",
+      "5 Mailboxes per website",
+      "5 Node.js web apps",
+      "Daily Backups",
+      "E-commerce site with AI",
+      "AI Agent for WordPress",
+      "Maximum speed with free CDN",
+      "Manage site with WordPress multi-site",
+    ],
+  },
+  {
+    name: "VPS Hosting: KVM 8",
+    features: [
+      "8 vCPU Cores",
+      "32GB RAM",
+      "400GB NVMe Disk Space",
+      "32TB Bandwidth",
+      "24/7 Support",
+    ],
+  },
+  {
+    name: "VPS Hosting: KVM 4",
+    features: [
+      "4 vCPU Cores",
+      "16GB RAM",
+      "200GB NVMe Disk Space",
+      "16TB Bandwidth",
+    ],
+  },
+  {
+    name: "VPS Hosting: KVM 2",
+    features: [
+      "2 vCPU Cores",
+      "8GB RAM",
+      "100GB NVMe Disk Space",
+      "8TB Bandwidth",
+    ],
+  },
+];
+
+/* Hosting types list */
+export const hostingTypes = [
+  "Dedicated hosting",
+  "Cloud hosting",
+  "VPS hosting",
+  "Share Hosting",
+  "Professional Hosting",
+  "Business Hosting",
+];
+
+/* Hosting transfer benefits */
+export const hostingTransferBenefits = [
+  "24/7 Monitoring / Free Support",
+  "Free SSL Certificates",
+  "UPTO 300 WEBSITES-12GB-6CPU-Daily Backup",
+  "Ultra-Fast for the best website performance and more",
+];
+
+/* ─────────────────────────────────────────────
+   SUBSCRIPTION BENEFITS (verbatim from PDF)
+───────────────────────────────────────────── */
+export const subscriptionBenefits = [
+  "Bira Solution Tech Teams will Design your website for free with a free Domain name and Hosting",
+  "Free Software Development",
+  "Free CMS Development and Digital Marketing",
+  "We use the Best Technology and Approach; we use Bira Solution high performance reliable Hosting Services",
+  "We can finish design in (2 weeks to 4 weeks) and deliver 100% ownership to you plus one-month free trial",
+  "Our professional team will customise to your desire",
+  "Schedule (30min–1hr) online meeting or physical meeting with us",
+  "We will Maintain the site, Security and 24hrs Support",
+  "You will get a warranty for all design",
+  "Monthly, Quarterly, Yearly subscription options",
+];
+
+/* Membership items (verbatim from PDF) */
+export const membershipItems = [
+  "Website Design",
+  "Web-Development",
+  "Website Maintenance",
+  "Domain Name & Transfer",
+  "Hosting & Transfer",
+  "Software Development",
+  "Programming and Coding",
+  "Software Maintenance",
+  "App Development",
+  "App Maintenance",
+  "CMS-CRM-ERP",
+  "Digital Marketing",
+];
+
+/* ─────────────────────────────────────────────
+   PAYMENT COINS (verbatim from PDF)
+───────────────────────────────────────────── */
+export const paymentCoins = [
+  "Bitcoin",
+  "XRP",
+  "Ethereum",
+  "Solana",
+  "Litecoin",
+  "USDC",
+  "Tether USDT",
+  "BNB",
+  "SHIB Inu",
+  "Chiliz",
+];
+
+/* ─────────────────────────────────────────────
+   BANK ACCOUNTS (verbatim from PDF)
+───────────────────────────────────────────── */
+export const bankAccounts = [
+  {
+    title: "Pay in Naira",
+    lines: [
+      "Bank Name: UBA",
+      "Acc No: 1025207623",
+      "Acc Name: BIRA RECRUITING AGENCY LIMITED",
+      "USD Acc: 3003706342",
+    ],
+  },
+  {
+    title: "Pay in USD",
+    lines: [
+      "Acc No: 2103433430/2010",
+      "IBAN: CZ2820100000002103433430",
+      "BIC: FIOBCZPPXXX",
+    ],
+  },
+  {
+    title: "Pay in Euro",
+    lines: [
+      "Acc No: 2403433432/2010",
+      "IBAN: CZ0920100000002403433432",
+      "BIC: FIOBCZPPXXX",
+    ],
+  },
+  {
+    title: "Pay in GBP",
+    lines: [
+      "Acc No: 2803433431/2010",
+      "IBAN: CZ1820100000002803433431",
+      "BIC: FIOBCZPPXXX",
+    ],
+  },
+];
+
+/* ─────────────────────────────────────────────
+   BUSINESS CARD SECTION (verbatim from PDF)
+───────────────────────────────────────────── */
+export const businessCardText = `Boost your online business by giving your business card to new customers, Client can easily find you with your business. We will design and print-out your business cards according to your preference colors, your business card is a part of advertising your brand and you need it.`;
+
+/* ─────────────────────────────────────────────
+   COMPLIMENTARY BUSINESS CARD FEATURES
+───────────────────────────────────────────── */
+export const businessCardFeatures = [
+  "Brand-matched color palette",
+  "Print-ready design files",
+  "Professional contact layout",
+  "Coordinated with your website launch",
+];
+
+/* ─────────────────────────────────────────────
+   DOMAIN SERVICES (verbatim from PDF)
+───────────────────────────────────────────── */
+export const domainServices = [
+  {
+    title: "Domain Name Search",
+    text: "Use Bira Solution team to search for a suitable domain name for your brand and company. Bira solution expert uses Advance search tools to find the best name for your business. We will help you secure and build your domain portfolios. By securing your domain name you ensure your brand and company is well protected online.",
+  },
+  {
+    title: "Domain Renewal",
+    text: "Let our experts renew or recover your cancelled domain name, it is vital to renew domain before it expires to protect your brand so your competitor doesn't use your domain name.",
+  },
+  {
+    title: "Domain Transfer",
+    text: "Transfer your domain name to Bira Solution fast and secure saver. We use the best upgraded trusted domain registrar. It is very easy to transfer your domain to Bira Solution database for privacy, protection, fast, reliable and monitoring.",
+  },
+  {
+    title: "Domain Privacy & Protection",
+    text: "Redaction to Safe guide your domain name and your personal information from public eyes, your home address, age, bio date might have already been published inside the internet without your consent, contact us to remove and enhance your domain security.",
+  },
+  {
+    title: "Domain Investment",
+    text: "If you like to invest in domain contact us.",
+  },
+];
+
+/* ─────────────────────────────────────────────
+   LEGAL SERVICES (verbatim from PDF)
+───────────────────────────────────────────── */
+export const legalServices = [
+  "Power of Attorney Documents",
+  "Legalization",
+  "Identification Documents",
+  "Criminal Record Certificate",
+  "Online Company Registration",
+  "Authentication Documents in the Ministry",
+  "Business License (for Third Country Nationals)",
+  "Residence permit for business License",
+  "Court documents & Advocate court Proceedings",
+];
+````
+
+## File: app/page.tsx
+````typescript
+import Link from "next/link";
+import { ArrowRight, PhoneCall } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { HeroCarousel, ImageCarousel } from "@/components/site/image-carousel";
+import {
+  CtaBand,
+  FeatureList,
+  SectionIntro,
+  StatsBar,
+} from "@/components/site/sections";
+import {
+  aboutText,
+  businessCardFeatures,
+  businessCardText,
+  coreServices,
+  heroSlides,
+  reasons,
+  technologies,
+  testimonials,
+  websiteTypes,
+  contact,
+} from "@/lib/site";
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <>
+      {/* ══════════════════════════════════════════
+          HERO — full-bleed carousel, text overlaid
+      ══════════════════════════════════════════ */}
+      <HeroCarousel slides={heroSlides}>
+        <div className="container-page flex h-full flex-col justify-center py-20 min-h-[calc(100svh-5.25rem)]">
+          <div className="max-w-2xl">
+            <span className="eyebrow">Lagos Nigeria Web Development</span>
+            <h1
+              className="mt-5 font-black text-[var(--bs-white)] text-balance"
+              style={{
+                fontSize: "clamp(2.4rem,5.5vw,4.5rem)",
+                lineHeight: 1.04,
+              }}
+            >
+              Professional websites,{" "}
+              <span className="text-[var(--bs-blue)]">software</span> &amp;
+              digital solutions.
+            </h1>
+            <div className="my-6 flex items-center gap-3">
+              <div className="h-px w-14 bg-[var(--bs-blue)] opacity-60" />
+              <div className="h-px w-6 bg-[var(--bs-blue)] opacity-30" />
+            </div>
+            <p className="max-w-md text-[0.95rem] leading-relaxed text-[var(--bs-muted)]">
+              Award-Winning Lagos Nigeria Web Development, Programming and
+              Coding Company. We Guarantee Quality, Timely delivery, Training,
+              Maintenance and Support.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Button asChild size="lg" variant="glow-blue">
+                <Link href="/contact">
+                  Request a Free Demo <ArrowRight className="size-3.5" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="glass-green">
+                <Link
+                  href={`https://wa.me/${contact.phone.replace(/\D/g, "")}`}
+                >
+                  <PhoneCall className="size-3.5" /> Order by WhatsApp
+                </Link>
+              </Button>
+            </div>
+            <div className="mt-10 flex flex-wrap items-center gap-5">
+              {[
+                "Schedule 30mins Free Consultation",
+                "24/7 Support",
+                "100% Ownership Transfer",
+                "Lagos Based",
+              ].map((tag) => (
+                <div key={tag} className="flex items-center gap-2">
+                  <div className="size-1.5 rounded-full bg-[var(--bs-green)]" />
+                  <span className="text-[0.65rem] font-bold tracking-[0.18em] uppercase text-[var(--bs-muted)]">
+                    {tag}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </HeroCarousel>
+
+      {/* Stats bar */}
+      <StatsBar
+        stats={[
+          { value: "500+", label: "Projects Delivered" },
+          { value: "10+", label: "Years Experience" },
+          { value: "100%", label: "Client Ownership" },
+          { value: "24/7", label: "Support Desk" },
+        ]}
+      />
+
+      {/* ══════════════════════════════════════════
+          ABOUT US
+      ══════════════════════════════════════════ */}
+      <section className="section-y">
+        <div className="container-page grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
+          <div>
+            <span className="eyebrow">About Us</span>
+            <h2
+              className="mt-4 font-bold text-[var(--bs-white)]"
+              style={{ fontSize: "clamp(1.8rem,3vw,2.8rem)", lineHeight: 1.1 }}
+            >
+              Award-Winning Lagos Nigeria Web Development Company
+            </h2>
+            <div className="mt-5 flex flex-col gap-4">
+              {aboutText.split("\n\n").map((para, i) => (
+                <p
+                  key={i}
+                  className="text-[0.9rem] leading-relaxed text-[var(--bs-muted)]"
+                >
+                  {para}
+                </p>
+              ))}
+            </div>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Button asChild variant="glow-blue">
+                <Link href="/contact">
+                  I&apos;m Interested <ArrowRight className="size-3.5" />
+                </Link>
+              </Button>
+              <Button asChild variant="glass-green">
+                <Link href="/contact">Schedule 30mins Free Consultation</Link>
+              </Button>
+            </div>
+          </div>
+
+          {/* Technology we use */}
+          <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-7">
+            <p className="eyebrow mb-5">Technology We Use</p>
+            <div className="flex flex-col gap-2">
+              {technologies.map((tech) => (
+                <div
+                  key={tech}
+                  className="flex items-center gap-3 py-2.5 border-b border-[var(--bs-navy-border)] last:border-0"
+                >
+                  <div className="size-1.5 rounded-full bg-[var(--bs-blue)]" />
+                  <span className="text-[0.875rem] text-[var(--bs-white)]">
+                    {tech}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+          SERVICES OVERVIEW (6 key services)
+      ══════════════════════════════════════════ */}
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page">
+          <SectionIntro
+            eyebrow="Our Services"
+            title="Everything your business needs, in one technology partner."
+          />
+          <div className="grid gap-px bg-[var(--bs-navy-border)] border border-[var(--bs-navy-border)] rounded-[var(--radius)] overflow-hidden sm:grid-cols-2 lg:grid-cols-3">
+            {coreServices.slice(0, 6).map(({ title, text, icon: Icon }) => (
+              <div
+                key={title}
+                className="group relative flex flex-col gap-4 bg-[var(--bs-navy-mid)] p-6 transition-all duration-200 hover:bg-[var(--bs-navy-light)] overflow-hidden"
+              >
+                <div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{
+                    background:
+                      "radial-gradient(circle at 0% 0%, rgba(45,184,216,0.07) 0%, transparent 60%)",
+                  }}
+                />
+                <div className="relative z-10 flex size-9 items-center justify-center rounded-lg border border-[rgba(45,184,216,0.2)] text-[var(--bs-blue)] transition-all group-hover:border-[rgba(45,184,216,0.4)] group-hover:bg-[rgba(45,184,216,0.07)]">
+                  <Icon className="size-4" strokeWidth={1.5} />
+                </div>
+                <div className="relative z-10">
+                  <h3 className="font-bold text-[1.05rem] text-[var(--bs-white)] mb-2 leading-snug">
+                    {title}
+                  </h3>
+                  <p className="text-[0.8rem] text-[var(--bs-muted)] leading-relaxed line-clamp-3">
+                    {text}
+                  </p>
+                </div>
+                <div className="relative z-10 h-px w-0 bg-[var(--bs-blue)] transition-all duration-300 group-hover:w-6 rounded-full opacity-50" />
+              </div>
+            ))}
+          </div>
+          <div className="mt-7 flex justify-center">
+            <Button asChild variant="outline">
+              <Link href="/services">
+                View All Services <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+          GROW YOUR PRIVATE PRACTICE — PROFESSION LIST
+      ══════════════════════════════════════════ */}
+      <section className="section-y">
+        <div className="container-page">
+          <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+            {/* Left — sticky headline + CTA */}
+            <div className="lg:sticky lg:top-28">
+              <span className="eyebrow">
+                Private Practice &amp; Brand Growth
+              </span>
+              <h2
+                className="mt-5 font-bold text-[var(--bs-white)] text-balance"
+                style={{
+                  fontSize: "clamp(1.8rem,3vw,2.8rem)",
+                  lineHeight: 1.1,
+                }}
+              >
+                Grow your private practice and brand with our professional web
+                design.
+              </h2>
+              <p className="mt-4 text-sm leading-relaxed text-[var(--bs-muted)] max-w-sm">
+                Your website will look good on Laptop, Desktop, Phone, Tablet.
+                Features Long lifespan, Exquisite Design, SEO, Device Responsive
+                and Guarantee Maximum Support.
+              </p>
+              <div className="mt-7">
+                <Button asChild variant="glow-green">
+                  <Link href="/contact">
+                    I&apos;m Interested <ArrowRight className="size-3.5" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Right — website types as a styled list panel, same look as Tech We Use */}
+            <div className="rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-7">
+              <p className="eyebrow mb-5">Types of Website We Design</p>
+              {/* 3 cols desktop, 2 cols mobile */}
+              <div className="grid grid-cols-2  gap-x-6">
+                {websiteTypes.map((type) => (
+                  <div
+                    key={type}
+                    className="flex items-center gap-3 py-2.5 border-b border-[var(--bs-navy-border)] last:border-0"
+                  >
+                    <div className="size-1.5 shrink-0 rounded-full bg-[var(--bs-blue)]" />
+                    <span className="text-[0.85rem] text-[var(--bs-white)]">
+                      {type} Website Design
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+          COMPLIMENTARY BUSINESS CARD
+      ══════════════════════════════════════════ */}
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page grid gap-14 lg:grid-cols-2 lg:items-center">
+          <div>
+            <ImageCarousel
+              title="Complimentary Business Card"
+              slides={[
+                {
+                  label: "Business card design mockup",
+                  src: "https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2Fcard%2FWhatsApp%20Image%202026-05-19%20at%2013.06.59.jpeg?alt=media&token=4449c52b-a662-46d9-89eb-39cbc23bcc76",
+                },
+              ]}
+            />
+          </div>
+          <div>
+            <span className="eyebrow">Complimentary Business Card</span>
+            <h2
+              className="mt-5 font-bold text-[var(--bs-white)]"
+              style={{
+                fontSize: "clamp(1.7rem,2.6vw,2.4rem)",
+                lineHeight: 1.1,
+              }}
+            >
+              Give customers a clean way to reach your business.
+            </h2>
+            <p className="mt-4 text-sm leading-relaxed text-[var(--bs-muted)] max-w-md">
+              {businessCardText}
+            </p>
+            <div className="mt-6">
+              <FeatureList items={businessCardFeatures} />
+            </div>
+            <Button asChild variant="outline" className="mt-6">
+              <Link href="/contact">
+                I&apos;m Interested <ArrowRight className="size-3.5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════
+    TESTIMONIALS
+══════════════════════════════════════════ */}
+      <section className="section-y overflow-hidden">
+        <div className="container-page mb-12">
+          <SectionIntro
+            eyebrow="What Our Clients Say"
+            title="★★★★★ 5 Stars Google Reviews"
+            text="Transparent reviews from real clients who have worked with Bira Solution."
+            accentColor="green"
+          />
+
+          {/* ── Featured image — cinematic wide frame ── */}
+          <div className="relative w-full overflow-hidden rounded-[var(--radius)] border border-[var(--bs-navy-border)] aspect-video">
+            <Image
+              src="https://firebasestorage.googleapis.com/v0/b/bccasting-99356.firebasestorage.app/o/bira%20solutions%2Fcard%2FWhatsApp%20Image%202026-05-19%20at%2013.07.00.jpeg?alt=media&token=bf94a367-420e-4e9f-be58-b0ee3e052fc2"
+              alt="Happy Bira Solution clients"
+              fill
+              className="object-cover"
+            />
+
+            {/* Dark overlay — keeps overlaid text readable on real photos */}
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to right, rgba(7,12,20,0.72) 0%, rgba(7,12,20,0.3) 50%, rgba(7,12,20,0.1) 100%)",
+              }}
+            />
+
+            {/* Corner accent */}
+            <div className="absolute left-0 top-0 h-12 w-px bg-gradient-to-b from-[var(--bs-green)] to-transparent opacity-60" />
+            <div className="absolute left-0 top-0 h-px w-12 bg-gradient-to-r from-[var(--bs-green)] to-transparent opacity-60" />
+          </div>
+        </div>
+
+        {/* Scroller — no container-page so it bleeds edge-to-edge */}
+        <div className="relative w-full overflow-hidden">
+          {/* Fade masks on left and right edges */}
+          <div
+            className="pointer-events-none absolute left-0 top-0 z-10 h-full w-24"
+            style={{
+              background:
+                "linear-gradient(to right, var(--bs-navy), transparent)",
+            }}
+          />
+          <div
+            className="pointer-events-none absolute right-0 top-0 z-10 h-full w-24"
+            style={{
+              background:
+                "linear-gradient(to left, var(--bs-navy), transparent)",
+            }}
+          />
+
+          {/* The scrolling track — duplicated for seamless infinite loop */}
+          <div
+            className="flex w-max gap-4"
+            style={{ animation: "scroll-x 40s linear infinite" }}
+          >
+            {[...testimonials, ...testimonials].map((item, idx) => (
+              <blockquote
+                key={`${item.name}-${idx}`}
+                className="w-[320px] shrink-0 rounded-[var(--radius)] border border-[var(--bs-navy-border)] bg-[var(--bs-navy-mid)] p-5 relative overflow-hidden flex flex-col"
+              >
+                <div className="absolute left-0 top-0 h-full w-0.5 bg-[var(--bs-green)] opacity-60" />
+                <p className="text-[0.85rem] leading-relaxed text-[var(--bs-muted)] italic pl-4 flex-1">
+                  &ldquo;{item.quote}&rdquo;
+                </p>
+                <footer className="mt-4 pl-4 flex items-center gap-3">
+                  <div className="size-7 rounded-full bg-[var(--bs-navy-border)] flex items-center justify-center text-[0.62rem] font-bold text-[var(--bs-white)]">
+                    {item.name[0]}
+                  </div>
+                  <div>
+                    <p className="text-[0.78rem] font-bold text-[var(--bs-white)]">
+                      {item.name}
+                    </p>
+                    <p className="text-[0.62rem] font-bold tracking-[0.16em] uppercase text-[var(--bs-green)]">
+                      {item.role}
+                    </p>
+                  </div>
+                </footer>
+              </blockquote>
+            ))}
+          </div>
+        </div>
+
+        {/* Keyframe injected inline */}
+        <style>{`
+    @keyframes scroll-x {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    div[style*="scroll-x"]:hover {
+      animation-play-state: paused;
+    }
+  `}</style>
+      </section>
+
+      {/* ══════════════════════════════════════════
+          REASONS TO CHOOSE US
+      ══════════════════════════════════════════ */}
+      <section className="section-y border-y border-[var(--bs-navy-border)] bg-[var(--bs-dark)]">
+        <div className="container-page grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div>
+            <span className="eyebrow">Reasons to Choose Us</span>
+            <h2
+              className="mt-4 font-bold text-[var(--bs-white)]"
+              style={{ fontSize: "clamp(1.8rem,3vw,2.8rem)", lineHeight: 1.1 }}
+            >
+              Our developers use latest modern cutting edge technology to
+              deliver an engaging website experience.
+            </h2>
+            <div className="mt-7">
+              <Button asChild variant="glow-blue">
+                <Link href="/contact">
+                  I&apos;m Interested <ArrowRight className="size-3.5" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+          <div className="flex flex-col border-t border-[var(--bs-navy-border)]">
+            {reasons.map(({ title, icon: Icon }, i) => (
+              <div
+                key={title}
+                className="group flex items-center gap-4 border-b border-[var(--bs-navy-border)] py-4 px-2 -mx-2 rounded-lg transition-colors hover:bg-[var(--bs-navy-mid)]"
+              >
+                <div className="flex size-8 shrink-0 items-center justify-center rounded-lg border border-[var(--bs-navy-border)] text-[var(--bs-blue)] transition-colors group-hover:border-[rgba(45,184,216,0.35)] group-hover:bg-[rgba(45,184,216,0.06)]">
+                  <Icon className="size-3.5" strokeWidth={1.5} />
+                </div>
+                <p className="text-[0.875rem] font-semibold text-[var(--bs-white)]">
+                  ★ {title}
+                </p>
+                <span className="ml-auto text-[0.6rem] font-bold tracking-widest text-[var(--bs-subtle)]">
+                  0{i + 1}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CtaBand />
+    </>
+  );
+}
 ````
